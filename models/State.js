@@ -6,7 +6,8 @@ const mongoose = require('mongoose'),
 
 const stateSchema = mongoose.Schema({
   state: String,
-  incentives: [],
+  incentivesElectric: [],
+  incentivesHybrid: [],
   fees: [],
   gasCost: Number,
   electricCost: Number
