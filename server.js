@@ -5,7 +5,9 @@ const express = require('express'),
      mongoose = require('mongoose'),
            db = mongoose.connection,
        Schema = mongoose.Schema,
-   bodyParser = require('body-parser');
+   bodyParser = require('body-parser'),
+        State = require('./models/State.js'),
+      Vehicle = require('./models/Vehicle.js');
 
 
 app.use(express.static('public'));
@@ -18,27 +20,6 @@ db.once('open', () => {
 });
 mongoose.connect('mongodb://localhost/eve');
 
-const vehicleSchema = mongoose.Schema({
-  country: String,
-  manufacturer: String,
-  model: String,
-  body: String,
-  power: String,
-  msrp: Number,
-  mpgmpge: Number,
-  range: Number,
-  maintenance: Number,
-  comparableManufacturer: String,
-  comparableModel: String,
-});
-
-const stateSchema = mongoose.Schema({
-  state: String,
-  incentives: [],
-  fees: String,
-  gasCost: Number,
-  electricCost: Number
-});
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
