@@ -14,8 +14,10 @@ const vehicleSchema = mongoose.Schema({
   mpgmpge: Number,
   range: Number,
   maintenance: Number,
-  comparableManufacturer: String,
-  comparableModel: String
+  gasComparableManufacturer: String,
+  gasComparableModel: String,
+  hybridComparableManufacturer: String,
+  hybridComparableModel: String,
 });
 
 module.exports = mongoose.model('Vehicle', vehicleSchema);
