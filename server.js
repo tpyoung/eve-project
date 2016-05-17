@@ -20,6 +20,8 @@ db.once('open', () => {
 });
 mongoose.connect('mongodb://localhost/eve');
 
+//Server calls go here
+
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
