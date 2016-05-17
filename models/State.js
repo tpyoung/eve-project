@@ -7,7 +7,9 @@ const mongoose = require('mongoose'),
 const stateSchema = mongoose.Schema({
   state: String,
   incentives: [],
-  fees: String,
+  fees: [],
   gasCost: Number,
   electricCost: Number
 });
+
+module.exports = mongoose.model('State', stateSchema);

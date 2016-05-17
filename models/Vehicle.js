@@ -15,5 +15,7 @@ const vehicleSchema = mongoose.Schema({
   range: Number,
   maintenance: Number,
   comparableManufacturer: String,
-  comparableModel: String,
+  comparableModel: String
 });
+
+module.exports = mongoose.model('Vehicle', vehicleSchema);
