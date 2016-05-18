@@ -550,6 +550,246 @@
     fees: [],
     gasCost: "",
     electricCost: ""
+  },
+  {
+    state: "Minnesota",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "true",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "true",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Mississippi",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Missouri",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Montana",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Nebraska",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: ["Low-cost loans for the replacement of conventional vehicles to alternative fuel", "Low-cost loans for the purchase of alternative fuel vehicles", "Low-cost loans for the conversion of conventional behicles to operate on alternative fuels"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Nevada",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "true",
+      hov: "false",
+      install: "false",
+      charging: "true",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "true",
+      hov: "false",
+      install: "false",
+      charging: "true",
+      other: ["Emissions exemption"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "New Hampshire",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "New Jersey",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
+      other: ["Incentives to replace heavily emitting trucks"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
+      other: ["Incentives to replace heavily emitting trucks"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "New Mexico",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "New York",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "true",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "true",
+      other: ["Incentives to replace heavily emitting trucks", "Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "true",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "true",
+      other: ["Incentives to replace heavily emitting trucks"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
   }
 ]
 
