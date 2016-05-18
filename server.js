@@ -7,7 +7,8 @@ const express = require('express'),
        Schema = mongoose.Schema,
    bodyParser = require('body-parser'),
         State = require('./models/State.js'),
-      Vehicle = require('./models/Vehicle.js');
+      Vehicle = require('./models/Vehicle.js'),
+      stateSeed = require('./seedState.js');
 
 
 app.use(express.static('public'));
@@ -20,8 +21,8 @@ db.once('open', () => {
 });
 mongoose.connect('mongodb://localhost/eve');
 
-//Server calls go here
-
+/* Uncomment out the "stateSeed" function below to load state data into your database */
+// stateSeed();
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
