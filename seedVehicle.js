@@ -23,6 +23,21 @@ function vehicleSeed(){
         hybridComparableModel: vehicleData.hybridComparableModel,
       });
     }
+    if (vehicleData.type === "hybrid"){
+      let indVehicle = new Vehicle({
+        country: vehicleData.country,
+        manufacturer: vehicleData.manufacturer,
+        model: vehicleData.model,
+        body: vehicleData.body,
+        power: vehicleData.power,
+        msrp: vehicleData.msrp,
+        mpgmpge: vehicleData.mpgmpge,
+        range: vehicleData.range,
+        maintenance: vehicleData.maintenance,
+        gasComparableManufacturer: vehicleData.gasComparableManufacturer,
+        gasComparableModel: vehicleData.gasComparableModel
+      });
+    }
     else {
       let indVehicle = new Vehicle({
         country: vehicleData.country,
