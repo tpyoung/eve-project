@@ -21,7 +21,7 @@
       ],
     fees: [],
     gasCost: "2.034",
-    electricCost: ""
+    electricCost: "11.50"
   },
   {
     state: "Alaska",
@@ -45,7 +45,7 @@
       ],
     fees: [],
     gasCost: "2.537",
-    electricCost: ""
+    electricCost: "19.84"
   },
   {
     state: "Arizona",
@@ -69,7 +69,7 @@
       ],
     fees: [],
     gasCost: "2.157",
-    electricCost: ""
+    electricCost: "11.46"
   },
   {
     state: "Arkansas",
@@ -93,7 +93,7 @@
       ],
     fees: [],
     gasCost: "1.999",
-    electricCost: ""
+    electricCost: "9.13"
   },
   {
     state: "California",
@@ -117,7 +117,7 @@
       ],
     fees: [],
     gasCost: "2.798",
-    electricCost: ""
+    electricCost: "17.69"
   },
   {
   state: "Colorado",
@@ -141,7 +141,7 @@
     ],
   fees: [],
   gasCost: "2.168",
-  electricCost: ""
+  electricCost: "11.26"
   },
   {
     state: "Connecticut",
@@ -165,7 +165,7 @@
       ],
     fees: [],
     gasCost: "2.366",
-    electricCost: ""
+    electricCost: "20.68"
   },
   {
     state: "Delaware",
@@ -189,7 +189,7 @@
       ],
     fees: [],
     gasCost: "2.168",
-    electricCost: ""
+    electricCost: "12.99"
   },
   {
     state: "District of Columbia",
@@ -213,7 +213,7 @@
       ],
     fees: [],
     gasCost: "2.404",
-    electricCost: ""
+    electricCost: "12.78"
   },
   {
     state: "Florida",
@@ -237,7 +237,7 @@
       ],
     fees: [],
     gasCost: "2.189",
-    electricCost: ""
+    electricCost: "11.34"
   },
   {
     state: "Georgia",
@@ -261,7 +261,7 @@
       ],
     fees: [],
     gasCost: "2.173",
-    electricCost: ""
+    electricCost: "10.52"
   },
   {
     state: "Hawaii",
@@ -285,7 +285,7 @@
       ],
     fees: [],
     gasCost: "2.659",
-    electricCost: ""
+    electricCost: "26.77"
   },
   {
     state: "Idaho",
@@ -309,7 +309,7 @@
       ],
     fees: [],
     gasCost: "2.426",
-    electricCost: ""
+    electricCost: "9.66"
   },
   {
     state: "Illinois",
@@ -333,7 +333,7 @@
       ],
     fees: [],
     gasCost: "2.345",
-    electricCost: ""
+    electricCost: "11.94"
   },
   {
     state: "Indiana",
@@ -357,7 +357,7 @@
       ],
     fees: [],
     gasCost: "2.233",
-    electricCost: ""
+    electricCost: "10.53"
   },
   {
     state: "Iowa",
@@ -381,7 +381,7 @@
       ],
     fees: [],
     gasCost: "2.181",
-    electricCost: ""
+    electricCost: "10.94"
   },
   {
     state: "Kansas",
@@ -405,7 +405,7 @@
       ],
     fees: [],
     gasCost: "2.038",
-    electricCost: ""
+    electricCost: "12.57"
   },
   {
     state: "Kentucky",
@@ -429,7 +429,7 @@
       ],
     fees: [],
     gasCost: "2.248",
-    electricCost: ""
+    electricCost: "9.71"
   },
   {
     state: "Louisiana",
@@ -453,7 +453,7 @@
       ],
     fees: [],
     gasCost: "2.009",
-    electricCost: ""
+    electricCost: "8.47"
   },
   {
     state: "Maine",
@@ -477,7 +477,7 @@
       ],
     fees: [],
     gasCost: "2.308",
-    electricCost: ""
+    electricCost: "17.83"
   },
   {
     state: "Maryland",
@@ -501,7 +501,7 @@
       ],
     fees: [],
     gasCost: "2.238",
-    electricCost: ""
+    electricCost: "13.98"
   },
   {
     state: "Massachusetts",
@@ -525,7 +525,7 @@
       ],
     fees: [],
     gasCost: "2.240",
-    electricCost: ""
+    electricCost: "19.78"
   },
   {
     state: "Michigan",
@@ -549,7 +549,7 @@
       ],
     fees: [],
     gasCost: "2.245",
-    electricCost: ""
+    electricCost: "14.88"
   },
   {
     state: "Minnesota",
@@ -573,7 +573,7 @@
       ],
     fees: [],
     gasCost: "2.146",
-    electricCost: ""
+    electricCost: "12.14"
   },
   {
     state: "Mississippi",
@@ -597,7 +597,7 @@
       ],
     fees: [],
     gasCost: "2.007",
-    electricCost: ""
+    electricCost: "10.32"
   },
   {
     state: "Missouri",
@@ -621,7 +621,7 @@
       ],
     fees: [],
     gasCost: "1.998",
-    electricCost: ""
+    electricCost: "9.23"
   },
   {
     state: "Montana",
@@ -645,7 +645,7 @@
       ],
     fees: [],
     gasCost: "2.199",
-    electricCost: ""
+    electricCost: "10.52"
   },
   {
     state: "Nebraska",
@@ -669,7 +669,7 @@
       ],
     fees: [],
     gasCost: "2.182",
-    electricCost: ""
+    electricCost: "9.83"
   },
   {
     state: "Nevada",
@@ -693,7 +693,7 @@
       ],
     fees: [],
     gasCost: "2.482",
-    electricCost: ""
+    electricCost: "12.20"
   },
   {
     state: "New Hampshire",
@@ -717,7 +717,7 @@
       ],
     fees: [],
     gasCost: "2.188",
-    electricCost: ""
+    electricCost: "18.37"
   },
   {
     state: "New Jersey",
@@ -741,7 +741,7 @@
       ],
     fees: [],
     gasCost: "2.090",
-    electricCost: ""
+    electricCost: "15.48"
   },
   {
     state: "New Mexico",
@@ -765,7 +765,7 @@
       ],
     fees: [],
     gasCost: "2.062",
-    electricCost: ""
+    electricCost: "11.26"
   },
   {
     state: "New York",
@@ -789,7 +789,7 @@
       ],
     fees: [],
     gasCost: "2.389",
-    electricCost: ""
+    electricCost: "16.76"
   },
   {
     state: "North Carolina",
@@ -813,7 +813,7 @@
       ],
     fees: [],
     gasCost: "2.168",
-    electricCost: ""
+    electricCost: "10.77"
   },
   {
     state: "North Dakota",
@@ -837,7 +837,7 @@
       ],
     fees: [],
     gasCost: "2.155",
-    electricCost: ""
+    electricCost: "9.41"
   },
   {
     state: "Ohio",
@@ -861,7 +861,7 @@
       ],
     fees: [],
     gasCost: "2.234",
-    electricCost: ""
+    electricCost: "12.03"
   },
   {
     state: "Oklahoma",
@@ -885,7 +885,7 @@
       ],
     fees: [],
     gasCost: "2.017",
-    electricCost: ""
+    electricCost: "9.63"
   },
   {
     state: "Oregon",
@@ -909,7 +909,7 @@
       ],
     fees: [],
     gasCost: "2.445",
-    electricCost: ""
+    electricCost: "10.37"
   },
   {
     state: "Pennsylvania",
@@ -933,7 +933,7 @@
       ],
     fees: [],
     gasCost: "2.411",
-    electricCost: ""
+    electricCost: "14.02"
   },
   {
     state: "Rhode Island",
@@ -957,7 +957,7 @@
       ],
     fees: [],
     gasCost: "2.265",
-    electricCost: ""
+    electricCost: "18.78"
   },
   {
     state: "South Carolina",
@@ -981,7 +981,7 @@
       ],
     fees: [],
     gasCost: "2.017",
-    electricCost: ""
+    electricCost: "11.90"
   },
   {
     state: "South Dakota",
@@ -1005,7 +1005,7 @@
       ],
     fees: [],
     gasCost: "2.190",
-    electricCost: ""
+    electricCost: "10.34"
   },
   {
     state: "Tennessee",
@@ -1029,7 +1029,7 @@
       ],
     fees: [],
     gasCost: "2.058",
-    electricCost: ""
+    electricCost: "9.61"
   },
   {
     state: "Texas",
@@ -1053,7 +1053,7 @@
       ],
     fees: [],
     gasCost: "2.004",
-    electricCost: ""
+    electricCost: "11.06"
   },
   {
     state: "Utah",
@@ -1077,7 +1077,7 @@
       ],
     fees: [],
     gasCost: "2.420",
-    electricCost: ""
+    electricCost: "10.61"
   },
   {
     state: "Vermont",
@@ -1101,7 +1101,7 @@
       ],
     fees: [],
     gasCost: "2.286",
-    electricCost: ""
+    electricCost: "16.89"
   },
   {
     state: "Virginia",
@@ -1125,7 +1125,7 @@
       ],
     fees: [],
     gasCost: "2.065",
-    electricCost: ""
+    electricCost: "10.89"
   },
   {
     state: "Washington",
@@ -1149,7 +1149,7 @@
       ],
     fees: [],
     gasCost: "2.557",
-    electricCost: ""
+    electricCost: "9.21"
   },
   {
     state: "West Virginia",
@@ -1173,7 +1173,7 @@
       ],
     fees: [],
     gasCost: "2.271",
-    electricCost: ""
+    electricCost: "10.68"
   },
   {
     state: "Wisconsin",
@@ -1197,7 +1197,7 @@
       ],
     fees: [],
     gasCost: "2.232",
-    electricCost: ""
+    electricCost: "14.09"
   },
   {
     state: "Wyoming",
@@ -1221,7 +1221,7 @@
       ],
     fees: [],
     gasCost: "2.196",
-    electricCost: ""
+    electricCost: "10.59"
   }
 ]
 
