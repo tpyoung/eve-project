@@ -1054,30 +1054,174 @@
     fees: [],
     gasCost: "",
     electricCost: ""
-  }
-]
-
+  },
   {
-    state: "",
+    state: "Utah",
     incentivesElectric: [
-      taxCredits: "",
-      cashRebates: "",
-      parking: "",
-      hov: "",
-      install: "",
-      charging: "",
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
       other: []
       ],
     incentivesHybrid: [
-      taxCredits: "",
-      cashRebates: "",
-      parking: "",
-      hov: "",
-      install: "",
-      charging: "",
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Vermont",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Virginia",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "true",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "true",
+      other: ["Emissions exemption on some hybrid vehicles"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Washington",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "West Virginia",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Wisconsin",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: ["Alternative fuel tax exemptions"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: ["Alternative fuel tax exemptions"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Wyoming",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
       other: []
       ],
     fees: [],
     gasCost: "",
     electricCost: ""
   }
+]
+
