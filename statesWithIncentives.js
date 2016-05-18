@@ -790,6 +790,270 @@
     fees: [],
     gasCost: "",
     electricCost: ""
+  },
+  {
+    state: "North Carolina",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "North Dakota",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Ohio",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Oklahoma",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: ["Low-cost alternative fuel vehicle loans"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Oregon",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Pennsylvania",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "true",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "true",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Rhode Island",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "true",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: ["Emissions exemption"]
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "true",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "South Carolina",
+    incentivesElectric: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "South Dakota",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Tennessee",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "true",
+      parking: "false",
+      hov: "true",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "true",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "false",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
+  },
+  {
+    state: "Texas",
+    incentivesElectric: [
+      taxCredits: "false",
+      cashRebates: "true",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    incentivesHybrid: [
+      taxCredits: "false",
+      cashRebates: "false",
+      parking: "false",
+      hov: "false",
+      install: "true",
+      charging: "false",
+      other: []
+      ],
+    fees: [],
+    gasCost: "",
+    electricCost: ""
   }
 ]
 
