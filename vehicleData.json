@@ -3,8 +3,8 @@
 // Sources:  www.edmunds.com
 //           www.kbb.com
 //           www.plugincars.com
-// 5 year cost to own = fuel, state fees, financing, maitenance, repairs, insurance + depreciation
-  [
+// maintenance = fuel, state fees, financing, maintenance, repairs, insurance + depreciation over 5 years
+   [
     {
       "country": "Germany",
       "manufacturer": "BMW",
