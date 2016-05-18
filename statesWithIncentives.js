@@ -20,7 +20,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.034",
     electricCost: ""
   },
   {
@@ -44,7 +44,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.537",
     electricCost: ""
   },
   {
@@ -68,7 +68,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.157",
     electricCost: ""
   },
   {
@@ -92,7 +92,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "1.999",
     electricCost: ""
   },
   {
@@ -116,7 +116,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.798",
     electricCost: ""
   },
   {
@@ -140,7 +140,7 @@
     other: ["Emissions exemption"]
     ],
   fees: [],
-  gasCost: "",
+  gasCost: "2.168",
   electricCost: ""
   },
   {
@@ -164,7 +164,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.366",
     electricCost: ""
   },
   {
@@ -188,7 +188,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.168",
     electricCost: ""
   },
   {
@@ -212,7 +212,7 @@
       other: ["Title tax exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.404",
     electricCost: ""
   },
   {
@@ -236,7 +236,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.189",
     electricCost: ""
   },
   {
@@ -260,7 +260,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.173",
     electricCost: ""
   },
   {
@@ -284,7 +284,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.659",
     electricCost: ""
   },
   {
@@ -308,7 +308,7 @@
       other: ["State motor vehicle inspection exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.426",
     electricCost: ""
   },
   {
@@ -332,7 +332,7 @@
       other: ["Low interest loan financing"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.345",
     electricCost: ""
   },
   {
@@ -356,7 +356,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.233",
     electricCost: ""
   },
   {
@@ -380,7 +380,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.181",
     electricCost: ""
   },
   {
@@ -404,7 +404,7 @@
       other: ["Loans to purchase new natural gas vehicles", "Loans to convert gas powered vehicles to natural gas vehicles"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.038",
     electricCost: ""
   },
   {
@@ -428,7 +428,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.248",
     electricCost: ""
   },
   {
@@ -452,7 +452,7 @@
       other: ["Tax credits for converting vehicle to operate on alternative fuel"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.009",
     electricCost: ""
   },
   {
@@ -476,7 +476,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.308",
     electricCost: ""
   },
   {
@@ -500,7 +500,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.238",
     electricCost: ""
   },
   {
@@ -524,7 +524,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.240",
     electricCost: ""
   },
   {
@@ -548,7 +548,7 @@
       other: ["Emissions exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.245",
     electricCost: ""
   },
   {
@@ -572,7 +572,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.146",
     electricCost: ""
   },
   {
@@ -596,7 +596,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.007",
     electricCost: ""
   },
   {
@@ -620,7 +620,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "1.998",
     electricCost: ""
   },
   {
@@ -644,7 +644,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.199",
     electricCost: ""
   },
   {
@@ -668,7 +668,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.182",
     electricCost: ""
   },
   {
@@ -692,7 +692,7 @@
       other: ["Emissions exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.482",
     electricCost: ""
   },
   {
@@ -716,7 +716,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.188",
     electricCost: ""
   },
   {
@@ -740,7 +740,7 @@
       other: ["Incentives to replace heavily emitting trucks"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.090",
     electricCost: ""
   },
   {
@@ -764,7 +764,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.062",
     electricCost: ""
   },
   {
@@ -788,7 +788,7 @@
       other: ["Incentives to replace heavily emitting trucks"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.389",
     electricCost: ""
   },
   {
@@ -812,7 +812,7 @@
       other: ["Emissions exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.168",
     electricCost: ""
   },
   {
@@ -836,7 +836,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.155",
     electricCost: ""
   },
   {
@@ -860,7 +860,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.234",
     electricCost: ""
   },
   {
@@ -884,7 +884,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.017",
     electricCost: ""
   },
   {
@@ -908,7 +908,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.445",
     electricCost: ""
   },
   {
@@ -932,7 +932,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.411",
     electricCost: ""
   },
   {
@@ -956,7 +956,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.265",
     electricCost: ""
   },
   {
@@ -980,7 +980,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.017",
     electricCost: ""
   },
   {
@@ -1004,7 +1004,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.190",
     electricCost: ""
   },
   {
@@ -1028,7 +1028,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.058",
     electricCost: ""
   },
   {
@@ -1052,7 +1052,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.004",
     electricCost: ""
   },
   {
@@ -1076,7 +1076,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.420",
     electricCost: ""
   },
   {
@@ -1100,7 +1100,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.286",
     electricCost: ""
   },
   {
@@ -1124,7 +1124,7 @@
       other: ["Emissions exemption on some hybrid vehicles"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.065",
     electricCost: ""
   },
   {
@@ -1148,7 +1148,7 @@
       other: ["Emissions exemption"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.557",
     electricCost: ""
   },
   {
@@ -1172,7 +1172,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.271",
     electricCost: ""
   },
   {
@@ -1196,7 +1196,7 @@
       other: ["Alternative fuel tax exemptions"]
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.232",
     electricCost: ""
   },
   {
@@ -1220,7 +1220,7 @@
       other: []
       ],
     fees: [],
-    gasCost: "",
+    gasCost: "2.196",
     electricCost: ""
   }
 ]
