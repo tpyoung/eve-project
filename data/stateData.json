@@ -19,7 +19,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "11"
+      },
     "gasCost": "2.034",
     "electricCost": "11.50"
   },
@@ -43,7 +45,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.50"
+      },
     "gasCost": "2.537",
     "electricCost": "19.84"
   },
@@ -67,7 +71,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "10.73"
+      },
     "gasCost": "2.157",
     "electricCost": "11.46"
   },
@@ -91,7 +97,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "12.00"
+      },
     "gasCost": "1.999",
     "electricCost": "9.13"
   },
@@ -115,7 +123,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "10.00"
+      },
     "gasCost": "2.798",
     "electricCost": "17.69"
   },
@@ -139,7 +149,9 @@
     "charging": "true",
     "other": ["Emissions exemption"]
     },
-  "fees": [],
+  "fees": {
+      "maxSalesTaxPercentage": "10.40"
+    },
   "gasCost": "2.168",
   "electricCost": "11.26"
   },
@@ -163,7 +175,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.35"
+      },
     "gasCost": "2.366",
     "electricCost": "20.68"
   },
@@ -187,7 +201,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "0"
+      },
     "gasCost": "2.168",
     "electricCost": "12.99"
   },
@@ -211,7 +227,9 @@
       "charging": "false",
       "other": ["Title tax exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "5.75"
+      },
     "gasCost": "2.404",
     "electricCost": "12.78"
   },
@@ -235,7 +253,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.50"
+      },
     "gasCost": "2.189",
     "electricCost": "11.34"
   },
@@ -259,7 +279,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.173",
     "electricCost": "10.52"
   },
@@ -283,7 +305,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "4.50"
+      },
     "gasCost": "2.659",
     "electricCost": "26.77"
   },
@@ -307,7 +331,9 @@
       "charging": "false",
       "other": ["State motor vehicle inspection exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.426",
     "electricCost": "9.66"
   },
@@ -331,7 +357,9 @@
       "charging": "true",
       "other": ["Low interest loan financing"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "10.50"
+      },
     "gasCost": "2.345",
     "electricCost": "11.94"
   },
@@ -355,7 +383,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.233",
     "electricCost": "10.53"
   },
@@ -379,7 +409,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.181",
     "electricCost": "10.94"
   },
@@ -403,7 +435,9 @@
       "charging": "false",
       "other": ["Loans to purchase new natural gas vehicles", "Loans to convert gas powered vehicles to natural gas vehicles"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "10.40"
+      },
     "gasCost": "2.038",
     "electricCost": "12.57"
   },
@@ -427,7 +461,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.248",
     "electricCost": "9.71"
   },
@@ -451,7 +487,9 @@
       "charging": "false",
       "other": ["Tax credits for converting vehicle to operate on alternative fuel"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "11.00"
+      },
     "gasCost": "2.009",
     "electricCost": "8.47"
   },
@@ -475,7 +513,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "5.50"
+      },
     "gasCost": "2.308",
     "electricCost": "17.83"
   },
@@ -499,7 +539,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.238",
     "electricCost": "13.98"
   },
@@ -523,7 +565,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.25"
+      },
     "gasCost": "2.240",
     "electricCost": "19.78"
   },
@@ -547,7 +591,9 @@
       "charging": "true",
       "other": ["Emissions exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.245",
     "electricCost": "14.88"
   },
@@ -571,7 +617,9 @@
       "charging": "true",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.88"
+      },
     "gasCost": "2.146",
     "electricCost": "12.14"
   },
@@ -595,7 +643,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.007",
     "electricCost": "10.32"
   },
@@ -619,7 +669,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "10.73"
+      },
     "gasCost": "1.998",
     "electricCost": "9.23"
   },
@@ -643,7 +695,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "0.00"
+      },
     "gasCost": "2.199",
     "electricCost": "10.52"
   },
@@ -667,7 +721,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.50"
+      },
     "gasCost": "2.182",
     "electricCost": "9.83"
   },
@@ -691,7 +747,9 @@
       "charging": "true",
       "other": ["Emissions exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.10"
+      },
     "gasCost": "2.482",
     "electricCost": "12.20"
   },
@@ -715,7 +773,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "0.00"
+      },
     "gasCost": "2.188",
     "electricCost": "18.37"
   },
@@ -739,7 +799,9 @@
       "charging": "false",
       "other": ["Incentives to replace heavily emitting trucks"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.090",
     "electricCost": "15.48"
   },
@@ -763,7 +825,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.69"
+      },
     "gasCost": "2.062",
     "electricCost": "11.26"
   },
@@ -787,7 +851,9 @@
       "charging": "true",
       "other": ["Incentives to replace heavily emitting trucks"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.88"
+      },
     "gasCost": "2.389",
     "electricCost": "16.76"
   },
@@ -811,7 +877,9 @@
       "charging": "false",
       "other": ["Emissions exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.50"
+      },
     "gasCost": "2.168",
     "electricCost": "10.77"
   },
@@ -835,7 +903,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.155",
     "electricCost": "9.41"
   },
@@ -859,7 +929,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.234",
     "electricCost": "12.03"
   },
@@ -883,7 +955,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "11.00"
+      },
     "gasCost": "2.017",
     "electricCost": "9.63"
   },
@@ -907,7 +981,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "0.00"
+      },
     "gasCost": "2.445",
     "electricCost": "10.37"
   },
@@ -931,7 +1007,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.00"
+      },
     "gasCost": "2.411",
     "electricCost": "14.02"
   },
@@ -955,7 +1033,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.265",
     "electricCost": "18.78"
   },
@@ -979,7 +1059,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.50"
+      },
     "gasCost": "2.017",
     "electricCost": "11.90"
   },
@@ -1003,7 +1085,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.190",
     "electricCost": "10.34"
   },
@@ -1027,7 +1111,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "9.75"
+      },
     "gasCost": "2.058",
     "electricCost": "9.61"
   },
@@ -1051,7 +1137,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.25"
+      },
     "gasCost": "2.004",
     "electricCost": "11.06"
   },
@@ -1075,7 +1163,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "8.35"
+      },
     "gasCost": "2.420",
     "electricCost": "10.61"
   },
@@ -1099,7 +1189,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.286",
     "electricCost": "16.89"
   },
@@ -1123,7 +1215,9 @@
       "charging": "true",
       "other": ["Emissions exemption on some hybrid vehicles"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.065",
     "electricCost": "10.89"
   },
@@ -1147,7 +1241,9 @@
       "charging": "false",
       "other": ["Emissions exemption"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "9.60"
+      },
     "gasCost": "2.557",
     "electricCost": "9.21"
   },
@@ -1171,7 +1267,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "7.00"
+      },
     "gasCost": "2.271",
     "electricCost": "10.68"
   },
@@ -1195,7 +1293,9 @@
       "charging": "false",
       "other": ["Alternative fuel tax exemptions"]
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "5.60"
+      },
     "gasCost": "2.232",
     "electricCost": "14.09"
   },
@@ -1219,7 +1319,9 @@
       "charging": "false",
       "other": []
       },
-    "fees": [],
+    "fees": {
+        "maxSalesTaxPercentage": "6.00"
+      },
     "gasCost": "2.196",
     "electricCost": "10.59"
   }
