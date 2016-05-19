@@ -1,6 +1,4 @@
 'use strict';
 
-
-
-// NOTHING WAS TESTED YET
-// JUST COPIES PROJECT STRUCTURE FROM BOILER PLATE
+import React from 'react';
+imporot ReactDOM
