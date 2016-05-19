@@ -12,6 +12,7 @@ const Dashboard = React.createClass({
   },
   handleSubmit(event) {
     event.preventDefault();
+    console.log('this.props: ', this.props);
   },
   handleUserStateChange(event) {
     this.setState({
