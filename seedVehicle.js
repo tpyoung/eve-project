@@ -49,6 +49,7 @@ function vehicleSeed(){
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
         maintenance: vehicleData.maintenance
+      });
     };
 
     indVehicle.save((err, indVehicle) => {
@@ -58,7 +59,7 @@ function vehicleSeed(){
       else {
         console.log("vehicle saved!")
       }
-    })
+    });
   });
 }
 
