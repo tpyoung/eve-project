@@ -25,8 +25,8 @@ mongoose.connect('mongodb://localhost/eve');
 /* Uncomment out the "stateSeed" and "vehicleSeed" functions below
    to load state and vehicle data into your database */
 
-stateSeed();
-vehicleSeed();
+// stateSeed();
+// vehicleSeed();
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
