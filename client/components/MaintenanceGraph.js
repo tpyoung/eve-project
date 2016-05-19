@@ -7,7 +7,7 @@ const MaintenanceGraph = React.createClass({
     return (
       <div className="maintGraph">
         <p>Gas: { this.props.gasCost }</p>
-        <p>Hyprid: { this.props.hybridCost }</p>
+        <p>Hybrid: { this.props.hybridCost }</p>
         <p>Electric: { this.props.elecCost }</p>
       </div>
     )
