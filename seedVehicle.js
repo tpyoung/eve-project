@@ -1,13 +1,14 @@
 'use strict';
-const mongoose = require('mongoose'),
-        Schema = mongoose.Schema,
-         vehicle = require('./data/stateData.json'),
-         Vehicle = require('./models/State');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const vehicles = require('./data/vehicleData.json');
+const Vehicle = require('./models/Vehicle');
+let indVehicle = null;
 
 function vehicleSeed(){
-  vehicle.forEach((vehicleData) => {
-    if (vehicleData.type === "electric"){
-      let indVehicle = new Vehicle({
+  vehicles.forEach((vehicleData) => {
+    if (vehicleData.power === "Electric"){
+      indVehicle = new Vehicle({
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -23,8 +24,8 @@ function vehicleSeed(){
         hybridComparableModel: vehicleData.hybridComparableModel,
       });
     }
-    if (vehicleData.type === "hybrid"){
-      let indVehicle = new Vehicle({
+    else if (vehicleData.power === "Plug-In Hybrid"){
+      indVehicle = new Vehicle({
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -39,7 +40,7 @@ function vehicleSeed(){
       });
     }
     else {
-      let indVehicle = new Vehicle({
+      indVehicle = new Vehicle({
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -57,10 +58,10 @@ function vehicleSeed(){
         return console.log(err);
       }
       else {
-        console.log("vehicle saved!")
+        console.log("vehicle saved!");
       }
     });
   });
-}
+ };
 
 module.exports = vehicleSeed;
