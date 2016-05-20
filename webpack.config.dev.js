@@ -1,41 +1,51 @@
-var path = require('path');
-var webpack = require('webpack');
+/* eslint strict: 0*/
+'use strict';
+
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   entry: [
-    'webpack-hot-middleware/client',
-    './client/router'
+    'webpack-hot-middleware/client?reload=true',
+    path.join(__dirname, './client/router.js'),
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    path: path.join(__dirname, '/dist/'),
+    filename: '[name].js',
+    publicPath: '/',
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'client/index.tpl.html',
+      inject: 'body',
+      filename: 'index.html',
+    }),
+    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       'React': 'react'
-    })
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development'),
+    }),
   ],
   module: {
-    loaders: [
-    // js
-    {
+    loaders: [{
       test: /(\.js$|\.jsx$)/,
+      exclude: /node_modules/,
       loader: 'babel',
-      include: path.join(__dirname, 'client'),
       query: {
-        presets: ['react', 'es2015', 'stage-0', 'react-hmre']
-      }
-    },
-    // CSS
-    { 
-      test: /\.styl$/, 
-      include: path.join(__dirname, 'client'),
-      loader: 'style-loader!css-loader!stylus-loader'
-    }
-    ]
-  }
+        presets: ['react', 'es2015', 'stage-0', 'react-hmre'],
+      },
+    }, {
+      test: /\.json?$/,
+      loader: 'json',
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass'],
+    }],
+  },
 };
