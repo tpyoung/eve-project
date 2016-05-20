@@ -15,6 +15,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 550,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Audi",
@@ -23,7 +24,7 @@
     {
       "country": "USA",
       "manufacturer": "Chevrolet",
-      "model": "Spark EV 1LT",
+      "model": "Spark EV",
       "body": "Compact",
       "power": "Electric",
       "msrp": 25995,
@@ -36,6 +37,7 @@
         "gas": null
       },
       "maintenance": 917,
+      "annualFuelCost": 550,
       "gasComparableManufacturer": "Chevrolet",
       "gasComparableModel": "Spark",
       "hybridComparableManufacturer": "Ford",
@@ -57,6 +59,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Fiat",
       "gasComparableModel": "500",
       "hybridComparableManufacturer": "Chevrolet",
@@ -78,6 +81,7 @@
         "gas": null
       },
       "maintenance": 1047.80,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
       "hybridComparableManufacturer": "Chevrolet",
@@ -86,7 +90,7 @@
     {
       "country": "South Korea",
       "manufacturer": "Kia",
-      "model": "Soul EV",
+      "model": "Soul",
       "body": "Compact",
       "power": "Electric",
       "msrp": 32800,
@@ -99,6 +103,7 @@
         "gas": null
       },
       "maintenance": 888.60,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul",
       "hybridComparableManufacturer": "Toyota",
@@ -107,7 +112,7 @@
     {
       "country": "Germany",
       "manufacturer": "Mercedes",
-      "model": "B-Class Electric Drive",
+      "model": "B250e",
       "body": "Hatchback",
       "power": "Electric",
       "msrp": 42375,
@@ -120,6 +125,7 @@
          "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 800,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Ford",
@@ -141,6 +147,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Mitsubishi",
       "gasComparableModel": "Mirage",
       "hybridComparableManufacturer": "Chevrolet",
@@ -162,6 +169,7 @@
         "gas": null
       },
       "maintenance": 965.60,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Nissan",
       "gasComparableModel": "Versa S",
       "hybridComparableManufacturer": "Ford",
@@ -183,6 +191,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 600,
       "gasComparableManufacturer": "Smart",
       "gasComparableModel": "forTwo",
       "hybridComparableManufacturer": "Ford",
@@ -204,6 +213,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 750,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
       "hybridComparableManufacturer": "BMW",
@@ -225,6 +235,7 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 700,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60",
       "hybridComparableManufacturer": "Volvo",
@@ -246,52 +257,11 @@
         "gas": null
       },
       "maintenance": null,
+      "annualFuelCost": 750,
       "gasComparableManufacturer": "Volkswagen",
       "gasComparableModel": "Golf",
       "hybridComparableManufacturer": "Hyundai",
       "hybridComparableModel": "Sonata"
-    },
-    {
-      "country": "USA",
-      "manufacturer": "Chevrolet",
-      "model": "Bolt",
-      "body": "Sedan",
-      "power": "Electric",
-      "msrp": 37500,
-      "mpgmpge": {
-        "electric": 106,
-        "gas": null
-      },
-      "range": {
-        "electric": 200,
-        "gas": null
-      },
-      "maintenance": null,
-      "gasComparableManufacturer": "Volkswagen",
-      "gasComparableModel": "Golf",
-      "hybridComparableManufacturer": "Chevrolet",
-      "hybridComparableModel": "Volt"
-    },
-    {
-      "country": "USA",
-      "manufacturer": "Tesla",
-      "model": "Model 3",
-      "body": "Sedan",
-      "power": "Electric",
-      "msrp": 35000,
-      "mpgmpge": {
-        "electric": 92,
-        "gas": null
-      },
-      "range": {
-        "electric": 200,
-        "gas": null
-      },
-      "maintenance": null,
-      "gasComparableManufacturer": "Audi",
-      "gasComparableModel": "A3",
-      "hybridComparableManufacturer": "Audi",
-      "hybridComparableModel": "A3 E-Tron"
     },
     {
       "country": "Germany",
@@ -309,6 +279,7 @@
         "gas": 364
       },
       "maintenance": 1252.80,
+      "annualFuelCost": 1200,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3"
     },
@@ -328,6 +299,7 @@
         "gas": 305
       },
       "maintenance": null,
+      "annualFuelCost": 700,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -347,6 +319,7 @@
         "gas": 527
       },
       "maintenance": null,
+      "annualFuelCost": 1750,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60"
     },
@@ -366,6 +339,7 @@
         "gas": 303
       },
       "maintenance": 1009.60,
+      "annualFuelCost": 1000,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -385,6 +359,7 @@
         "gas": 314
       },
       "maintenance": 964.40,
+      "annualFuelCost": 700,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -404,6 +379,7 @@
         "gas": 568
       },
       "maintenance": 897.60,
+      "annualFuelCost": 1000,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -423,6 +399,7 @@
         "gas": 530
       },
       "maintenance": 1030.20,
+      "annualFuelCost": 1000,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -442,6 +419,7 @@
         "gas": 573
       },
       "maintenance": 857.20,
+      "annualFuelCost": 850,
       "gasComparableManufacturer": "Hyundai",
       "gasComparableModel": "Sonata"
     },
@@ -461,6 +439,7 @@
         "gas": 466
       },
       "maintenance": 1901.20,
+      "annualFuelCost": 1900,
       "gasComparableManufacturer": "Porsche",
       "gasComparableModel": "Cayenne"
     },
@@ -480,6 +459,7 @@
         "gas": 544
       },
       "maintenance": 2173,
+      "annualFuelCost": 1650,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -499,13 +479,15 @@
         "gas": 577
       },
       "maintenance": 797.20,
+      "annualFuelCost": 800,
+      "annualFuelCost": ,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul"
     },
     {
       "country": "Sweden",
       "manufacturer": "Volvo",
-      "model": "XC90 T8",
+      "model": "XC90",
       "body": "SUV",
       "power": "Plug-In Hybrid",
       "msrp": 68100,
@@ -518,6 +500,7 @@
         "gas": 336
       },
       "maintenance": 1271,
+      "annualFuelCost": 1700,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60"
     },
@@ -537,6 +520,7 @@
         "gas": 408
       },
       "maintenance": null,
+      "annualFuelCost": 1550,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -555,7 +539,8 @@
         "gas": 356,
         "electric": null
       },
-      "maintenance": 1252.80
+      "maintenance": 1252.80,
+      "annualFuelCost": 1650
     },
     {
       "country": "USA",
@@ -572,7 +557,8 @@
         "gas": 315,
         "electric": null
       },
-      "maintenance": 842.80
+      "maintenance": 842.80,
+      "annualFuelCost": 1300
     },
     {
       "country": "Italy",
@@ -589,7 +575,8 @@
         "gas": 315,
         "electric": null
       },
-      "maintenance": 816.60
+      "maintenance": 816.60,
+      "annualFuelCost": 2000
     },
     {
       "country": "USA",
@@ -606,7 +593,8 @@
         "gas": 434,
         "electric": null
       },
-      "maintenance": 949.20
+      "maintenance": 949.20,
+      "annualFuelCost": 1400
     },
     {
       "country": "South Korea",
@@ -623,7 +611,8 @@
         "gas": 383,
         "electric": null
       },
-      "maintenance": 873.80
+      "maintenance": 873.80,
+      "annualFuelCost": 1750
     },
     {
       "country": "Japan",
@@ -640,7 +629,8 @@
         "gas": 359,
         "electric": null
       },
-      "maintenance": 907.20
+      "maintenance": 907.20,
+      "annualFuelCost": 900
     },
     {
       "country": "Japan",
@@ -657,7 +647,8 @@
         "gas": 378,
         "electric": null
       },
-      "maintenance": 726.40
+      "maintenance": 726.40,
+      "annualFuelCost": 1500
     },
     {
       "country": "Switzerland",
@@ -674,7 +665,8 @@
         "gas": 277,
         "electric": null
       },
-      "maintenance": 1080.40
+      "maintenance": 1080.40,
+      "annualFuelCost": 1400
     },
     {
       "country": "Germany",
@@ -691,7 +683,8 @@
         "gas": 500,
         "electric": null
       },
-      "maintenance": 1668.40
+      "maintenance": 1668.40,
+      "annualFuelCost": 1850
     },
     {
       "country": "Japan",
@@ -708,7 +701,9 @@
         "gas": 448,
         "electric": null
       },
-      "maintenance": 1411.60
+      "maintenance": 1411.60,
+      "annualFuelCost": 2500
+
     },
     {
       "country": "Germany",
@@ -725,7 +720,8 @@
         "gas": 396,
         "electric": null
       },
-      "maintenance": 1083.80
+      "maintenance": 1083.80,
+      "annualFuelCost": 1550
     },
     {
       "country": "South Korea",
@@ -742,7 +738,8 @@
         "gas": 592,
         "electric": null
       },
-      "maintenance": 851.20
+      "maintenance": 851.20,
+      "annualFuelCost": 1400
     },
    {
     "country": "Germany",
@@ -759,7 +756,9 @@
       "gas": 592,
       "electric": null
     },
-    "maintenance": 1860.40
+    "maintenance": 1860.40,
+    "annualFuelCost": 2350
+
   }
 ]
 
