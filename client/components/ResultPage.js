@@ -8,9 +8,10 @@ class ResultPage extends React.Component{
        {
        	this.props.stateCarInfo.map((item, index) => {
        		return (
+
        			<div key={index}>
 							<h1> {item.userState} </h1>
-							<h1> {item.maxPrice} </h1>
+							<h1> {item.maxPrice} </h1>		
 							<h1> {item.bodyType} </h1>
 						</div>
        		)

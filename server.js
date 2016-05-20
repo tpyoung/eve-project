@@ -71,7 +71,7 @@ app.get('/api/vehicles/:power', (req, res) => {
 });
 
 /* GET SPECIFIC VEHICLES BY BODY TYPE:
-    "Electric", "Plug-In Hybrid", "Gas" */
+    "Coupe", "Sedan", "Compact", "Hatchback", "SUV" */
 app.get('/api/vehicles/:body', (req, res) => {
   Vehicles.find({ body: req.params.body}, (err, vehicles) => {
     if (err) {
