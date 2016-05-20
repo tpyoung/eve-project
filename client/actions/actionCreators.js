@@ -41,7 +41,7 @@ const $ = require('jquery');
 function requestStateInfo (userState) {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: `http://localhost:3000/api/states/${userState}`,
+      url: `/api/states/${userState}`,
       dataType: 'json',
       crossDomain: true,
       cache: false,
