@@ -70,6 +70,17 @@ app.get('/api/vehicles/:power', (req, res) => {
   });
 });
 
+/* GET SPECIFIC VEHICLES BY BODY TYPE:
+    "Electric", "Plug-In Hybrid", "Gas" */
+app.get('/api/vehicles/:body', (req, res) => {
+  Vehicles.find({ body: req.params.body}, (err, vehicles) => {
+    if (err) {
+      console.log(err)
+    }
+    res.json(vehicles)
+  });
+});
+
 /* GET SPECIFIC VEHICLES BY MODEL */
 app.get('/api/vehicles/:model', (req, res) => {
   Vehicles.find({ model: req.params.model }, (err, vehicle) => {
