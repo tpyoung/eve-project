@@ -19,6 +19,7 @@ function vehicleSeed(){
         msrp: vehicleData.msrp,
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
+        energyPer100Miles: vehicleData.energyPer100Miles,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
         fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
@@ -39,6 +40,7 @@ function vehicleSeed(){
         msrp: vehicleData.msrp,
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
+        energyPer100Miles: vehicleData.energyPer100Miles,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
         fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
@@ -57,6 +59,7 @@ function vehicleSeed(){
         msrp: vehicleData.msrp,
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
+        energyPer100Miles: vehicleData.energyPer100Miles,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
         fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating
