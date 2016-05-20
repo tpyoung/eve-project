@@ -1,17 +1,19 @@
-import { createStore, compose } from 'redux';
+import { createStore, compose, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 import { syncHistoryWithStore } from 'react-router-redux'
 import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index';
 import path from 'path'
 
-const enhancers = compose(
-  window.devToolsExtension ? window.devToolsExtension() : f => f  
-)
+// const enhancers = compose(
+    
+// )
 
 // Create store
 const store = createStore(
   rootReducer, 
-  enhancers
+  applyMiddleware(thunk),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
 );
 
 export const history = syncHistoryWithStore(browserHistory, store);

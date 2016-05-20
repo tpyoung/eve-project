@@ -1,4 +1,5 @@
 const $ = require('jquery');
+import store from '../store';
 
 // test action
 // export function getAllStateCarInfo (userState, maxPrice, bodyType) {
@@ -12,10 +13,34 @@ const $ = require('jquery');
 //   }
 // }
 
-export function getStateInfo (userState) {
-  console.log('dispatching');
-  let stateData;
+// export function getStateInfo (userState) {
+//   console.log('dispatching');
 
+//   let stateData; 
+
+//     $.ajax({
+//       url: `http://localhost:3000/api/states/${userState}`,
+//       dataType: 'json',
+//       crossDomain: true,
+//       cache: false,
+//       success: function (data) {
+//         console.log('data: ', data);
+//       },
+//       error: function (xhr, status, err) {
+//         console.error(err);
+//       }
+//     });
+
+//    console.log('stateData: ', stateData); 
+
+//     return {
+//       type: 'GET_STATE_INFO',
+//       stateData
+//     }
+// }
+
+function requestStateInfo (userState) {
+  return new Promise((resolve, reject) => {
     $.ajax({
       url: `/api/states/${userState}`,
       dataType: 'json',
@@ -23,15 +48,26 @@ export function getStateInfo (userState) {
       cache: false,
       success: function (data) {
         console.log('data: ', data);
-        stateData = data;
+        return resolve(data);
       },
       error: function (xhr, status, err) {
-        console.error(err);
+        reject(err);
       }
     });
-
-    return {
-      type: 'GET_STATE_INFO',
-      stateData
-    }
+  })
 }
+
+export function getStateInfo (userState) {
+  return function (dispatch) {
+    requestStateInfo(userState).then((data) => {
+      dispatch({
+        type: 'GET_STATE_INFO',
+        data
+      })
+    })
+  } 
+}
+
+// function send (userState) {
+//   return 
+// }

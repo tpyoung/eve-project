@@ -35,7 +35,7 @@ if (isDeveloping) {
       modules: false,
     },
   });
-  const response = (req, res) => {
+  let response = (req, res) => {
     res.write(middleware.fileSystem.readFileSync(path.join(`${__dirname}/dist/index.html`)));
     res.end();
   };
@@ -44,7 +44,7 @@ if (isDeveloping) {
   app.use(webpackHotMiddleware(compiler));
   app.get('*', response);
 } else {
-  const response = (req, res) => {
+  let response = (req, res) => {
     res.sendFile(path.join(`${__dirname}/index.html`));
   };
   // app.use(express.static(`${__dirname}/public`));
