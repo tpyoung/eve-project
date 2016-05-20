@@ -2,8 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
 import ResultPage from './ResultPage';
+const $ = require('jquery');
 
-const Dashboard = React.createClass({
+const InputForm = React.createClass({
   getInitialState() {
     return {
         userState: '',
@@ -11,13 +12,25 @@ const Dashboard = React.createClass({
         bodyType: ''
     };
   },
+  getStateInfo() {
+    $.ajax({
+      url: `http://localhost:3000/api/states/${this.state.userState}`,
+      dataType: 'json',
+      cache: false,
+      success: function (data) {
+        console.log('data: ', data);
+      },
+      error: function (xhr, status, err) {
+        console.error(err);
+      }
+    })
+  },
   handleSubmit(event) {
     event.preventDefault();
-   
-    const userState = this.state.userState;
-    const maxPrice = this.state.maxPrice;
-    const bodyType = this.state.bodyType;
-
+    // this.getStateInfo(); 
+    const userState = this.state.userState
+    const maxPrice = this.state.maxPrice
+    const bodyType = this.state.bodyType
     this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
   },
   handleUserStateChange(event) {
@@ -49,10 +62,10 @@ const Dashboard = React.createClass({
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
         </form> 
-        <ResultPage stateCarInfo = {this.props.stateCarInfo} />
+        <ResultPage />
       </div>
     )
   }
 });
 
-export default Dashboard;
+export default InputForm;
