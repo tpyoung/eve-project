@@ -32,7 +32,9 @@ const InputForm = React.createClass({
     const maxPrice = this.state.maxPrice
     const bodyType = this.state.bodyType
     this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
+    
   },
+
   handleUserStateChange(event) {
     this.setState({
       userState: event.target.value
@@ -62,7 +64,7 @@ const InputForm = React.createClass({
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
         </form> 
-        <ResultPage stateCarInfo = {this.props.stateCarInfo} /> 
+          <ResultPage stateCarInfo = {this.props.stateCarInfo} />
       </div>
     )
   }

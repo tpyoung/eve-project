@@ -12,8 +12,8 @@ const router = (
     <Router history = { history }>
       <Route path = '/' component = { App } >
       	<IndexRoute component = { InputContainer } />
-      	<Route path = '/results' component = { ResultPage } />
       </Route>
+      	<Route path = '/results' component = { ResultPage } />
     </Router>
   </Provider>
 )
