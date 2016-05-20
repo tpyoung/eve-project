@@ -1,4 +1,5 @@
 const $ = require('jquery');
+import store from '../store';
 
 // test action
 // export function getAllStateCarInfo (userState, maxPrice, bodyType) {
@@ -47,7 +48,7 @@ function requestStateInfo (userState) {
       cache: false,
       success: function (data) {
         console.log('data: ', data);
-        resolve(data);
+        return resolve(data);
       },
       error: function (xhr, status, err) {
         reject(err);
@@ -57,10 +58,16 @@ function requestStateInfo (userState) {
 }
 
 export function getStateInfo (userState) {
-  return requestStateInfo(userState).then((data) => {
-    return {
-      type: 'GET_STATE_INFO',
-      data
-    }
-  })
+  return function (dispatch) {
+    requestStateInfo(userState).then((data) => {
+      dispatch({
+        type: 'GET_STATE_INFO',
+        data
+      })
+    })
+  } 
 }
+
+// function send (userState) {
+//   return 
+// }

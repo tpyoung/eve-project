@@ -18,7 +18,6 @@ const InputForm = React.createClass({
     // const maxPrice = this.state.maxPrice
     // const bodyType = this.state.bodyType
     // this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
-    
     this.props.getStateInfo(this.state.userState);
   },
 
