@@ -4,9 +4,8 @@ import * as actionCreators from '../actions/actionCreators';
 import InputForm from './InputForm';
 
 function mapStateToProps (state) {
-  console.log('state: ', state);
   return {
-    carStateInfo: state
+    stateCarInfo: state.allCarsReducer
   }
 }
 

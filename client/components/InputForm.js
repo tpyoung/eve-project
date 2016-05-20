@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
+import ResultPage from './ResultPage';
 
 const Dashboard = React.createClass({
   getInitialState() {
@@ -12,7 +13,12 @@ const Dashboard = React.createClass({
   },
   handleSubmit(event) {
     event.preventDefault();
-    console.log('this.props: ', this.props);
+   
+    const userState = this.state.userState;
+    const maxPrice = this.state.maxPrice;
+    const bodyType = this.state.bodyType;
+
+    this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
   },
   handleUserStateChange(event) {
     this.setState({
@@ -43,6 +49,7 @@ const Dashboard = React.createClass({
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
         </form> 
+        <ResultPage stateCarInfo = {this.props.stateCarInfo} />
       </div>
     )
   }
