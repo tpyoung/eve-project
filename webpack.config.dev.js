@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './client/app'
+    './client/router'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -14,7 +14,10 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({
+      'React': 'react'
+    })
   ],
   module: {
     loaders: [

@@ -1,7 +1,16 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actionCreators from '../actions/actionCreators';
-import InputForm from './InputForm';
+
+const App = React.createClass({
+  render() {
+    return (
+      <div>
+        { this.props.children }
+      </div>
+    )
+  }
+});
 
 function mapStateToProps (state) {
   return {
@@ -13,6 +22,4 @@ function mapDispatchToProps (dispatch) {
   return bindActionCreators(actionCreators, dispatch);
 }
 
-const Dashboard = connect(mapStateToProps, mapDispatchToProps)(InputForm);
-
-export default Dashboard;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: [
     
-    './client/app'
+    './client/router'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -18,6 +18,9 @@ module.exports = {
       'process.env': {
         'NODE_ENV': "'production'"
       }
+    }),
+    new webpack.ProvidePlugin({
+      'React': 'react'
     }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {

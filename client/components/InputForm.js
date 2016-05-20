@@ -62,7 +62,7 @@ const InputForm = React.createClass({
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
         </form> 
-        <ResultPage stateCarInfo = {this.props.stateCarInfo} />
+        <ResultPage stateCarInfo = {this.props.stateCarInfo} /> 
       </div>
     )
   }
