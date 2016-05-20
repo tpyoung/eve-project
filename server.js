@@ -7,9 +7,9 @@ const express = require('express'),
        Schema = mongoose.Schema,
    bodyParser = require('body-parser'),
        States = require('./models/State.js'),
-     Vehicles = require('./models/Vehicle.js');
-    // stateSeed = require('./seedState.js'),
-  // vehicleSeed = require('./seedVehicle.js');
+     Vehicles = require('./models/Vehicle.js'),
+    stateSeed = require('./seedState.js'),
+  vehicleSeed = require('./seedVehicle.js');
 
 
 app.use(express.static('public'));
@@ -25,8 +25,8 @@ mongoose.connect('mongodb://localhost/eve');
 /* Uncomment out the "stateSeed" and "vehicleSeed" functions below
    to load state and vehicle data into your database */
 
-// stateSeed();
-// vehicleSeed();
+stateSeed();
+vehicleSeed();
 
 /* GET ALL STATES */
 app.get('/api/states', (req, res) => {
