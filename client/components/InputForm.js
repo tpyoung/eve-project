@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
 import ResultPage from './ResultPage';
-const $ = require('jquery');
 
 const InputForm = React.createClass({
   getInitialState() {
@@ -12,27 +11,15 @@ const InputForm = React.createClass({
         bodyType: ''
     };
   },
-  getStateInfo() {
-    $.ajax({
-      url: `http://localhost:3000/api/states/${this.state.userState}`,
-      dataType: 'json',
-      cache: false,
-      success: function (data) {
-        console.log('data: ', data);
-      },
-      error: function (xhr, status, err) {
-        console.error(err);
-      }
-    })
-  },
   handleSubmit(event) {
     event.preventDefault();
-    // this.getStateInfo(); 
-    const userState = this.state.userState
-    const maxPrice = this.state.maxPrice
-    const bodyType = this.state.bodyType
-    this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
+    // // this.getStateInfo(); 
+    // const userState = this.state.userState
+    // const maxPrice = this.state.maxPrice
+    // const bodyType = this.state.bodyType
+    // this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
     
+    this.props.getStateInfo(this.state.userState);
   },
 
   handleUserStateChange(event) {

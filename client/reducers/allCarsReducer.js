@@ -1,5 +1,6 @@
 function allCarsReducer (state = [], action) {
   switch (action.type) {
+    // test action
     case 'GET_ALL_STATE_CAR_INFO':
     console.log('getting all state and car info');
     console.log(action.userState, action.maxPrice, action.bodyType);
@@ -10,6 +11,13 @@ function allCarsReducer (state = [], action) {
         maxPrice: action.maxPrice,
         bodyType: action.bodyType 
         }] 
+      )
+    case 'GET_STATE_INFO':
+      console.log('getting state info');
+      return (
+        [...state, {
+          stateData: action.stateData
+        }]
       )
     default:
       return state; 
