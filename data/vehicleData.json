@@ -6,12 +6,10 @@
       "body": "Sedan,",
       "power": "Electric",
       "msrp": 43300,
-      "mpgmpge": {
-        "City": 137,
-        "Hwy": 111,
-        "Combined": 81
-      },
-      "range": {"Range": 81},
+      "mpgmpge": 124,
+      "range": {"electric": 81,
+                "gas": null
+                },
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Audi",
@@ -24,12 +22,10 @@
       "body": "Compact",
       "power": "Electric",
       "msrp": 25995,
-       "mpgmpge": {
-        "City": 128,
-        "Hwy": 109,
-        "Combined": 119
-      },
-      "range": {"Range": 82},
+      "mpgmpge": 119,
+      "range": {"electric": 82,
+                "gas": null
+                },
       "maintenance": 44119,
       "gasComparableManufacturer": "Chevrolet",
       "gasComparableModel": "Spark",
@@ -43,12 +39,10 @@
       "body": "Compact",
       "power": "Electric",
       "msrp": 37332,
-      "mpgmpge": {
-        "City": 121,
-        "Hwy": 103,
-        "Combined": 84
-      },
-      "range": {"Range": 84},
+      "mpgmpge": 112,
+      "range": {"electric": 84,
+                "gas": null
+                },
       "gasComparableManufacturer": "Fiat",
       "gasComparableModel": "500",
       "hybridComparableManufacturer": "Chevrolet",
@@ -61,12 +55,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 30045,
-       "mpgmpge": {
-        "City": 110,
-        "Hwy": 99,
-        "Combined": 105
-      },
-      "range": {"Range": 76},
+      "mpgmpge": 105,
+      "range": {"electric": 76,
+                "gas": null
+                },
       "maintenance": 50625,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
@@ -80,12 +72,10 @@
       "body": "Compact",
       "power": "Electric",
       "msrp": 32800,
-       "mpgmpge": {
-        "City": 120,
-        "Hwy": 92,
-        "Combined": 105
-      },
-      "range": {"Range": 93},
+      "mpgmpge": 105,
+      "range": {"electric": 93,
+                "gas": null
+                },
       "maintenance": 37332,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul",
@@ -99,12 +89,10 @@
       "body": "Hatchback",
       "power": "Electric",
       "msrp": 42375,
-       "mpgmpge": {
-        "City": 85,
-        "Hwy": 83,
-        "Combined": 84
-      },
-      "range": {"Range": 87},
+      "mpgmpge": 84,
+      "range": {"electric": 87,
+                "gas": null
+                },
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Ford",
@@ -117,12 +105,10 @@
       "body": "Hatchback",
       "power": "Electric",
       "msrp": 23845,
-       "mpgmpge": {
-        "City": 126,
-        "Hwy": 99,
-        "Combined": 113
-      },
-      "range": {"Range": 75},
+      "mpgmpge": 113,
+      "range": {"electric": 75,
+                "gas": null
+                },
       "maintenance": 27747,
       "gasComparableManufacturer": "Mitsubushi",
       "gasComparableModel": "Mirage",
@@ -136,12 +122,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 29860,
-       "mpgmpge": {
-        "City": 126,
-        "Hwy": 101,
-        "Combined": 115
-      },
-      "range": {"Range": 107},
+      "mpgmpge": 115,
+      "range": {"electric": 107,
+                "gas": null
+                },
       "maintenance": 55020,
       "gasComparableManufacturer": "Nissan",
       "gasComparableModel": "Versa S",
@@ -155,12 +139,10 @@
       "body": "Compact",
       "power": "Electric",
       "msrp": 25750,
-       "mpgmpge": {
-        "City": 122,
-        "Hwy": 93,
-        "Combined": 110
-      },
-      "range": {"Range": 68},
+      "mpgmpge": 110,
+      "range": {"electric": 68,
+                "gas": null
+                },
       "maintenance": 27260,
       "gasComparableManufacturer": "Smart",
       "gasComparableModel": "forTwo",
@@ -174,12 +156,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 71200,
-       "mpgmpge": {
-        "City": 88,
-        "Hwy": 90,
-        "Combined": 89
-      },
-      "range": {"Range": 265},
+      "mpgmpge": 89,
+      "range": {"electric": 265,
+                "gas": null
+                },
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
       "hybridComparableManufacturer": "BMW",
@@ -192,8 +172,10 @@
       "body": "SUV",
       "power": "Electric",
       "msrp": 81200,
-      "mpgmpge": {"Electric": "Information not available"},
-      "range": {"Range": 237},
+      "mpgmpge": 92,
+      "range": {"electric": 237,
+                "gas": null
+                },
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60",
       "hybridComparableManufacturer": "Volvo",
@@ -206,12 +188,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 29815,
-      "mpgmpge": {
-        "City": 126,
-        "Hwy": 105,
-        "Combined": 115
-      },
-      "range": {"Range": 83},
+      "mpgmpge": 115,
+      "range": {"electric": 83,
+                "gas": null
+                },
       "gasComparableManufacturer": "Volkswagon",
       "gasComparableModel": "Golf",
       "hybridComparableManufacturer": "Hyundai",
@@ -224,8 +204,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 37500,
-      "mpgmpge": {"Electric": "Information not available"},
-      "range": {"Range": 200},
+      "mpgmpge": 106,
+      "range": {"electric": 200,
+                "gas": null
+                },
       "gasComparableManufacturer": "Volkswagon",
       "gasComparableModel": "Golf",
       "hybridComparableManufacturer": "Chevrolet",
@@ -238,8 +220,10 @@
       "body": "Sedan",
       "power": "Electric",
       "msrp": 35000,
-      "mpgmpge": {"Electric": "Information not available"},
-      "range": {"Range": 200},
+      "mpgmpge": 92,
+      "range": {"electric": 200,
+                "gas": null
+                },
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Audi",
@@ -522,12 +506,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 30900,
-      "mpgmpge":
-        {
-          "city": 23,
-          "hwy":  33
-        },
-      "range": {"Gas": 356},
+      "mpgmpge": 27,
+      "range": {"gas": 356,
+                "electric": null
+                },
       "maintenance": 40375
     },
     {
@@ -537,12 +519,10 @@
       "body": "Compact",
       "power": "Gas",
       "msrp": 15560,
-      "mpgmpge":
-        {
-          "city": 31,
-          "hwy":  41
-        },
-      "range": {"gas": 315},
+      "mpgmpge": 35,
+      "range": {"gas": 315,
+                "electric": null
+                },
       "maintenance": 28645
     },
     {
@@ -552,12 +532,10 @@
       "body": "Compact",
       "power": "Gas",
       "msrp": 21445,
-      "mpgmpge":
-        {
-          "city": 31,
-          "hwy":  40
-        },
-      "range": {"gas": 315},
+      "mpgmpge": 34,
+      "range": {"gas": 315,
+                "electric": null
+                },
       "maintenance": 29826
     },
     {
@@ -567,12 +545,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 18100,
-      "mpgmpge":
-        {
-          "city": 30,
-          "hwy":  42
-        },
-      "range": {"gas": 434},
+      "mpgmpge": 36,
+      "range": {"gas": 434,
+                "electric": null
+                },
       "maintenance": 32924
     },
     {
@@ -583,11 +559,12 @@
       "power": "Gas",
       "msrp": 19320,
       "mpgmpge":
-        {
-          "city": 24,
-          "hwy":  31
+         {
+          "combined": 27
         },
-      "range": {"gas": 383},
+      "range": {"gas": 383,
+                "electric": null
+                },
       "maintenance": 29243
     },
     {
@@ -597,12 +574,10 @@
       "body": "Compact",
       "power": "Gas",
       "msrp": 12995,
-      "mpgmpge":
-        {
-          "city": 37,
-          "hwy":  43
-        },
-      "range": {"gas": 359}
+      "mpgmpge": 40,
+      "range": {"gas": 359,
+                "electric": null
+                }
     },
     {
       "country": "Japan",
@@ -611,12 +586,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 14875,
-      "mpgmpge":
-        {
-          "city": 31,
-          "hwy":  40
-        },
-      "range": {"gas": 378},
+      "mpgmpge": 35,
+      "range": {"gas": 378,
+                "electric": null
+                },
       "maintenance": 28123
     },
     {
@@ -626,12 +599,10 @@
       "body": "Coupe",
       "power": "Gas",
       "msrp": 14650,
-      "mpgmpge":
-        {
-          "city": 34,
-          "hwy":  39
-        },
-      "range": {"gas": 277},
+      "mpgmpge": 37,
+      "range": {"gas": 277,
+                "electric": null
+                },
       "maintenance": 27087
     },
     {
@@ -641,12 +612,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 55195,
-      "mpgmpge":
-        {
-          "city": 23,
-          "hwy":  34
-        },
-      "range": {"gas": 500},
+      "mpgmpge": 29,
+      "range": {"gas": 500,
+                "electric": null
+                },
       "maintenance": 62233
     },
     {
@@ -656,12 +625,10 @@
       "body": "SUV",
       "power": "Gas",
       "msrp": 49895,
-      "mpgmpge":
-        {
-          "city": 21,
-          "hwy":  27
-        },
-      "range": {"gas": 448},
+      "mpgmpge": 24,
+      "range": {"gas": 448,
+                "electric": null
+                },
       "maintenance": 53762
     },
     {
@@ -671,12 +638,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 22330,
-      "mpgmpge":
-        {
-          "city": 25,
-          "hwy":  37
-        },
-      "range": {"gas": 396},
+      "mpgmpge": 31,
+      "range": {"gas": 396,
+                "electric": null
+                },
       "maintenance": 31167
     },
     {
@@ -686,12 +651,10 @@
       "body": "Sedan",
       "power": "Gas",
       "msrp": 23125,
-      "mpgmpge":
-        {
-          "city": 28,
-          "hwy":  38
-        },
-      "range": {"gas": 592},
+      "mpgmpge": 33,
+      "range": {"gas": 592,
+                "electric": null
+                },
       "maintenance": 31795
     },
    {
@@ -701,12 +664,10 @@
     "body": "SUV",
     "power": "Gas",
     "msrp": 66959,
-    "mpgmpge":
-        {
-          "city": 28,
-          "hwy":  38
-        },
-    "range": {"gas": 592},
+    "mpgmpge": 21,
+    "range": {"gas": 592,
+              "electric": null
+              },
     "maintenance": 73717
   }
 ]

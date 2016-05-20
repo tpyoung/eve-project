@@ -11,7 +11,7 @@ const vehicleSchema = mongoose.Schema({
   body: String,
   power: String,
   msrp: Number,
-  mpgmpge: {},
+  mpgmpge: Number,
   range: {},
   maintenance: Number,
   gasComparableManufacturer: String,
