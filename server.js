@@ -9,8 +9,8 @@ const express = require('express'),
        States = require('./models/State.js'),
      Vehicles = require('./models/Vehicle.js'),
     stateSeed = require('./seedState.js'),
-  vehicleSeed = require('./seedVehicle.js'),
-         cors = require('cors');
+  vehicleSeed = require('./seedVehicle.js');
+         // cors = require('cors');
 
 
 app.use(express.static('public'));
