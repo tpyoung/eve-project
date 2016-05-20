@@ -7,8 +7,10 @@ let indVehicle = null;
 
 function vehicleSeed(){
   vehicles.forEach((vehicleData) => {
+    var count = 0;
     if (vehicleData.power === "Electric"){
       indVehicle = new Vehicle({
+        id: count,
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -18,6 +20,8 @@ function vehicleSeed(){
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
         maintenance: vehicleData.maintenance,
+        annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
         gasComparableManufacturer: vehicleData.gasComparableManufacturer,
         gasComparableModel: vehicleData.gasComparableModel,
         hybridComparableManufacturer: vehicleData.hybridComparableManufacturer,
@@ -26,6 +30,7 @@ function vehicleSeed(){
     }
     else if (vehicleData.power === "Plug-In Hybrid"){
       indVehicle = new Vehicle({
+        id: count,
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -35,12 +40,15 @@ function vehicleSeed(){
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
         maintenance: vehicleData.maintenance,
+        annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
         gasComparableManufacturer: vehicleData.gasComparableManufacturer,
         gasComparableModel: vehicleData.gasComparableModel
       });
     }
     else {
       indVehicle = new Vehicle({
+        id: count,
         country: vehicleData.country,
         manufacturer: vehicleData.manufacturer,
         model: vehicleData.model,
@@ -49,7 +57,9 @@ function vehicleSeed(){
         msrp: vehicleData.msrp,
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
-        maintenance: vehicleData.maintenance
+        maintenance: vehicleData.maintenance,
+        annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating
       });
     };
 
@@ -61,6 +71,7 @@ function vehicleSeed(){
         console.log("vehicle saved!");
       }
     });
+    count++
   });
  };
 

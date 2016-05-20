@@ -14,7 +14,6 @@ const express = require('express'),
 webpackDevMiddleware = require('webpack-dev-middleware'),
 webpackHotMiddleware = require('webpack-hot-middleware');
 
-
 var webpack = require('webpack');
 var config = require('./webpack.config.dev');
 var path = require('path');

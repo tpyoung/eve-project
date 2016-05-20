@@ -5,6 +5,7 @@ const mongoose = require('mongoose'),
 
 
 const vehicleSchema = mongoose.Schema({
+  id: Number,
   country: String,
   manufacturer: String,
   model: String,
@@ -14,6 +15,8 @@ const vehicleSchema = mongoose.Schema({
   mpgmpge: {},
   range: {},
   maintenance: Number,
+  annualFuelCost: Number,
+  fuelEconomyGHGRating: Number,
   gasComparableManufacturer: String,
   gasComparableModel: String,
   hybridComparableManufacturer: String,

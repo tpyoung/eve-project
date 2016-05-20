@@ -1,13 +1,13 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { getAllStateCarInfo } from '../actions/actionCreators';
+import { getStateInfo } from '../actions/actionCreators';
 import InputForm from '../components/InputForm';
 
 const InputContainer = React.createClass({
   render() {
     return (
       <div>
-        <InputForm getAllStateCarInfo={this.props.getAllStateCarInfo} stateCarInfo={this.props.stateCarInfo} />
+        <InputForm getStateInfo={this.props.getStateInfo} stateInfo={this.props.stateInfo} />
       </div>
     )
   }
@@ -15,8 +15,8 @@ const InputContainer = React.createClass({
 
 function mapStateToProps (state) {
   return {
-    stateCarInfo: state.allCarsReducer
+    stateInfo: state.allCarsReducer
   }
 }
 
-export default connect(mapStateToProps, { getAllStateCarInfo }  )(InputContainer);
+export default connect(mapStateToProps, { getStateInfo }  )(InputContainer);

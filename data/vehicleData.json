@@ -16,6 +16,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 550,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Audi",
@@ -38,6 +39,7 @@
       },
       "maintenance": 917,
       "annualFuelCost": 550,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Chevrolet",
       "gasComparableModel": "Spark",
       "hybridComparableManufacturer": "Ford",
@@ -60,6 +62,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Fiat",
       "gasComparableModel": "500",
       "hybridComparableManufacturer": "Chevrolet",
@@ -82,6 +85,7 @@
       },
       "maintenance": 1047.80,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
       "hybridComparableManufacturer": "Chevrolet",
@@ -104,6 +108,7 @@
       },
       "maintenance": 888.60,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul",
       "hybridComparableManufacturer": "Toyota",
@@ -126,6 +131,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 800,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Ford",
@@ -148,6 +154,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Mitsubishi",
       "gasComparableModel": "Mirage",
       "hybridComparableManufacturer": "Chevrolet",
@@ -170,6 +177,7 @@
       },
       "maintenance": 965.60,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Nissan",
       "gasComparableModel": "Versa S",
       "hybridComparableManufacturer": "Ford",
@@ -192,6 +200,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 600,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Smart",
       "gasComparableModel": "forTwo",
       "hybridComparableManufacturer": "Ford",
@@ -214,6 +223,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 750,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
       "hybridComparableManufacturer": "BMW",
@@ -236,6 +246,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 700,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60",
       "hybridComparableManufacturer": "Volvo",
@@ -258,6 +269,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 750,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Volkswagen",
       "gasComparableModel": "Golf",
       "hybridComparableManufacturer": "Hyundai",
@@ -280,6 +292,7 @@
       },
       "maintenance": 1252.80,
       "annualFuelCost": 1200,
+      "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3"
     },
@@ -300,6 +313,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 700,
+      "fuelEconomyGHGRating": 8,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -320,6 +334,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 1750,
+      "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60"
     },
@@ -340,6 +355,7 @@
       },
       "maintenance": 1009.60,
       "annualFuelCost": 1000,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -360,6 +376,7 @@
       },
       "maintenance": 964.40,
       "annualFuelCost": 700,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -380,6 +397,7 @@
       },
       "maintenance": 897.60,
       "annualFuelCost": 1000,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -400,6 +418,7 @@
       },
       "maintenance": 1030.20,
       "annualFuelCost": 1000,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus"
     },
@@ -420,6 +439,7 @@
       },
       "maintenance": 857.20,
       "annualFuelCost": 850,
+      "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Hyundai",
       "gasComparableModel": "Sonata"
     },
@@ -440,6 +460,7 @@
       },
       "maintenance": 1901.20,
       "annualFuelCost": 1900,
+      "fuelEconomyGHGRating": 6,
       "gasComparableManufacturer": "Porsche",
       "gasComparableModel": "Cayenne"
     },
@@ -460,6 +481,7 @@
       },
       "maintenance": 2173,
       "annualFuelCost": 1650,
+      "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -480,7 +502,7 @@
       },
       "maintenance": 797.20,
       "annualFuelCost": 800,
-      "annualFuelCost": ,
+      "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul"
     },
@@ -501,6 +523,7 @@
       },
       "maintenance": 1271,
       "annualFuelCost": 1700,
+      "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60"
     },
@@ -521,6 +544,7 @@
       },
       "maintenance": null,
       "annualFuelCost": 1550,
+      "fuelEconomyGHGRating": 8,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i"
     },
@@ -540,7 +564,8 @@
         "electric": null
       },
       "maintenance": 1252.80,
-      "annualFuelCost": 1650
+      "annualFuelCost": 1650,
+      "fuelEconomyGHGRating": 6
     },
     {
       "country": "USA",
@@ -558,7 +583,8 @@
         "electric": null
       },
       "maintenance": 842.80,
-      "annualFuelCost": 1300
+      "annualFuelCost": 1300,
+      "fuelEconomyGHGRating": 8
     },
     {
       "country": "Italy",
@@ -576,7 +602,8 @@
         "electric": null
       },
       "maintenance": 816.60,
-      "annualFuelCost": 2000
+      "annualFuelCost": 2000,
+      "fuelEconomyGHGRating": 6
     },
     {
       "country": "USA",
@@ -594,7 +621,8 @@
         "electric": null
       },
       "maintenance": 949.20,
-      "annualFuelCost": 1400
+      "annualFuelCost": 1400,
+      "fuelEconomyGHGRating": 8
     },
     {
       "country": "South Korea",
@@ -612,7 +640,8 @@
         "electric": null
       },
       "maintenance": 873.80,
-      "annualFuelCost": 1750
+      "annualFuelCost": 1750,
+      "fuelEconomyGHGRating": 6
     },
     {
       "country": "Japan",
@@ -630,7 +659,8 @@
         "electric": null
       },
       "maintenance": 907.20,
-      "annualFuelCost": 900
+      "annualFuelCost": 900,
+      "fuelEconomyGHGRating": 9
     },
     {
       "country": "Japan",
@@ -648,7 +678,8 @@
         "electric": null
       },
       "maintenance": 726.40,
-      "annualFuelCost": 1500
+      "annualFuelCost": 1500,
+      "fuelEconomyGHGRating": 7
     },
     {
       "country": "Switzerland",
@@ -666,7 +697,8 @@
         "electric": null
       },
       "maintenance": 1080.40,
-      "annualFuelCost": 1400
+      "annualFuelCost": 1400,
+      "fuelEconomyGHGRating": 8
     },
     {
       "country": "Germany",
@@ -684,7 +716,8 @@
         "electric": null
       },
       "maintenance": 1668.40,
-      "annualFuelCost": 1850
+      "annualFuelCost": 1850,
+      "fuelEconomyGHGRating": 6
     },
     {
       "country": "Japan",
@@ -702,7 +735,8 @@
         "electric": null
       },
       "maintenance": 1411.60,
-      "annualFuelCost": 2500
+      "annualFuelCost": 2500,
+      "fuelEconomyGHGRating": 5
 
     },
     {
@@ -721,7 +755,8 @@
         "electric": null
       },
       "maintenance": 1083.80,
-      "annualFuelCost": 1550
+      "annualFuelCost": 1550,
+      "fuelEconomyGHGRating": 7
     },
     {
       "country": "South Korea",
@@ -739,7 +774,8 @@
         "electric": null
       },
       "maintenance": 851.20,
-      "annualFuelCost": 1400
+      "annualFuelCost": 1400,
+      "fuelEconomyGHGRating": 8
     },
    {
     "country": "Germany",
@@ -757,8 +793,8 @@
       "electric": null
     },
     "maintenance": 1860.40,
-    "annualFuelCost": 2350
-
+    "annualFuelCost": 2350,
+    "fuelEconomyGHGRating": 5
   }
 ]
 
