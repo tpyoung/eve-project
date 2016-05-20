@@ -8,8 +8,8 @@ const express = require('express'),
    bodyParser = require('body-parser'),
        States = require('./models/State.js'),
      Vehicles = require('./models/Vehicle.js'),
-    stateSeed = require('./seedState.js'),
-  vehicleSeed = require('./seedVehicle.js');
+  //   stateSeed = require('./seedState.js'),
+  // vehicleSeed = require('./seedVehicle.js'),
     isDeveloping = process.env.NODE_ENV !== 'Production',
 webpackDevMiddleware = require('webpack-dev-middleware'),
 webpackHotMiddleware = require('webpack-hot-middleware');
@@ -61,8 +61,8 @@ mongoose.connect('mongodb://localhost/eve');
 /* Uncomment out the "stateSeed" and "vehicleSeed" functions below
    to load state and vehicle data into your database */
 
-stateSeed();
-vehicleSeed();
+// stateSeed();
+// vehicleSeed();
 
 /* GET ALL STATES */
 app.get('/api/states', (req, res) => {
