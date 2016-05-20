@@ -1,5 +1,18 @@
 'use strict';
 
+
+
+/* WE NEED TO ARRANGE THIS SO THE TWO
+    NUMBERS FOR THE HYBRID VEHICLES
+    SHOW UP TOGETHER -- HYBRID HAS BOTH
+    GAS AND ELECTRIC SO THERE NEEDS TO
+    BE A CHANGE MADE ON THIS GRAPH
+    BEFORE IT ACCURATELY REFLECTS THE
+    RANGE
+*/
+
+
+
 import React from 'react';
 
 const RangeGraph = React.createClass({
