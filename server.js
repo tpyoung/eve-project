@@ -25,8 +25,8 @@ mongoose.connect('mongodb://localhost/eve');
 /* Uncomment out the "stateSeed" and "vehicleSeed" functions below
    to load state and vehicle data into your database */
 
-stateSeed();
-vehicleSeed();
+// stateSeed();
+// vehicleSeed();
 
 /* GET ALL STATES */
 app.get('/api/states', (req, res) => {
