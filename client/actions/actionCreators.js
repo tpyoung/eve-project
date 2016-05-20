@@ -19,6 +19,7 @@ export function getStateInfo (userState) {
     $.ajax({
       url: `http://localhost:3000/api/states/${userState}`,
       dataType: 'json',
+      crossDomain: true,
       cache: false,
       success: function (data) {
         console.log('data: ', data);
