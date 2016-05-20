@@ -2,9 +2,10 @@
 
 import React from 'react';
 
-const Comments = React.createClass({
+const MaintenanceGraph = React.createClass({
 
   render() {  // <------------------- insert applicable states and index into render function
+
     return (
       var gasMaintCost = this.props.gasMaintCost;
       var hybridMaintCost = this.props.hybridMaintCost;
