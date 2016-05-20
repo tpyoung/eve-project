@@ -16,6 +16,7 @@ const vehicleSchema = mongoose.Schema({
   range: {},
   maintenance: Number,
   annualFuelCost: Number,
+  fuelEconomyGHGRating: Number,
   gasComparableManufacturer: String,
   gasComparableModel: String,
   hybridComparableManufacturer: String,
