@@ -21,6 +21,7 @@ function vehicleSeed(){
         range: vehicleData.range,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
         gasComparableManufacturer: vehicleData.gasComparableManufacturer,
         gasComparableModel: vehicleData.gasComparableModel,
         hybridComparableManufacturer: vehicleData.hybridComparableManufacturer,
@@ -40,6 +41,7 @@ function vehicleSeed(){
         range: vehicleData.range,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
         gasComparableManufacturer: vehicleData.gasComparableManufacturer,
         gasComparableModel: vehicleData.gasComparableModel
       });
@@ -56,7 +58,8 @@ function vehicleSeed(){
         mpgmpge: vehicleData.mpgmpge,
         range: vehicleData.range,
         maintenance: vehicleData.maintenance,
-        annualFuelCost: vehicleData.annualFuelCost
+        annualFuelCost: vehicleData.annualFuelCost,
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating
       });
     };
 
