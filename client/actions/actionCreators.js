@@ -12,10 +12,34 @@ const $ = require('jquery');
 //   }
 // }
 
-export function getStateInfo (userState) {
-  console.log('dispatching');
-  let stateData;
+// export function getStateInfo (userState) {
+//   console.log('dispatching');
 
+//   let stateData; 
+
+//     $.ajax({
+//       url: `http://localhost:3000/api/states/${userState}`,
+//       dataType: 'json',
+//       crossDomain: true,
+//       cache: false,
+//       success: function (data) {
+//         console.log('data: ', data);
+//       },
+//       error: function (xhr, status, err) {
+//         console.error(err);
+//       }
+//     });
+
+//    console.log('stateData: ', stateData); 
+
+//     return {
+//       type: 'GET_STATE_INFO',
+//       stateData
+//     }
+// }
+
+function requestStateInfo (userState) {
+  return new Promise((resolve, reject) => {
     $.ajax({
       url: `http://localhost:3000/api/states/${userState}`,
       dataType: 'json',
@@ -23,15 +47,20 @@ export function getStateInfo (userState) {
       cache: false,
       success: function (data) {
         console.log('data: ', data);
-        stateData = data;
+        resolve(data);
       },
       error: function (xhr, status, err) {
-        console.error(err);
+        reject(err);
       }
     });
+  })
+}
 
+export function getStateInfo (userState) {
+  return requestStateInfo(userState).then((data) => {
     return {
       type: 'GET_STATE_INFO',
-      stateData
+      data
     }
+  })
 }
