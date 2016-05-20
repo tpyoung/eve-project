@@ -2,7 +2,6 @@ import React from 'react';
 
 class ResultPage extends React.Component{
   render() {
-    console.log('this.props.stateCarInfo: ', this.props.stateCarInfo);
     return (
       <div className='ResultPage'>
        {
