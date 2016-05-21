@@ -1,18 +1,17 @@
 import React from 'react';
+import Car from './Car';
 
 class ResultPage extends React.Component{
+  filterGasCars () {
+  }
   render() {
-    console.log('this.props.stateInfo: ', this.props.stateInfo);
     console.log('this.props.vehicleInfo: ', this.props.vehicleInfo);
-
+    // this.filterGasCars();
     return (
       <div className='ResultPage'>
-        {this.props.stateInfo.map((data) => {
-          return (
-            <p key={data._id}>{data.state}</p>
-          )
-        })}
+        <Car />
       </div>
+       
     )
   } 
 }
