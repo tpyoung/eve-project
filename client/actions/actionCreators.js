@@ -19,6 +19,25 @@ function requestStateInfo (userState) {
   })
 }
 
+function requestCarInfo (maxPrice, bodyType) {
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      url: `/api/vehicles/${maxPrice}/${bodyType}`,
+      dataType: 'json',
+      crossDomain: true,
+      cache: false,
+      success: function (data) {
+        console.log('data: ', data);
+        return resolve(data);
+      },
+      error: function (xhr, status, err) {
+        reject(err);
+      }
+    });
+  })
+}
+
+
 export function getStateInfo (userState) {
   console.log('dispatching');
   return function (dispatch) {
@@ -30,3 +49,16 @@ export function getStateInfo (userState) {
     })
   } 
 }
+
+export function getCarInfo (maxPrice, bodyType) {
+  console.log('dispatching');
+  return function (dispatch) {
+    requestCarInfo(maxPrice, bodyType).then((data) => {
+      dispatch({
+        type: 'GET_CAR_INFO',
+        data
+      })
+    })
+  } 
+}
+

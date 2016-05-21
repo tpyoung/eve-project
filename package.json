@@ -35,12 +35,14 @@
     "body-parser": "^1.15.1",
     "cors": "^2.7.1",
     "css-loader": "^0.23.1",
+    "es6-promise": "^3.2.1",
     "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.17.0",
+    "isomorphic-fetch": "^2.2.1",
     "jquery": "^2.2.3",
     "json-loader": "^0.5.4",
     "mongoose": "^4.4.17",
@@ -71,6 +73,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
+    "isomorphic-fetch": "^2.2.1",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^15.0.2"
   }

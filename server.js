@@ -1,22 +1,22 @@
 'use strict';
 
-const express = require('express'),
-          app = express(),
-     mongoose = require('mongoose'),
-           db = mongoose.connection,
-       Schema = mongoose.Schema,
-   bodyParser = require('body-parser'),
-       States = require('./models/State.js'),
-     Vehicles = require('./models/Vehicle.js'),
-  //   stateSeed = require('./seedState.js'),
-  // vehicleSeed = require('./seedVehicle.js'),
-    isDeveloping = process.env.NODE_ENV !== 'Production',
-webpackDevMiddleware = require('webpack-dev-middleware'),
-webpackHotMiddleware = require('webpack-hot-middleware');
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const db = mongoose.connection;
+const Schema = mongoose.Schema;
+const bodyParser = require('body-parser');
+const States = require('./models/State.js');
+const Vehicles = require('./models/Vehicle.js');
+const isDeveloping = process.env.NODE_ENV !== 'Production';
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
+// const stateSeed = require('./seedState.js');
+// const vehicleSeed = require('./seedVehicle.js');
 
-var webpack = require('webpack');
-var config = require('./webpack.config.dev');
-var path = require('path');
+const webpack = require('webpack');
+const config = require('./webpack.config.dev');
+const path = require('path');
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended : true}));

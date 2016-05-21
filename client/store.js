@@ -9,14 +9,7 @@ const enhancers = compose(
   window.devToolsExtension ? window.devToolsExtension() : f => f  
 )
 
-// // Create store
-// const store = createStore(
-//   rootReducer, 
-//   applyMiddleware(thunk),
-//   enhancers
-// );
-
-const store = compose(applyMiddleware(thunk))(createStore)(rootReducer);
+const store = compose(applyMiddleware(thunk), (enhancers))(createStore)(rootReducer);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
