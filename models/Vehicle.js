@@ -14,6 +14,7 @@ const vehicleSchema = mongoose.Schema({
   msrp: Number,
   mpgmpge: {},
   range: {},
+  energyPer100Miles: {},
   maintenance: Number,
   annualFuelCost: Number,
   fuelEconomyGHGRating: Number,
