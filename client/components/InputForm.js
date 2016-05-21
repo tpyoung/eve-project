@@ -49,8 +49,8 @@ const InputForm = React.createClass({
           <label for="bodyType">Vehicle Body Type: </label>
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
+          <ResultPage stateCarInfo = {this.props.stateInfo} />
         </form> 
-          <ResultPage stateCarInfo = {this.props.stateCarInfo} />
       </div>
     )
   }
