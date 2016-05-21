@@ -95,37 +95,63 @@ app.get('/api/vehicles', (req, res) => {
   });
 });
 
-/* GET SPECIFIC VEHICLES BY POWER TYPE:
-    "Electric", "Plug-In Hybrid", "Gas" */
-app.get('/api/vehicles/:power', (req, res) => {
-  Vehicles.find({ power: req.params.power }, (err, vehicles) => {
-    if (err) {
-      console.log(err)
-    }
-    res.json(vehicles)
-  });
+/* GET SPECIFIC VEHICLES BY PRICE AND BODY:
+     Prices: */
+app.get('/api/vehicles/:msrp/:body/', (req, res) => {
+  if (req.params.msrp === "All" && req.params.body === "All") {
+    Vehicles.find((err, vehicles) => {
+      if (err) {
+        console.log(err)
+      }
+      res.json(vehicles)
+    });
+  }
+  else if (req.params.msrp === "Any") {
+    Vehicles.find({ body: req.params.body }, (err, vehicles) => {
+      if (err) {
+        console.log(err)
+      }
+      res.json(vehicles)
+    });
+  }
+  else if (req.params.body === "Any") {
+    Vehicles.find({ msrp: { $lt: req.params.msrp }}, (err, vehicles) => {
+      if (err) {
+        console.log(err)
+      }
+      res.json(vehicles)
+    });
+  }
+  else {
+    Vehicles.find({ msrp: { $lt: req.params.msrp }, body: req.params.body }, (err, vehicles) => {
+      if (err) {
+        console.log(err)
+      }
+      res.json(vehicles)
+    });
+  }
 });
 
-/* GET SPECIFIC VEHICLES BY BODY TYPE:
-    "Coupe", "Sedan", "Compact", "Hatchback", "SUV" */
-app.get('/api/vehicles/:body', (req, res) => {
-  Vehicles.find({ body: req.params.body}, (err, vehicles) => {
-    if (err) {
-      console.log(err)
-    }
-    res.json(vehicles)
-  });
-});
+// /* GET SPECIFIC VEHICLES BY BODY TYPE:
+//     "Coupe", "Sedan", "Compact", "Hatchback", "SUV" */
+// app.get('/api/vehicles/:body', (req, res) => {
+//   Vehicles.find({ body: req.params.body}, (err, vehicles) => {
+//     if (err) {
+//       console.log(err)
+//     }
+//     res.json(vehicles)
+//   });
+// });
 
-/* GET SPECIFIC VEHICLES BY MODEL */
-app.get('/api/vehicles/:model', (req, res) => {
-  Vehicles.find({ model: req.params.model }, (err, vehicle) => {
-    if (err) {
-      console.log(err)
-    }
-    res.json(vehicle)
-  });
-});
+// /* GET SPECIFIC VEHICLES BY MODEL */
+// app.get('/api/vehicles/:model', (req, res) => {
+//   Vehicles.find({ model: req.params.model }, (err, vehicle) => {
+//     if (err) {
+//       console.log(err)
+//     }
+//     res.json(vehicle)
+//   });
+// });
 
 
 
