@@ -8,11 +8,11 @@ const Schema = mongoose.Schema;
 const bodyParser = require('body-parser');
 const States = require('./models/State.js');
 const Vehicles = require('./models/Vehicle.js');
-// const stateSeed = require('./seedState.js');
-// const vehicleSeed = require('./seedVehicle.js');
 const isDeveloping = process.env.NODE_ENV !== 'Production';
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
+// const stateSeed = require('./seedState.js');
+// const vehicleSeed = require('./seedVehicle.js');
 
 const webpack = require('webpack');
 const config = require('./webpack.config.dev');
@@ -126,8 +126,6 @@ app.get('/api/vehicles/:model', (req, res) => {
     res.json(vehicle)
   });
 });
-
-
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");
