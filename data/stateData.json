@@ -23,7 +23,7 @@
         "maxSalesTaxPercentage": "11"
       },
     "gasCost": "2.034",
-    "electricCost": "11.50"
+    "electricCost": "0.12"
   },
   {
     "state": "Alaska",
@@ -49,7 +49,7 @@
         "maxSalesTaxPercentage": "7.50"
       },
     "gasCost": "2.537",
-    "electricCost": "19.84"
+    "electricCost": "0.20"
   },
   {
     "state": "Arizona",
@@ -75,7 +75,7 @@
         "maxSalesTaxPercentage": "10.73"
       },
     "gasCost": "2.157",
-    "electricCost": "11.46"
+    "electricCost": "0.11"
   },
   {
     "state": "Arkansas",
@@ -101,7 +101,7 @@
         "maxSalesTaxPercentage": "12.00"
       },
     "gasCost": "1.999",
-    "electricCost": "9.13"
+    "electricCost": "0.09"
   },
   {
     "state": "California",
@@ -127,7 +127,7 @@
         "maxSalesTaxPercentage": "10.00"
       },
     "gasCost": "2.798",
-    "electricCost": "17.69"
+    "electricCost": "0.18"
   },
   {
   "state": "Colorado",
@@ -153,7 +153,7 @@
       "maxSalesTaxPercentage": "10.40"
     },
   "gasCost": "2.168",
-  "electricCost": "11.26"
+  "electricCost": "0.11"
   },
   {
     "state": "Connecticut",
@@ -179,7 +179,7 @@
         "maxSalesTaxPercentage": "6.35"
       },
     "gasCost": "2.366",
-    "electricCost": "20.68"
+    "electricCost": "0.21"
   },
   {
     "state": "Delaware",
@@ -205,7 +205,7 @@
         "maxSalesTaxPercentage": "0"
       },
     "gasCost": "2.168",
-    "electricCost": "12.99"
+    "electricCost": "0.13"
   },
   {
     "state": "District of Columbia",
@@ -231,7 +231,7 @@
         "maxSalesTaxPercentage": "5.75"
       },
     "gasCost": "2.404",
-    "electricCost": "12.78"
+    "electricCost": "0.13"
   },
   {
     "state": "Florida",
@@ -257,7 +257,7 @@
         "maxSalesTaxPercentage": "7.50"
       },
     "gasCost": "2.189",
-    "electricCost": "11.34"
+    "electricCost": "0.11"
   },
   {
     "state": "Georgia",
@@ -283,7 +283,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.173",
-    "electricCost": "10.52"
+    "electricCost": "0.11"
   },
   {
     "state": "Hawaii",
@@ -309,7 +309,7 @@
         "maxSalesTaxPercentage": "4.50"
       },
     "gasCost": "2.659",
-    "electricCost": "26.77"
+    "electricCost": "0.27"
   },
   {
     "state": "Idaho",
@@ -335,7 +335,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.426",
-    "electricCost": "9.66"
+    "electricCost": "0.10"
   },
   {
     "state": "Illinois",
@@ -361,7 +361,7 @@
         "maxSalesTaxPercentage": "10.50"
       },
     "gasCost": "2.345",
-    "electricCost": "11.94"
+    "electricCost": "0.12"
   },
   {
     "state": "Indiana",
@@ -387,7 +387,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.233",
-    "electricCost": "10.53"
+    "electricCost": "0.11"
   },
   {
     "state": "Iowa",
@@ -413,7 +413,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.181",
-    "electricCost": "10.94"
+    "electricCost": "0.11"
   },
   {
     "state": "Kansas",
@@ -439,7 +439,7 @@
         "maxSalesTaxPercentage": "10.40"
       },
     "gasCost": "2.038",
-    "electricCost": "12.57"
+    "electricCost": "0.13"
   },
   {
     "state": "Kentucky",
@@ -465,7 +465,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.248",
-    "electricCost": "9.71"
+    "electricCost": "0.10"
   },
   {
     "state": "Louisiana",
@@ -491,7 +491,7 @@
         "maxSalesTaxPercentage": "11.00"
       },
     "gasCost": "2.009",
-    "electricCost": "8.47"
+    "electricCost": "0.08"
   },
   {
     "state": "Maine",
@@ -517,7 +517,7 @@
         "maxSalesTaxPercentage": "5.50"
       },
     "gasCost": "2.308",
-    "electricCost": "17.83"
+    "electricCost": "0.18"
   },
   {
     "state": "Maryland",
@@ -543,7 +543,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.238",
-    "electricCost": "13.98"
+    "electricCost": "0.14"
   },
   {
     "state": "Massachusetts",
@@ -569,7 +569,7 @@
         "maxSalesTaxPercentage": "6.25"
       },
     "gasCost": "2.240",
-    "electricCost": "19.78"
+    "electricCost": "0.20"
   },
   {
     "state": "Michigan",
@@ -595,7 +595,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.245",
-    "electricCost": "14.88"
+    "electricCost": "0.15"
   },
   {
     "state": "Minnesota",
@@ -621,7 +621,7 @@
         "maxSalesTaxPercentage": "7.88"
       },
     "gasCost": "2.146",
-    "electricCost": "12.14"
+    "electricCost": "0.12"
   },
   {
     "state": "Mississippi",
@@ -647,7 +647,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.007",
-    "electricCost": "10.32"
+    "electricCost": "0.10"
   },
   {
     "state": "Missouri",
@@ -673,7 +673,7 @@
         "maxSalesTaxPercentage": "10.73"
       },
     "gasCost": "1.998",
-    "electricCost": "9.23"
+    "electricCost": "0.09"
   },
   {
     "state": "Montana",
@@ -699,7 +699,7 @@
         "maxSalesTaxPercentage": "0.00"
       },
     "gasCost": "2.199",
-    "electricCost": "10.52"
+    "electricCost": "0.11"
   },
   {
     "state": "Nebraska",
@@ -725,7 +725,7 @@
         "maxSalesTaxPercentage": "7.50"
       },
     "gasCost": "2.182",
-    "electricCost": "9.83"
+    "electricCost": "0.10"
   },
   {
     "state": "Nevada",
@@ -751,7 +751,7 @@
         "maxSalesTaxPercentage": "8.10"
       },
     "gasCost": "2.482",
-    "electricCost": "12.20"
+    "electricCost": "0.12"
   },
   {
     "state": "New Hampshire",
@@ -777,7 +777,7 @@
         "maxSalesTaxPercentage": "0.00"
       },
     "gasCost": "2.188",
-    "electricCost": "18.37"
+    "electricCost": "0.18"
   },
   {
     "state": "New Jersey",
@@ -803,7 +803,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.090",
-    "electricCost": "15.48"
+    "electricCost": "0.15"
   },
   {
     "state": "New Mexico",
@@ -829,7 +829,7 @@
         "maxSalesTaxPercentage": "8.69"
       },
     "gasCost": "2.062",
-    "electricCost": "11.26"
+    "electricCost": "0.11"
   },
   {
     "state": "New York",
@@ -855,7 +855,7 @@
         "maxSalesTaxPercentage": "8.88"
       },
     "gasCost": "2.389",
-    "electricCost": "16.76"
+    "electricCost": "0.17"
   },
   {
     "state": "North Carolina",
@@ -881,7 +881,7 @@
         "maxSalesTaxPercentage": "7.50"
       },
     "gasCost": "2.168",
-    "electricCost": "10.77"
+    "electricCost": "0.11"
   },
   {
     "state": "North Dakota",
@@ -907,7 +907,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.155",
-    "electricCost": "9.41"
+    "electricCost": "0.09"
   },
   {
     "state": "Ohio",
@@ -933,7 +933,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.234",
-    "electricCost": "12.03"
+    "electricCost": "0.12"
   },
   {
     "state": "Oklahoma",
@@ -959,7 +959,7 @@
         "maxSalesTaxPercentage": "11.00"
       },
     "gasCost": "2.017",
-    "electricCost": "9.63"
+    "electricCost": "0.10"
   },
   {
     "state": "Oregon",
@@ -985,7 +985,7 @@
         "maxSalesTaxPercentage": "0.00"
       },
     "gasCost": "2.445",
-    "electricCost": "10.37"
+    "electricCost": "0.10"
   },
   {
     "state": "Pennsylvania",
@@ -1011,7 +1011,7 @@
         "maxSalesTaxPercentage": "8.00"
       },
     "gasCost": "2.411",
-    "electricCost": "14.02"
+    "electricCost": "0.14"
   },
   {
     "state": "Rhode Island",
@@ -1037,7 +1037,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.265",
-    "electricCost": "18.78"
+    "electricCost": "0.19"
   },
   {
     "state": "South Carolina",
@@ -1063,7 +1063,7 @@
         "maxSalesTaxPercentage": "8.50"
       },
     "gasCost": "2.017",
-    "electricCost": "11.90"
+    "electricCost": "0.12"
   },
   {
     "state": "South Dakota",
@@ -1089,7 +1089,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.190",
-    "electricCost": "10.34"
+    "electricCost": "0.10"
   },
   {
     "state": "Tennessee",
@@ -1115,7 +1115,7 @@
         "maxSalesTaxPercentage": "9.75"
       },
     "gasCost": "2.058",
-    "electricCost": "9.61"
+    "electricCost": "0.10"
   },
   {
     "state": "Texas",
@@ -1141,7 +1141,7 @@
         "maxSalesTaxPercentage": "8.25"
       },
     "gasCost": "2.004",
-    "electricCost": "11.06"
+    "electricCost": "0.11"
   },
   {
     "state": "Utah",
@@ -1167,7 +1167,7 @@
         "maxSalesTaxPercentage": "8.35"
       },
     "gasCost": "2.420",
-    "electricCost": "10.61"
+    "electricCost": "0.11"
   },
   {
     "state": "Vermont",
@@ -1193,7 +1193,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.286",
-    "electricCost": "16.89"
+    "electricCost": "0.17"
   },
   {
     "state": "Virginia",
@@ -1219,7 +1219,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.065",
-    "electricCost": "10.89"
+    "electricCost": "0.11"
   },
   {
     "state": "Washington",
@@ -1245,7 +1245,7 @@
         "maxSalesTaxPercentage": "9.60"
       },
     "gasCost": "2.557",
-    "electricCost": "9.21"
+    "electricCost": "0.09"
   },
   {
     "state": "West Virginia",
@@ -1271,7 +1271,7 @@
         "maxSalesTaxPercentage": "7.00"
       },
     "gasCost": "2.271",
-    "electricCost": "10.68"
+    "electricCost": "0.11"
   },
   {
     "state": "Wisconsin",
@@ -1297,7 +1297,7 @@
         "maxSalesTaxPercentage": "5.60"
       },
     "gasCost": "2.232",
-    "electricCost": "14.09"
+    "electricCost": "0.14"
   },
   {
     "state": "Wyoming",
@@ -1323,7 +1323,7 @@
         "maxSalesTaxPercentage": "6.00"
       },
     "gasCost": "2.196",
-    "electricCost": "10.59"
+    "electricCost": "0.11"
   }
 ]
 
