@@ -12,12 +12,7 @@ const InputForm = React.createClass({
     };
   },
   handleSubmit(event) {
-    event.preventDefault();
-    // // this.getStateInfo(); 
-    // const userState = this.state.userState
-    // const maxPrice = this.state.maxPrice
-    // const bodyType = this.state.bodyType
-    // this.props.getAllStateCarInfo(userState, maxPrice, bodyType) 
+    event.preventDefault(); 
     this.props.getStateInfo(this.state.userState);
   },
 

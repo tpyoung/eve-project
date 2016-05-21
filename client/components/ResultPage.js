@@ -7,7 +7,7 @@ class ResultPage extends React.Component{
       <div className='ResultPage'>
         {this.props.stateInfo.map((data) => {
           return (
-            <p key={data._id}>{data.electricCost}</p>
+            <p key={data._id}>{data.state}</p>
           )
         })}
       </div>
