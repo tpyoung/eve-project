@@ -11,7 +11,7 @@ class ResultPage extends React.Component{
             <p key={data._id}>{data.state}</p>
           )
         })}
-        <StateIncentives stateInfo={this.props.stateInfo}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
     )
   }
