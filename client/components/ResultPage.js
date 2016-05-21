@@ -1,9 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import StateIncentives from './StateIncentives';
-=======
 import Car from './Car';
->>>>>>> master
 
 class ResultPage extends React.Component{
   filterGasCars () {
