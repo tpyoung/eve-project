@@ -14,8 +14,9 @@ const InputContainer = React.createClass({
 });
 
 function mapStateToProps (state) {
+  console.log('state.allCarsReducer: ', state.allCarsReducer[0].stateData);
   return {
-    stateInfo: state.allCarsReducer
+    stateInfo: state.allCarsReducer[0]
   }
 }
 

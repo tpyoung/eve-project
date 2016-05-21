@@ -58,6 +58,7 @@ function requestStateInfo (userState) {
 }
 
 export function getStateInfo (userState) {
+  console.log('dispatching');
   return function (dispatch) {
     requestStateInfo(userState).then((data) => {
       dispatch({
@@ -67,7 +68,3 @@ export function getStateInfo (userState) {
     })
   } 
 }
-
-// function send (userState) {
-//   return 
-// }

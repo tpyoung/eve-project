@@ -5,16 +5,18 @@ import { browserHistory } from 'react-router';
 import rootReducer from './reducers/index';
 import path from 'path'
 
-// const enhancers = compose(
-    
-// )
+const enhancers = compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f  
+)
 
-// Create store
-const store = createStore(
-  rootReducer, 
-  applyMiddleware(thunk),
-  window.devToolsExtension ? window.devToolsExtension() : f => f
-);
+// // Create store
+// const store = createStore(
+//   rootReducer, 
+//   applyMiddleware(thunk),
+//   enhancers
+// );
+
+const store = compose(applyMiddleware(thunk))(createStore)(rootReducer);
 
 export const history = syncHistoryWithStore(browserHistory, store);
 
