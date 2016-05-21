@@ -14,6 +14,7 @@ const InputForm = React.createClass({
   handleSubmit(event) {
     event.preventDefault(); 
     this.props.getStateInfo(this.state.userState);
+    this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
   },
 
   handleUserStateChange(event) {
@@ -44,7 +45,7 @@ const InputForm = React.createClass({
           <label for="bodyType">Vehicle Body Type: </label>
           <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
           <button type="submit">Submit</button>
-          <ResultPage stateInfo={this.props.stateInfo} />
+          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
         </form> 
       </div>
     )

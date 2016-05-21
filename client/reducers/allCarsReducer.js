@@ -3,7 +3,7 @@ function allCarsReducer (state = [], action) {
     case 'GET_STATE_INFO':
       console.log('getting state info'); 
       return (
-        [...state,
+        [
           action.data[0]
         ]
       )
@@ -12,5 +12,8 @@ function allCarsReducer (state = [], action) {
   }
   return state;
 }
+
+
+
 
 export default allCarsReducer;

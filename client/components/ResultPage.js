@@ -3,6 +3,8 @@ import React from 'react';
 class ResultPage extends React.Component{
   render() {
     console.log('this.props.stateInfo: ', this.props.stateInfo);
+    console.log('this.props.vehicleInfo: ', this.props.vehicleInfo);
+
     return (
       <div className='ResultPage'>
         {this.props.stateInfo.map((data) => {
