@@ -9,7 +9,6 @@ function requestStateInfo (userState) {
       crossDomain: true,
       cache: false,
       success: function (data) {
-        console.log('data: ', data);
         return resolve(data);
       },
       error: function (xhr, status, err) {
@@ -27,7 +26,6 @@ function requestCarInfo (maxPrice, bodyType) {
       crossDomain: true,
       cache: false,
       success: function (data) {
-        console.log('data: ', data);
         return resolve(data);
       },
       error: function (xhr, status, err) {
