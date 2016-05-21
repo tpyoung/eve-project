@@ -1,17 +1,19 @@
 import React from 'react';
 import Car from './Car';
 
-class ResultPage extends React.Component{
-  filterGasCars () {
+class ResultPage extends React.Component{ 
+  getGasCars () {
+    const gasCars = this.props.vehicleInfo.filter((car) => {
+      return car.power === 'Gas';
+    })
+
+    return gasCars;
   }
   render() {
-    console.log('this.props.vehicleInfo: ', this.props.vehicleInfo);
-    // this.filterGasCars();
     return (
       <div className='ResultPage'>
-        <Car />
+        <Car gasCars={this.getGasCars()} />
       </div>
-       
     )
   } 
 }

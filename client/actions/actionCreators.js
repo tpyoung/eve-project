@@ -37,7 +37,6 @@ function requestCarInfo (maxPrice, bodyType) {
 
 
 export function getStateInfo (userState) {
-  console.log('dispatching');
   return function (dispatch) {
     requestStateInfo(userState).then((data) => {
       dispatch({
@@ -49,7 +48,6 @@ export function getStateInfo (userState) {
 }
 
 export function getCarInfo (maxPrice, bodyType) {
-  console.log('dispatching');
   return function (dispatch) {
     requestCarInfo(maxPrice, bodyType).then((data) => {
       dispatch({
