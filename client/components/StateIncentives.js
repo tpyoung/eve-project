@@ -28,7 +28,7 @@ const StateIncentives = React.createClass({
         var gasKeys = Object.keys(grayImgs);
         var images = gasKeys.map(function(key){
           return (
-            <p>{grayImgs[key]}</p>
+            <p key={key}>{grayImgs[key]}</p>
           )
         });
 
@@ -64,20 +64,20 @@ const StateIncentives = React.createClass({
 
         var colorImgs = color.map((key) => {
           return (
-            <p>{colorImgArr[key]}</p>
+            <p key={key}>{colorImgArr[key]}</p>
           )
         });
         var grayImgs = gray.map((key) => {
           return (
-            <p>{grayImgs[key]}</p>
+            <p key={key}>{grayImgs[key]}</p>
           )
         });
 
         return (
           <div className="StateIncentives">
             <h1>Hybrid Or Electric Vehicle</h1>
-            <p>{colorImgs}</p>
-            <p>{grayImgs}</p>
+            <div>{colorImgs}</div>
+            <div>{grayImgs}</div>
           </div>
         )
       }
