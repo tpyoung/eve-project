@@ -3,7 +3,7 @@
       "country": "Germany",
       "manufacturer": "BMW",
       "model": "i3",
-      "body": "Sedan",
+      "body": "Hatchback",
       "power": "Electric",
       "msrp": 43300,
       "mpgmpge": {
@@ -12,6 +12,10 @@
       },
       "range": {
         "electric": 81,
+        "gas": null
+      },
+      "energyPer100Miles": {
+        "electric": 27,
         "gas": null
       },
       "maintenance": null,
@@ -37,6 +41,10 @@
         "electric": 82,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 28,
+        "gas": null
+      },
       "maintenance": 917,
       "annualFuelCost": 550,
       "fuelEconomyGHGRating": 10,
@@ -60,6 +68,10 @@
         "electric": 84,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 30,
+        "gas": null
+      },
       "maintenance": null,
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
@@ -72,7 +84,7 @@
       "country": "USA",
       "manufacturer": "Ford",
       "model": "Focus Electric",
-      "body": "Sedan",
+      "body": "Hatchback",
       "power": "Electric",
       "msrp": 30045,
       "mpgmpge": {
@@ -81,6 +93,10 @@
       },
       "range": {
         "electric": 76,
+        "gas": null
+      },
+      "energyPer100Miles": {
+        "electric": 32,
         "gas": null
       },
       "maintenance": 1047.80,
@@ -106,6 +122,10 @@
         "electric": 93,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 32,
+        "gas": null
+      },
       "maintenance": 888.60,
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
@@ -129,6 +149,10 @@
          "electric": 87,
          "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 40,
+        "gas": null
+      },
       "maintenance": null,
       "annualFuelCost": 800,
       "fuelEconomyGHGRating": 10,
@@ -150,6 +174,10 @@
       },
       "range": {
         "electric": 75,
+        "gas": null
+      },
+      "energyPer100Miles": {
+        "electric": 30,
         "gas": null
       },
       "maintenance": null,
@@ -175,6 +203,10 @@
         "electric": 107,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 30,
+        "gas": null
+      },
       "maintenance": 965.60,
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
@@ -187,7 +219,7 @@
       "country": "Switzerland",
       "manufacturer": "Smart",
       "model": "forTwo Electric Drive",
-      "body": "Compact",
+      "body": "Coupe",
       "power": "Electric",
       "msrp": 25750,
       "mpgmpge": {
@@ -196,6 +228,10 @@
       },
       "range": {
         "electric": 68,
+        "gas": null
+      },
+      "energyPer100Miles": {
+        "electric": 32,
         "gas": null
       },
       "maintenance": null,
@@ -221,6 +257,10 @@
         "electric": 265,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 38,
+        "gas": null
+      },
       "maintenance": null,
       "annualFuelCost": 750,
       "fuelEconomyGHGRating": 10,
@@ -242,6 +282,10 @@
       },
       "range": {
         "electric": 237,
+        "gas": null
+      },
+      "energyPer100Miles": {
+        "electric": 36,
         "gas": null
       },
       "maintenance": null,
@@ -267,6 +311,10 @@
         "electric": 83,
         "gas": null
       },
+      "energyPer100Miles": {
+        "electric": 29,
+        "gas": null
+      },
       "maintenance": null,
       "annualFuelCost": 750,
       "fuelEconomyGHGRating": 10,
@@ -290,6 +338,10 @@
         "electric": 16,
         "gas": 364
       },
+      "energyPer100Miles": {
+        "electric": 40,
+        "gas": 2.9
+      },
       "maintenance": 1252.80,
       "annualFuelCost": 1200,
       "fuelEconomyGHGRating": 9,
@@ -310,6 +362,10 @@
       "range": {
         "electric": 25,
         "gas": 305
+      },
+      "energyPer100Miles": {
+        "electric": 43,
+        "gas": 3.6
       },
       "maintenance": null,
       "annualFuelCost": 700,
@@ -332,6 +388,10 @@
         "electric": 13,
         "gas": 527
       },
+      "energyPer100Miles": {
+        "electric": 59,
+        "gas": 4.2
+      },
       "maintenance": null,
       "annualFuelCost": 1750,
       "fuelEconomyGHGRating": 7,
@@ -352,6 +412,10 @@
       "range": {
         "electric": 37,
         "gas": 303
+      },
+      "energyPer100Miles": {
+        "electric": 39,
+        "gas": 3.1
       },
       "maintenance": 1009.60,
       "annualFuelCost": 1000,
@@ -374,6 +438,10 @@
         "electric": 53,
         "gas": 314
       },
+      "energyPer100Miles": {
+        "electric": 31,
+        "gas": 2.4
+      },
       "maintenance": 964.40,
       "annualFuelCost": 700,
       "fuelEconomyGHGRating": 10,
@@ -394,6 +462,10 @@
       "range": {
         "electric": 20,
         "gas": 568
+      },
+      "energyPer100Miles": {
+        "electric": 37,
+        "gas": 2.6
       },
       "maintenance": 897.60,
       "annualFuelCost": 1000,
@@ -416,6 +488,10 @@
         "electric": 20,
         "gas": 530
       },
+      "energyPer100Miles": {
+        "electric": 37,
+        "gas": 2.6
+      },
       "maintenance": 1030.20,
       "annualFuelCost": 1000,
       "fuelEconomyGHGRating": 10,
@@ -436,6 +512,10 @@
       "range": {
         "electric": 27,
         "gas": 573
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.4
       },
       "maintenance": 857.20,
       "annualFuelCost": 850,
@@ -458,6 +538,10 @@
         "electric": 14,
         "gas": 466
       },
+      "energyPer100Miles": {
+        "electric": 69,
+        "gas": 4.5
+      },
       "maintenance": 1901.20,
       "annualFuelCost": 1900,
       "fuelEconomyGHGRating": 6,
@@ -478,6 +562,10 @@
       "range": {
         "electric": 16,
         "gas": 544
+      },
+      "energyPer100Miles": {
+        "electric": 51,
+        "gas": 4.0
       },
       "maintenance": 2173,
       "annualFuelCost": 1650,
@@ -500,6 +588,10 @@
         "electric": 11,
         "gas": 577
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 1.9
+      },
       "maintenance": 797.20,
       "annualFuelCost": 800,
       "fuelEconomyGHGRating": 9,
@@ -520,6 +612,10 @@
       "range": {
         "electric": 14,
         "gas": 336
+      },
+      "energyPer100Miles": {
+        "electric": 58,
+        "gas": 4.0
       },
       "maintenance": 1271,
       "annualFuelCost": 1700,
@@ -542,6 +638,10 @@
         "electric": 12,
         "gas": 408
       },
+      "energyPer100Miles": {
+        "electric": 50,
+        "gas": 4.8
+      },
       "maintenance": null,
       "annualFuelCost": 1550,
       "fuelEconomyGHGRating": 8,
@@ -563,6 +663,10 @@
         "gas": 356,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.7
+      },
       "maintenance": 1252.80,
       "annualFuelCost": 1650,
       "fuelEconomyGHGRating": 6
@@ -581,6 +685,10 @@
       "range": {
         "gas": 315,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.9
       },
       "maintenance": 842.80,
       "annualFuelCost": 1300,
@@ -601,6 +709,10 @@
         "gas": 315,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.3
+      },
       "maintenance": 816.60,
       "annualFuelCost": 2000,
       "fuelEconomyGHGRating": 6
@@ -619,6 +731,10 @@
       "range": {
         "gas": 434,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.1
       },
       "maintenance": 949.20,
       "annualFuelCost": 1400,
@@ -639,6 +755,10 @@
         "gas": 383,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.7
+      },
       "maintenance": 873.80,
       "annualFuelCost": 1750,
       "fuelEconomyGHGRating": 6
@@ -657,6 +777,10 @@
       "range": {
         "gas": 359,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.5
       },
       "maintenance": 907.20,
       "annualFuelCost": 900,
@@ -677,6 +801,10 @@
         "gas": 378,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.9
+      },
       "maintenance": 726.40,
       "annualFuelCost": 1500,
       "fuelEconomyGHGRating": 7
@@ -695,6 +823,10 @@
       "range": {
         "gas": 277,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.8
       },
       "maintenance": 1080.40,
       "annualFuelCost": 1400,
@@ -715,6 +847,10 @@
         "gas": 500,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.7
+      },
       "maintenance": 1668.40,
       "annualFuelCost": 1850,
       "fuelEconomyGHGRating": 6
@@ -733,6 +869,10 @@
       "range": {
         "gas": 448,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 4.3
       },
       "maintenance": 1411.60,
       "annualFuelCost": 2500,
@@ -754,6 +894,10 @@
         "gas": 396,
         "electric": null
       },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.4
+      },
       "maintenance": 1083.80,
       "annualFuelCost": 1550,
       "fuelEconomyGHGRating": 7
@@ -772,6 +916,10 @@
       "range": {
         "gas": 592,
         "electric": null
+      },
+      "energyPer100Miles": {
+        "electric": null,
+        "gas": 3.3
       },
       "maintenance": 851.20,
       "annualFuelCost": 1400,
@@ -792,6 +940,10 @@
       "gas": 592,
       "electric": null
     },
+    "energyPer100Miles": {
+        "electric": null,
+        "gas": 4.8
+      },
     "maintenance": 1860.40,
     "annualFuelCost": 2350,
     "fuelEconomyGHGRating": 5
