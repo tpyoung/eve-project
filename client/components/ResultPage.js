@@ -1,4 +1,5 @@
 import React from 'react';
+import StateIncentives from './StateIncentives';
 
 class ResultPage extends React.Component{
   render() {
@@ -10,9 +11,10 @@ class ResultPage extends React.Component{
             <p key={data._id}>{data.state}</p>
           )
         })}
+        <StateIncentives stateInfo={this.props.stateInfo}/>
       </div>
     )
-  } 
+  }
 }
 ResultPage.defaultProps = {
   stateInfo: [],
