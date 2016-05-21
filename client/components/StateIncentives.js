@@ -4,9 +4,7 @@ import React from 'react';
 const StateIncentives = React.createClass({
   render() {
     if (this.props.stateInfo[0] !== undefined && this.props.vehicleInfo[0] !== undefined){
-      console.log(this.props.vehicleInfo[0]);
-      console.log(this.props.stateInfo[0]);
-      var vehicle = this.props.vehicleInfo[0][0];
+      var vehicle = this.props.vehicleInfo[0];
       var state = this.props.stateInfo[0];
       var grayImgs = {
         cashRebates: 'gray1',
@@ -24,6 +22,7 @@ const StateIncentives = React.createClass({
         parking: 'color5',
         taxCredits: 'color6'
       };
+
       //GAS VEHICLES
       if (vehicle.power === "Gas"){
         var gasKeys = Object.keys(grayImgs);
@@ -90,8 +89,3 @@ const StateIncentives = React.createClass({
 });
 
 export default StateIncentives;
-
-
-//if power === gas
-//if power === hybrid, stateInfo.incentivesHybrid
-//if power === electric, stateInfo.incentivesElectric
