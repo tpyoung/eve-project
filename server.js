@@ -11,8 +11,8 @@ const Vehicles = require('./models/Vehicle.js');
 const isDeveloping = process.env.NODE_ENV !== 'Production';
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-// const stateSeed = require('./seedState.js');
-// const vehicleSeed = require('./seedVehicle.js');
+const stateSeed = require('./seedState.js');
+const vehicleSeed = require('./seedVehicle.js');
 
 const webpack = require('webpack');
 const config = require('./webpack.config.dev');
