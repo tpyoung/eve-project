@@ -66,8 +66,8 @@ app.get('/api/vehicles', (req, res) => {
 });
 
 /* GET SPECIFIC VEHICLES BY PRICE AND BODY:
-     Prices: */
-app.get('/api/vehicles/:msrp/:body/', (req, res) => {
+     BODY TYPES: "Coupe", "Sedan", "SUV", "Hatchback", "Compact" */
+app.get('/api/vehicles/:msrp/:body', (req, res) => {
   if (req.params.msrp === "All" && req.params.body === "All") {
     Vehicles.find((err, vehicles) => {
       if (err) {
@@ -76,7 +76,7 @@ app.get('/api/vehicles/:msrp/:body/', (req, res) => {
       res.json(vehicles)
     });
   }
-  else if (req.params.msrp === "Any") {
+  else if (req.params.msrp === "All") {
     Vehicles.find({ body: req.params.body }, (err, vehicles) => {
       if (err) {
         console.log(err)
@@ -84,7 +84,7 @@ app.get('/api/vehicles/:msrp/:body/', (req, res) => {
       res.json(vehicles)
     });
   }
-  else if (req.params.body === "Any") {
+  else if (req.params.body === "All") {
     Vehicles.find({ msrp: { $lt: req.params.msrp }}, (err, vehicles) => {
       if (err) {
         console.log(err)
@@ -92,7 +92,7 @@ app.get('/api/vehicles/:msrp/:body/', (req, res) => {
       res.json(vehicles)
     });
   }
-  else {
+  else if (req.params.body !== "All" && req.params.msrp !== "All"){
     Vehicles.find({ msrp: { $lt: req.params.msrp }, body: req.params.body }, (err, vehicles) => {
       if (err) {
         console.log(err)
@@ -102,26 +102,6 @@ app.get('/api/vehicles/:msrp/:body/', (req, res) => {
   }
 });
 
-// /* GET SPECIFIC VEHICLES BY BODY TYPE:
-//     "Coupe", "Sedan", "Compact", "Hatchback", "SUV" */
-// app.get('/api/vehicles/:body', (req, res) => {
-//   Vehicles.find({ body: req.params.body}, (err, vehicles) => {
-//     if (err) {
-//       console.log(err)
-//     }
-//     res.json(vehicles)
-//   });
-// });
-
-// /* GET SPECIFIC VEHICLES BY MODEL */
-// app.get('/api/vehicles/:model', (req, res) => {
-//   Vehicles.find({ model: req.params.model }, (err, vehicle) => {
-//     if (err) {
-//       console.log(err)
-//     }
-//     res.json(vehicle)
-//   });
-// });
 
 if (isDeveloping) {
   const compiler = webpack(config);
