@@ -14,11 +14,6 @@ class ResultPage extends React.Component{
     return (
       <div className='ResultPage'>
         <Car gasCars={this.getGasCars()} />
-        {this.props.stateInfo.map((data) => {
-          return (
-            <p key={data._id}>{data.state}</p>
-          )
-        })}
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
     )
