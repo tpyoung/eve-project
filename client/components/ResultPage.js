@@ -5,12 +5,17 @@ class ResultPage extends React.Component{
     console.log('this.props.stateInfo: ', this.props.stateInfo);
     return (
       <div className='ResultPage'>
+        {this.props.stateInfo.map((data) => {
+          return (
+            <p key={data._id}>{data.state}</p>
+          )
+        })}
       </div>
     )
   } 
 }
 ResultPage.defaultProps = {
-	stateInfo: [],
+  stateInfo: [],
 };
 
 export default ResultPage;
