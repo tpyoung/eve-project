@@ -26,7 +26,9 @@ class ResultPage extends React.Component{
   render() {
     return (
       <div className='ResultPage'>
-        <Car gasCars={this.getGasCars()} hybridCars={this.getHybridCars()} electricCars={this.getElectricCars()} />
+        <Car gasCars={this.getGasCars()} />
+        <Car hybridCars={this.getHybridCars()} />
+        <Car electricCars={this.getElectricCars()} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
     )
