@@ -29,7 +29,7 @@ class ResultPage extends React.Component{
         <Car gasCars={this.getGasCars()} />
         <Car hybridCars={this.getHybridCars()} />
         <Car electricCars={this.getElectricCars()} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/> 
       </div>
     )
   }

@@ -48,7 +48,6 @@ const Car = React.createClass({
     const style = {
       backgroundColor: 'pink'
     }
-
     return (
       <div className="cars" style={style}>
         {this.props.gasCars[0] && <div className="gasCar">
@@ -78,7 +77,6 @@ const Car = React.createClass({
           {this.props.electricCars[this.state.electricIndex].model}<br/>
           MSRP: {this.props.electricCars[this.state.electricIndex].msrp}<br/>
           MPGMPGE Electric: {this.props.electricCars[this.state.electricIndex].mpgmpge.electric}<br/>
-          MPGMPGE Gas: {this.props.electricCars[this.state.electricIndex].mpgmpge.gas}<br/>
           <button onClick={this.prevElectricCar}>left</button>
           <button onClick={this.nextElectricCar}>right</button>
         </div>}

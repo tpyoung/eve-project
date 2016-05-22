@@ -29,3 +29,5 @@ const CostAnalysisGraph = React.createClass({
     )
   }
 })
+
+export default CostAnalysisGraph;
