@@ -1,9 +1,9 @@
-import React from 'react';
-import { connect } from 'react-redux';
 import store from '../store';
+import { connect } from 'react-redux';
 import ResultPage from './ResultPage';
 import StateDropDown from './stateDropDown';
 import BodyTypeDropDown from './BodyTypeDropDown';
+const InputFormCSS = require("./inputForm.scss");
 
 const InputForm = React.createClass({
   getInitialState() {
