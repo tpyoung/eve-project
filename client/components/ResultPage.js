@@ -1,4 +1,4 @@
-import React from 'react';
+'use strict'
 
 class ResultPage extends React.Component{
   render() {

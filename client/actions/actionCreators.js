@@ -12,7 +12,7 @@ function requestStateInfo (userState) {
         console.log('data: ', data);
         return resolve(data);
       },
-      error: function (xhr, status, err) {
+      error: function (xhr, status, err) { 
         reject(err);
       }
     });

@@ -13,7 +13,4 @@ function vehicleReducer (state = [], action) {
   return state;
 }
 
-
-
-
 export default vehicleReducer;

@@ -1,6 +1,6 @@
    [
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "BMW",
       "model": "i3",
       "body": "Hatchback",
@@ -54,7 +54,7 @@
       "hybridComparableModel": "C-Max Energi"
     },
     {
-      "country": "Italy",
+      "country": "European",
       "manufacturer": "Fiat",
       "model": "500e",
       "body": "Compact",
@@ -108,7 +108,7 @@
       "hybridComparableModel": "Volt"
     },
     {
-      "country": "South Korea",
+      "country": "Asian",
       "manufacturer": "Kia",
       "model": "Soul",
       "body": "Compact",
@@ -135,7 +135,7 @@
       "hybridComparableModel": "Prius"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Mercedes",
       "model": "B250e",
       "body": "Hatchback",
@@ -162,7 +162,7 @@
       "hybridComparableModel": "C-Max Energi"
     },
     {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Mitsubishi",
       "model": "i-MiEV",
       "body": "Hatchback",
@@ -189,7 +189,7 @@
       "hybridComparableModel": "Volt"
     },
     {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Nissan",
       "model": "Leaf SV",
       "body": "Sedan",
@@ -216,7 +216,7 @@
       "hybridComparableModel": "Fusion Energi"
     },
     {
-      "country": "Switzerland",
+      "country": "European",
       "manufacturer": "Smart",
       "model": "forTwo Electric Drive",
       "body": "Coupe",
@@ -297,7 +297,7 @@
       "hybridComparableModel": "XC90 T8"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Volkswagen",
       "model": "E-Golf SE",
       "body": "Sedan",
@@ -324,7 +324,7 @@
       "hybridComparableModel": "Sonata"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Audi",
       "model": "A3 E-Tron",
       "body": "Coupe",
@@ -349,7 +349,7 @@
       "gasComparableModel": "A3"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "BMW",
       "model": "i8",
       "body": "Coupe",
@@ -374,7 +374,7 @@
       "gasComparableModel": "528i"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "BMW",
       "model": "X5 xdrive40e",
       "body": "SUV",
@@ -499,7 +499,7 @@
       "gasComparableModel": "Focus"
     },
     {
-      "country": "South Korea",
+      "country": "Asian",
       "manufacturer": "Hyundai",
       "model": "Sonata Hybrid",
       "body": "Sedan",
@@ -524,7 +524,7 @@
       "gasComparableModel": "Sonata"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Porsche",
       "model": "Cayenne S-E Hybrid",
       "body": "SUV",
@@ -549,7 +549,7 @@
       "gasComparableModel": "Cayenne"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Porsche",
       "model": "Panamera S E-Hybrid",
       "body": "Sedan",
@@ -574,7 +574,7 @@
       "gasComparableModel": "528i"
     },
      {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Toyota",
       "model": "Prius",
       "body": "Hatchback",
@@ -599,7 +599,7 @@
       "gasComparableModel": "Soul"
     },
     {
-      "country": "Sweden",
+      "country": "European",
       "manufacturer": "Volvo",
       "model": "XC90",
       "body": "SUV",
@@ -624,7 +624,7 @@
       "gasComparableModel": "QX60"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Porsche",
       "model": "918 Spyder",
       "body": "Coupe",
@@ -649,7 +649,7 @@
       "gasComparableModel": "528i"
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Audi",
       "model": "A3",
       "body": "Sedan",
@@ -695,7 +695,7 @@
       "fuelEconomyGHGRating": 8
     },
     {
-      "country": "Italy",
+      "country": "European",
       "manufacturer": "Fiat",
       "model": "500",
       "body": "Compact",
@@ -741,7 +741,7 @@
       "fuelEconomyGHGRating": 8
     },
     {
-      "country": "South Korea",
+      "country": "Asian",
       "manufacturer": "Kia",
       "model": "Soul",
       "body": "Hatchback",
@@ -764,7 +764,7 @@
       "fuelEconomyGHGRating": 6
     },
     {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Mitsubishi",
       "model": "Mirage",
       "body": "Compact",
@@ -787,7 +787,7 @@
       "fuelEconomyGHGRating": 9
     },
     {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Nissan",
       "model": "Versa S",
       "body": "Sedan",
@@ -810,7 +810,7 @@
       "fuelEconomyGHGRating": 7
     },
     {
-      "country": "Switzerland",
+      "country": "European",
       "manufacturer": "Smart",
       "model": "forTwo",
       "body": "Compact",
@@ -833,7 +833,7 @@
       "fuelEconomyGHGRating": 8
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "BMW",
       "model": "528i",
       "body": "Sedan",
@@ -856,7 +856,7 @@
       "fuelEconomyGHGRating": 6
     },
     {
-      "country": "Japan",
+      "country": "Asian",
       "manufacturer": "Infiniti",
       "model": "QX60 FWD",
       "body": "SUV",
@@ -880,7 +880,7 @@
 
     },
     {
-      "country": "Germany",
+      "country": "European",
       "manufacturer": "Volkswagen",
       "model": "Golf",
       "body": "Hatchback",
@@ -903,7 +903,7 @@
       "fuelEconomyGHGRating": 7
     },
     {
-      "country": "South Korea",
+      "country": "Asian",
       "manufacturer": "Hyundai",
       "model": "Sonata",
       "body": "Sedan",
@@ -926,7 +926,7 @@
       "fuelEconomyGHGRating": 8
     },
    {
-    "country": "Germany",
+    "country": "European",
     "manufacturer": "Porsche",
     "model": "Cayenne",
     "body": "SUV",

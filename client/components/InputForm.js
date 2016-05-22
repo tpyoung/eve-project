@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
 import ResultPage from './ResultPage';
+import StateDropDown from './stateDropDown';
+import BodyTypeDropDown from './BodyTypeDropDown';
 
 const InputForm = React.createClass({
   getInitialState() {
@@ -28,6 +30,7 @@ const InputForm = React.createClass({
     });
   },
   handleBodyTypeChange(event) {
+    console.log('BODY BODY BODY', event.target.value)
     this.setState({
       bodyType: event.target.value
     });
@@ -39,14 +42,18 @@ const InputForm = React.createClass({
         <h1>EVE - Electric Vehicle Evaluator</h1>
         <form onSubmit={ this.handleSubmit }>
           <label for="userState">State: </label>
-          <input id="userState" type="text" value={ this.state.userState } onChange={ this.handleUserStateChange }/><br/>
+          <StateDropDown value={this.state.userState} handleUserStateChange={this.handleUserStateChange} /> <br/>
+
           <label for="maxPrice">Max Price: </label>
-          <input id="maxPrice" type="text" value={ this.state.maxPrice } onChange={ this.handleMaxPriceChange }/><br/>
+          <input id="maxPrice" type="text" value={ this.state.maxPrice } onChange={ this.handleMaxPriceChange } /> <br/>
+          
           <label for="bodyType">Vehicle Body Type: </label>
-          <input id="bodyType" type="text" value={ this.state.bodyType } onChange={ this.handleBodyTypeChange }/><br/>
+          <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
+          
           <button type="submit">Submit</button>
-          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
         </form> 
+
+          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
     )
   }
