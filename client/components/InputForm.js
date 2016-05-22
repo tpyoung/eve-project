@@ -38,6 +38,7 @@ const InputForm = React.createClass({
 
   render(){
     return (
+      <div>
       <div className="landingPage">
         <h1>EVE - Electric Vehicle Evaluator</h1>
         <form onSubmit={ this.handleSubmit }>
@@ -52,9 +53,9 @@ const InputForm = React.createClass({
           
           <button type="submit">Submit</button>
         </form> 
-
-          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
+          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
+    </div>
     )
   }
 });
