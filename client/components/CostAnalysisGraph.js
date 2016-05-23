@@ -1,21 +1,19 @@
-'use strict';
-
 import React from 'react';
+import c3 from '../resources/c3';
 
 const CostAnalysisGraph = React.createClass({
-  render() {
-    var initialInvestment = this.props.msrp / 6;
-    var annualFuelCost = this.props.annualFuelCost;
-    var maintenanceCost = this.props.maintenance;
+  renderChart: function () {
+    // var initialInvestment = this.props.currGasCar.msrp / 6;
+    // var annualFuelCost = this.props.currGasCar.annualFuelCost;
+    // var maintenanceCost = this.props.currGasCar.maintenance;
 
-    return (
-
-      var chart = c3.generate({
+    var chart = c3.generate({
+          bindto: '#CostAnalysisGraph',
           data: {
               columns: [
-                  ['Initial Investment', initialInvestment],
-                  ['Maintenance', maintenanceCost],
-                  ['Energy Costs', annualFuelCost],
+                  ['Initial Investment', 21445],
+                  ['Maintenance', 816.6],
+                  ['Energy Costs', 2000],
               ],
               type : 'donut',
               onclick: function (d, i) { console.log("onclick", d, i); },
@@ -26,8 +24,17 @@ const CostAnalysisGraph = React.createClass({
               title: "Annual Fuel Cost"
           }
       });
+  },
+  render() {
+    this.renderChart();
+    return (
+      <div className="CostAnalysisGraph">
+        <h3>ohhai cost analysis</h3>
+        <div id="CostAnalysisGraph"></div>
+      </div>
     )
   }
 })
 
 export default CostAnalysisGraph;
+      

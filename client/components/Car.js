@@ -48,9 +48,11 @@ const Car = React.createClass({
     const style = {
       backgroundColor: 'pink'
     }
+    // Need to refactor to use 1 div
     return (
       <div className="cars" style={style}>
         {this.props.gasCars[0] && <div className="gasCar">
+          <div style={{display: 'none'}}>{this.props.getCurrGasCar(this.state.gasIndex)}</div> 
           <h3>Gas</h3>
           {this.props.gasCars[this.state.gasIndex].manufacturer}<br/>
           {this.props.gasCars[this.state.gasIndex].model}<br/>
@@ -59,8 +61,7 @@ const Car = React.createClass({
           <button onClick={this.prevGasCar}>left</button>
           <button onClick={this.nextGasCar}>right</button>
         </div>}
-        {this.props.hybridCars[0] &&
-        <div className="hybridCar">
+        {this.props.hybridCars[0] && <div className="hybridCar">
           <h3>Plug-In Hybrid</h3>
           {this.props.hybridCars[this.state.hybridIndex].manufacturer}<br/> 
           {this.props.hybridCars[this.state.hybridIndex].model}<br/>
@@ -70,8 +71,7 @@ const Car = React.createClass({
           <button onClick={this.prevHybridCar}>left</button>
           <button onClick={this.nextHybridCar}>right</button>
         </div>}
-        {this.props.electricCars[0] &&
-        <div className="electricCar">
+        {this.props.electricCars[0] && <div className="electricCar">
           <h3>Electric</h3>
           {this.props.electricCars[this.state.electricIndex].manufacturer}<br/> 
           {this.props.electricCars[this.state.electricIndex].model}<br/>

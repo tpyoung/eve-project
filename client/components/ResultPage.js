@@ -2,38 +2,43 @@
 
 import StateIncentives from './StateIncentives';
 import Car from './Car';
+import CostAnalysisGraph from './CostAnalysisGraph';
 
-class ResultPage extends React.Component{ 
-  getGasCars () {
+const ResultPage = React.createClass({
+  getGasCars : function () {
     const gasCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Gas';
     })
 
     return gasCars;
-  }
-  getHybridCars() {
+  },
+  getCurrGasCar: function (id) {
+    return <CostAnalysisGraph currGasCar={this.getGasCars()[id]} />
+  },
+  getHybridCars: function () {
     const hybridCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Plug-In Hybrid';
     })
     return hybridCars;
-  }
-  getElectricCars() {
+  },
+  getElectricCars: function () {
     const electricCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Electric';
     })
     return electricCars;
-  }
-  render() {
+  },
+  render: function () {
     return (
       <div className='ResultPage'>
-        <Car gasCars={this.getGasCars()} />
+        <Car gasCars={this.getGasCars()} getCurrGasCar={this.getCurrGasCar} />
         <Car hybridCars={this.getHybridCars()} />
         <Car electricCars={this.getElectricCars()} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/> 
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
+        <CostAnalysisGraph />
       </div>
     )
   }
-}
+})
 ResultPage.defaultProps = {
   stateInfo: [],
 };
