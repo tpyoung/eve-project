@@ -16,41 +16,42 @@ const RangeGraph = React.createClass({
       var hybridElectricRange = hybridVehicle.range.electric;
       var electricRange = electricVehicle.range.electric;
       var chart = c3.generate({
-          data: {
-              columns: [
-                  ['Gas', 0],
-                  ['HybridGas', 0],
-                  ['HybridElectric', 0],
-                  ['Electric', 0]
-              ],
-              types: {
-                  Gas: 'bar',
-                  Hybrid: 'bar',
-                  Electric: 'bar'
-              },
-              colors: {
-                Gas: '#FE944C',
-                Hybrid: '#414F6E',
-                Electric: '#9ED073'
-              },
-              transition: {
-                duration: 2000
-              }
+        data: {
+          columns: [
+              ['Gas', 0],
+              ['HybridGas', 0],
+              ['HybridElectric', 0],
+              ['Electric', 0]
+          ],
+          types: {
+              Gas: 'bar',
+              Hybrid: 'bar',
+              Electric: 'bar'
           },
-          axis: {
-              rotated: true,
-              x: {show:false},
-              y: {show:false}
+          colors: {
+            Gas: '#FE944C',
+            Hybrid: '#414F6E',
+            Electric: '#9ED073'
           },
-          tooltip: {
-        format: {
-          title: function () { return 'Vehicle Range (Miles)'; }
+          transition: {
+            duration: 2000
+          }
+        },
+        axis: {
+          rotated: true,
+          x: {show:false},
+          y: {show:false}
+        },
+        tooltip: {
+          format: {
+            title: function () { return 'Vehicle Range (Miles)'; }
+          }
         }
-      }
-    });
-  },
+      }); //end of CHART
+    } //end IF
+  }, //end RENDERCHART
 
-  render() {
+  render: function() {
 
 
         // setTimeout(function () {
@@ -81,8 +82,8 @@ const RangeGraph = React.createClass({
         //   })
         // }, 1200);
     return (<p>Hello</p>)
-    }
-  )};
+  }
 });
+
 
 export default RangeGraph;
