@@ -1,33 +1,26 @@
 'use strict';
 
-
-
-/* WE NEED TO ARRANGE THIS SO THE TWO
-    NUMBERS FOR THE HYBRID VEHICLES
-    SHOW UP TOGETHER -- HYBRID HAS BOTH
-    GAS AND ELECTRIC SO THERE NEEDS TO
-    BE A CHANGE MADE ON THIS GRAPH
-    BEFORE IT ACCURATELY REFLECTS THE
-    RANGE
-*/
-
-
-
 import React from 'react';
+import c3 from '../resources/c3';
 
 const RangeGraph = React.createClass({
-
-  render() {  // <------------------- insert applicable states and index into render function
-    return (
-      var gasRange = {this.props.gasRange}; // <------- filler data, replace with: { PROP NAME HERE }
-      var hybridRange = {this.props.hybridRange}; // <---- filler data, replace with: { PROP NAME HERE }
-      var electricRange = {this.props.electricRange}; // <- filler data, replace with: { PROP NAME HERE }
-
+  renderChart: function(){
+    if (this.props.gasVehicle[0] !== undefined &&
+      this.props.hybridVehicle[0] !== undefined &&
+      this.props.electricVehicle[0] !== undefined) {
+      var gasVehicle = this.props.gasVehicle[0];
+      var hybridVehicle = this.props.hybridVehicle[0];
+      var electricVehicle = this.props.electricVehicle[0];
+      var gasRange = gasVehicle.range.gas;
+      var hybridGasRange = hybridVehicle.range.gas;
+      var hybridElectricRange = hybridVehicle.range.electric;
+      var electricRange = electricVehicle.range.electric;
       var chart = c3.generate({
           data: {
               columns: [
                   ['Gas', 0],
-                  ['Hybrid', 0],
+                  ['HybridGas', 0],
+                  ['HybridElectric', 0],
                   ['Electric', 0]
               ],
               types: {
@@ -54,34 +47,41 @@ const RangeGraph = React.createClass({
           title: function () { return 'Vehicle Range (Miles)'; }
         }
       }
-      });
-        setTimeout(function () {
-          chart.load({
-            columns: [
-              ['Gas', gasRange],
-              ['Hybrid', 0],
-              ['Electric', 0]
-            ]
-          })
-        }, 600);
-          setTimeout(function () {
-          chart.load({
-            columns: [
-              ['Gas', gasRange],
-              ['Hybrid', hybridRange],
-              ['Electric', 0]
-            ]
-          })
-        }, 900);
-            setTimeout(function () {
-          chart.load({
-            columns: [
-              ['Gas', gasRange],
-              ['Hybrid', hybridRange],
-              ['Electric', electricRange]
-            ]
-          })
-        }, 1200);
+    });
+  },
+
+  render() {
+
+
+        // setTimeout(function () {
+        //   chart.load({
+        //     columns: [
+        //       ['Gas', gasRange],
+        //       ['Hybrid', 0],
+        //       ['Electric', 0]
+        //     ]
+        //   })
+        // }, 600);
+        //   setTimeout(function () {
+        //   chart.load({
+        //     columns: [
+        //       ['Gas', gasRange],
+        //       ['Hybrid', hybridRange],
+        //       ['Electric', 0]
+        //     ]
+        //   })
+        // }, 900);
+        //     setTimeout(function () {
+        //   chart.load({
+        //     columns: [
+        //       ['Gas', gasRange],
+        //       ['Hybrid', hybridRange],
+        //       ['Electric', electricRange]
+        //     ]
+        //   })
+        // }, 1200);
+    return (<p>Hello</p>)
+    }
   )};
 });
 
