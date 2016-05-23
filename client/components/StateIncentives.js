@@ -64,12 +64,12 @@ const StateIncentives = React.createClass({
 
         var colorImgs = color.map((key) => {
           return (
-            <p key={key}>{colorImgArr[key]}</p>
+            <div key={key}>{colorImgArr[key]}</div>
           )
         });
         var grayImgs = gray.map((key) => {
           return (
-            <p key={key}>{grayImgs[key]}</p>
+            <div key={key}>{grayImgs[key]}</div>
           )
         });
 
