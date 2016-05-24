@@ -26,9 +26,10 @@ const InputForm = React.createClass({
       userState: newValue
     });
   },
-  handleMaxPriceChange(event) {
+  handleMaxPriceChange(newPrice) {
+    console.log(newPrice)
     this.setState({
-      maxPrice: event.target.value
+      maxPrice: newPrice
     });
   },
   handleBodyTypeChange(newValue) {
@@ -46,7 +47,7 @@ const InputForm = React.createClass({
           <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
   
           <label for="maxPrice">Max Price: </label>
-          <PriceSlider />
+          <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
 
           <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
           

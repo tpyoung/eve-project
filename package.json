@@ -53,6 +53,7 @@
     "rc-slider": "^3.6.2",
     "react": "^15.0.2",
     "react-addons-css-transition-group": "^15.0.2",
+    "react-bootstrap-native-slider": "^2.0.0",
     "react-chosen": "^0.3.8",
     "react-dom": "^15.0.2",
     "react-rangeslider": "^1.0.2",

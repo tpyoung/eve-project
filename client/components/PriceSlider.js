@@ -1,30 +1,25 @@
-import ionRangeSlider from 'ion-rangeslider';
+import ReactSliderNativeBootstrap from 'react-bootstrap-native-slider';
+const PriceSliderCSS = require("./PriceSlider.scss");
+
 
 var PriceSlider = React.createClass({
+		
+		updateValue (newPrice) {
+			console.log('newPrice', newPrice.target.value);
+			this.props.handleMaxPriceChange(newPrice)
+		},
 	render(){
-		$("#range_43").ionRangeSlider({
-    type: "single",
-    min: 0,
-    max: 100,
-    from: 50,
-    keyboard: true,
-    onStart: function (data) {
-        console.log("onStart");
-    },
-    onChange: function (data) {
-        console.log("onChange");
-    },
-    onFinish: function (data) {
-        console.log("onFinish");
-    },
-    onUpdate: function (data) {
-        console.log("onUpdate");
-    }
-});
 		return(
-		<input type="text" id="example_id" name="example_name" value="" />
+			<input id="pSlider" 
+			type="range"  
+			min="20000" 
+			max="850000"  
+			step="5000"
+			onChange={this.updateValue}
+			/>
 		);
 	}
 });
 
 export default PriceSlider;
+
