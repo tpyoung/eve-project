@@ -6,6 +6,13 @@ import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
 
 const ResultPage = React.createClass({
+  getInitialState() {
+    return {
+      gasIndex: 0,
+      hybridIndex: 0,
+      electricIndex: 0
+    }
+  },
   getGasCars : function () {
     const gasCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Gas';
@@ -13,8 +20,42 @@ const ResultPage = React.createClass({
 
     return gasCars;
   },
-  getCurrGasCar: function (id) {
-    return <CostAnalysisGraph currGasCar={this.getGasCars()[id]} />
+  getCurrCar: function (directionPowerType) {
+    console.log('directionPowerType: ', directionPowerType);
+    switch (directionPowerType) {
+      case 'previous gas':
+        if (this.state.gasIndex-1 >= 0) {
+          this.setState({gasIndex: this.state.gasIndex-1})
+        }
+        break;
+      case 'next gas':
+        if (this.state.gasIndex+1 !== this.getGasCars().length) {
+          this.setState({gasIndex: this.state.gasIndex+1})
+        }
+        break;
+      case 'previous hybrid':
+        if (this.state.hybridIndex-1 >= 0) {
+          this.setState({hybridIndex: this.state.hybridIndex-1})
+        }
+        break;
+      case 'next hybrid':
+        if (this.state.hybridIndex+1 !== this.getHybridCars().length) {
+          this.setState({hybridIndex: this.state.hybridIndex+1})
+        }
+        break;
+      case 'previous electric':
+        if (this.state.electricIndex-1 >= 0) {
+          this.setState({electricIndex: this.state.electricIndex-1})
+        }
+        break;
+      case 'next electric':
+        if (this.state.electricIndex+1 !== this.getElectricCars().length) {
+          this.setState({electricIndex: this.state.electricIndex+1})
+        }
+        break;
+      // default:
+      //   this.setState({gasIndex: this.state.gasIndex})
+    }
   },
   getHybridCars: function () {
     const hybridCars = this.props.vehicleInfo.filter((car) => {
@@ -31,9 +72,9 @@ const ResultPage = React.createClass({
   render: function () {
     return (
       <div className='ResultPage'>
-        <Car gasCars={this.getGasCars()} getCurrGasCar={this.getCurrGasCar} />
-        <Car hybridCars={this.getHybridCars()} />
-        <Car electricCars={this.getElectricCars()} />
+        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
+        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
+        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
