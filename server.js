@@ -102,7 +102,6 @@ app.get('/api/vehicles/:msrp/:body', (req, res) => {
   }
 });
 
-
 if (isDeveloping) {
   const compiler = webpack(config);
   const middleware = webpackDevMiddleware(compiler, {

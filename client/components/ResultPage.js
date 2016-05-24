@@ -7,6 +7,13 @@ import RangeGraph from './RangeGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 
 const ResultPage = React.createClass({
+  getInitialState() {
+    return {
+      gasIndex: 0,
+      hybridIndex: 0,
+      electricIndex: 0
+    }
+  },
   getGasCars : function () {
     const gasCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Gas';
@@ -14,26 +21,41 @@ const ResultPage = React.createClass({
 
     return gasCars;
   },
-  getCurrCar: function (gasId, hybridId, electricId) {
-    console.log(gasId);
-    console.log(hybridId);
-    console.log(electricId);
-    // return (
-    //   <div>
-    //     <CostAnalysisGraph currGasCar={this.getGasCars()[gasId]} />
-    //     <RangeGraph currGasCar={this.getGasCars()[gasId]} currHybridCar={this.getHybridCars()[hybridId]} currElectricCar={this.getElectricCars()[electricId]}/>
-    //   </div>
-    // )
+  getCurrCar: function (directionPowerType) {
+    console.log('directionPowerType: ', directionPowerType);
+    switch (directionPowerType) {
+      case 'previous gas':
+        if (this.state.gasIndex-1 >= 0) {
+          this.setState({gasIndex: this.state.gasIndex-1})
+        }
+        break;
+      case 'next gas':
+        if (this.state.gasIndex+1 !== this.getGasCars().length) {
+          this.setState({gasIndex: this.state.gasIndex+1})
+        }
+        break;
+      case 'previous hybrid':
+        if (this.state.hybridIndex-1 >= 0) {
+          this.setState({hybridIndex: this.state.hybridIndex-1})
+        }
+        break;
+      case 'next hybrid':
+        if (this.state.hybridIndex+1 !== this.getHybridCars().length) {
+          this.setState({hybridIndex: this.state.hybridIndex+1})
+        }
+        break;
+      case 'previous electric':
+        if (this.state.electricIndex-1 >= 0) {
+          this.setState({electricIndex: this.state.electricIndex-1})
+        }
+        break;
+      case 'next electric':
+        if (this.state.electricIndex+1 !== this.getElectricCars().length) {
+          this.setState({electricIndex: this.state.electricIndex+1})
+        }
+        break;
+    }
   },
-  // handleGraphUpdate: function () {
-  //   this.chart.load({
-  //           columns: [
-  //             ['Initial Investment', nextProps.currGasCar.msrp/6],
-  //             ['Maintenance', nextProps.currGasCar.annualFuelCost],
-  //             ['Energy Costs', nextProps.currGasCar.maintenance]
-  //           ]
-  //         })
-  // }
   getHybridCars: function () {
     const hybridCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Plug-In Hybrid';
@@ -49,10 +71,10 @@ const ResultPage = React.createClass({
   render: function () {
     return (
       <div className='ResultPage'>
-        <Car gasCars={this.getGasCars()} getCurrCar={this.getCurrCar} />
-        <Car hybridCars={this.getHybridCars()} getCurrCar={this.getCurrCar} />
-        <Car electricCars={this.getElectricCars()} getCurrCar={this.getCurrCar} />
-        <EpaGHGRatingGraph />
+        <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
+        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
+        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
+        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
@@ -66,4 +88,5 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
-        // <RangeGraph />
+
+// <EpaGHGRatingGraph />
