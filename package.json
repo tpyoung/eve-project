@@ -34,6 +34,7 @@
     "body-parser": "^1.15.1",
     "cors": "^2.7.1",
     "css-loader": "^0.23.1",
+    "d3": "^3.5.17",
     "es6-promise": "^3.2.1",
     "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",

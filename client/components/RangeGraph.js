@@ -1,88 +1,161 @@
 'use strict';
 
-
-
-/* WE NEED TO ARRANGE THIS SO THE TWO
-    NUMBERS FOR THE HYBRID VEHICLES
-    SHOW UP TOGETHER -- HYBRID HAS BOTH
-    GAS AND ELECTRIC SO THERE NEEDS TO
-    BE A CHANGE MADE ON THIS GRAPH
-    BEFORE IT ACCURATELY REFLECTS THE
-    RANGE
-*/
-
-
-
 import React from 'react';
+import c3 from '../resources/c3';
 
 const RangeGraph = React.createClass({
-
-  render() {  // <------------------- insert applicable states and index into render function
-    return (
-      var gasRange = {this.props.gasRange}; // <------- filler data, replace with: { PROP NAME HERE }
-      var hybridRange = {this.props.hybridRange}; // <---- filler data, replace with: { PROP NAME HERE }
-      var electricRange = {this.props.electricRange}; // <- filler data, replace with: { PROP NAME HERE }
-
+  renderChart: function(){
+    if (this.props.gasVehicle[0] !== undefined &&
+      this.props.hybridVehicle[0] !== undefined &&
+      this.props.electricVehicle[0] !== undefined) {
+      var gasVehicle = this.props.gasVehicle[0];
+      var hybridVehicle = this.props.hybridVehicle[0];
+      var electricVehicle = this.props.electricVehicle[0];
+      var gasRange = gasVehicle.range.gas;
+      var hybridGasRange = hybridVehicle.range.gas;
+      var hybridElectricRange = hybridVehicle.range.electric;
+      var electricRange = electricVehicle.range.electric;
       var chart = c3.generate({
-          data: {
-              columns: [
-                  ['Gas', 0],
-                  ['Hybrid', 0],
-                  ['Electric', 0]
-              ],
-              types: {
-                  Gas: 'bar',
-                  Hybrid: 'bar',
-                  Electric: 'bar'
-              },
-              colors: {
-                Gas: '#FE944C',
-                Hybrid: '#414F6E',
-                Electric: '#9ED073'
-              },
-              transition: {
-                duration: 2000
-              }
-          },
-          axis: {
-              rotated: true,
-              x: {show:false},
-              y: {show:false}
-          },
-          tooltip: {
-        format: {
-          title: function () { return 'Vehicle Range (Miles)'; }
-        }
-      }
-      });
-        setTimeout(function () {
-          chart.load({
-            columns: [
+        bindto: '#RangeGraph',
+        data: {
+          columns: [
               ['Gas', gasRange],
-              ['Hybrid', 0],
-              ['Electric', 0]
-            ]
-          })
-        }, 600);
-          setTimeout(function () {
-          chart.load({
-            columns: [
-              ['Gas', gasRange],
-              ['Hybrid', hybridRange],
-              ['Electric', 0]
-            ]
-          })
-        }, 900);
-            setTimeout(function () {
-          chart.load({
-            columns: [
-              ['Gas', gasRange],
-              ['Hybrid', hybridRange],
+              ['HybridGas', hybridGasRange],
+              ['HybridElectric', hybridElectricRange],
               ['Electric', electricRange]
-            ]
-          })
-        }, 1200);
-  )};
+          ],
+          types: {
+              Gas: 'bar',
+              HybridGas: 'bar',
+              HybridElectric: 'bar',
+              Electric: 'bar'
+          },
+          colors: {
+            Gas: '#4F4F4F',
+            HybridGas: '#4FA0CD',
+            HybridElectric: '#4FA9FF',
+            Electric: '#93CC5D'
+          },
+          transition: {
+            duration: 2000
+          }
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        tooltip: {
+          format: {
+            title: function () { return 'Vehicle Range (Miles)'; }
+          }
+        }
+      }); //end of CHART
+    } //end IF
+    else if (this.props.gasVehicle[0] !== undefined &&
+      this.props.electricVehicle[0] !== undefined) {
+      var gasVehicle = this.props.gasVehicle[0];
+      var electricVehicle = this.props.electricVehicle[0];
+      var gasRange = gasVehicle.range.gas;
+      var electricRange = electricVehicle.range.electric;
+      var chart = c3.generate({
+        bindto: '#RangeGraph',
+        data: {
+          columns: [
+              ['Gas', gasRange],
+              ['Electric', electricRange]
+          ],
+          types: {
+              Gas: 'bar',
+              Electric: 'bar'
+          },
+          colors: {
+            Gas: '#4F4F4F',
+            Electric: '#93CC5D'
+          },
+          transition: {
+            duration: 2000
+          }
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        tooltip: {
+          format: {
+            title: function () { return 'Vehicle Range (Miles)'; }
+          }
+        }
+      }); //end of CHART
+    } //ELSE IF
+    else if (this.props.gasVehicle[0] !== undefined &&
+      this.props.hybridVehicle[0] !== undefined) {
+      var gasVehicle = this.props.gasVehicle[0];
+      var hybridVehicle = this.props.hybridVehicle[0];
+      var gasRange = gasVehicle.range.gas;
+      var hybridGasRange = hybridVehicle.range.gas;
+      var hybridElectricRange = hybridVehicle.range.electric;
+      var chart = c3.generate({
+        bindto: '#RangeGraph',
+        data: {
+          columns: [
+              ['Gas', gasRange],
+              ['HybridGas', hybridGasRange],
+              ['HybridElectric', hybridElectricRange],
+          ],
+          types: {
+              Gas: 'bar',
+              HybridGas: 'bar',
+              HybridElectric: 'bar',
+          },
+          colors: {
+            Gas: '#4F4F4F',
+            HybridGas: '#4FA0CD',
+            HybridElectric: '#4FA9FF',
+          },
+          transition: {
+            duration: 2000
+          }
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        tooltip: {
+          format: {
+            title: function () { return 'Vehicle Range (Miles)'; }
+          }
+        }
+      }); //end of CHART
+    } //end IF
+    else if (this.props.hybridVehicle[0] === undefined &&
+      this.props.electricVehicle[0] === undefined) {
+      return null;
+    }
+  }, //end RENDERCHART
+
+  render: function() {
+    if (this.renderChart() !== null){
+      this.renderChart()
+      return (
+        <div className="RangeGraph">
+          <h3>Range Graph</h3>
+          <div id="RangeGraph"></div>
+        </div>
+      )
+    }
+    else {
+      return (
+        <div className="RangeGraph">
+          <h3>Range Graph</h3>
+          <p>No range comparisons avilable</p>
+        </div>
+      )
+    }
+  }
 });
+
 
 export default RangeGraph;

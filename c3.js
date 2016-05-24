@@ -1,4 +1,4 @@
-(function (window) {
+const c3 = (function (window) {
     'use strict';
 
     /*global define, module, exports, require */
@@ -8200,3 +8200,4 @@
     }
 
 })(window);
+export default c3;
