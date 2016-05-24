@@ -1,22 +1,37 @@
 import ReactSliderNativeBootstrap from 'react-bootstrap-native-slider';
 const PriceSliderCSS = require("./PriceSlider.scss");
 
-
 var PriceSlider = React.createClass({
-		
-		updateValue (newPrice) {
-			console.log('newPrice', newPrice.target.value);
-			this.props.handleMaxPriceChange(newPrice)
-		},
+	getInitialState() {
+    return {
+        newPriceState: '60'
+      }
+    },
+
+	updateValue (newPrice) {
+		this.setState({
+			newPriceState: newPrice.target.value
+		}),	
+		this.props.handleMaxPriceChange(newPrice.target.value)
+	},
 	render(){
+			let dollarAmount = ',000'
+			if (this.state.newPriceState > 90) {
+				dollarAmount = ',000 and Above'
+			}
 		return(
-			<input id="pSlider" 
-			type="range"  
-			min="20000" 
-			max="850000"  
-			step="5000"
-			onChange={this.updateValue}
-			/>
+			<div>
+				<h3 className="section-heading">Max Price:</h3>
+				<input id="pSlider" 
+				type="range" 
+				min="20" 
+				max="100"  
+				step="10"
+				onChange={this.updateValue}
+				/>
+				<output value={'$' + this.state.newPriceState + dollarAmount} for='pSlider'></output>
+
+		</div>
 		);
 	}
 });

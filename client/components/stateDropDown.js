@@ -38,10 +38,18 @@ var StateDropDown = React.createClass({
 		return (
 			<div className="section">
 				<h3 className="section-heading">{this.props.label}</h3>
-				<Select ref="stateSelect" autofocus options={options} onChange={this.updateValue} simpleValue clearable={this.state.clearable} name="selected-state" disabled={this.state.disabled} value={this.state.selectValue} searchable={this.state.searchable} />
-
-
-				
+				<Select 
+				autofocus 
+				simpleValue 
+				options={options} 
+				ref="stateSelect" 
+				name="selected-state" 
+				onChange={this.updateValue} 
+				value={this.state.selectValue} 
+				disabled={this.state.disabled} 
+				clearable={this.state.clearable} 
+				searchable={this.state.searchable} 
+				/>
 			</div>
 		);
 	}

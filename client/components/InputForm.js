@@ -27,6 +27,10 @@ const InputForm = React.createClass({
     });
   },
   handleMaxPriceChange(newPrice) {
+    newPrice = newPrice * 1000
+    if (newPrice >= 100000) {
+      newPrice = 900000;
+    }
     console.log(newPrice)
     this.setState({
       maxPrice: newPrice
@@ -40,22 +44,21 @@ const InputForm = React.createClass({
 
   render(){
     return (
-      <div>
-      <div className="landingPage">
-        <h1>EVE - Electric Vehicle Evaluator</h1>
-        <form onSubmit={ this.handleSubmit }>
-          <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
-  
-          <label for="maxPrice">Max Price: </label>
-          <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
+      <div className='InputContainerDivs'>
+        <div className="landingPage">
+          <h1>EVE - Electric Vehicle Evaluator</h1>
+          <form onSubmit={ this.handleSubmit }>
+            <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
+    
+            <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
 
-          <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
-          
-          <button type="submit">Submit</button>
-        </form> 
-      </div>
+            <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
+            
+            <button type="submit">Submit</button>
+          </form> 
+        </div>
           <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
-    </div>
+      </div>
     )
   }
 });

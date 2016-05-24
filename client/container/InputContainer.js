@@ -7,7 +7,7 @@ import InputForm from '../components/InputForm';
 const InputContainer = React.createClass({
   render() {
     return (
-      <div>
+      <div className='InputContainerDivs'>
         <InputForm getStateInfo={this.props.getStateInfo} stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo} getCarInfo={this.props.getCarInfo} />
       </div>
     )
