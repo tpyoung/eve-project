@@ -1,50 +1,53 @@
-var path = require('path');
-var webpack = require('webpack');
+/* eslint strict: 0*/
+'use strict';
+
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'eval-source-map',
   entry: [
-    
-    './client/router'
+    'webpack-hot-middleware/client?reload=true',
+    path.join(__dirname, './client/router.js'),
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '/dist/'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/',
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': "'production'"
-      }
+    new HtmlWebpackPlugin({
+      template: 'client/index.tpl.html',
+      inject: 'body',
+      filename: 'index.html',
     }),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
     new webpack.ProvidePlugin({
       'React': 'react'
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
+    new webpack.DefinePlugin({
+         'process.env': {
+        'NODE_ENV': "'production'"
       }
-    })
+    }),
   ],
   module: {
-    loaders: [
-    // js
-    {
+    loaders: [{
       test: /(\.js$|\.jsx$)/,
+      exclude: /node_modules/,
       loader: 'babel',
-      include: path.join(__dirname, 'client'),
       query: {
-        presets: ['react', 'es2015', 'stage-0', 'react-hmre']
-      }
-    },
-    // CSS
-    { 
-      test: /\.styl$/, 
-      include: path.join(__dirname, 'client'),
-      loader: 'style-loader!css-loader!stylus-loader'
-    }
-    ]
-  }
+        presets: ['react', 'es2015', 'stage-0', 'react-hmre'],
+      },
+    }, {
+      test: /\.json?$/,
+      loader: 'json',
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass'],
+    }],
+  },
 };
