@@ -16,15 +16,6 @@ const ResultPage = React.createClass({
   getCurrGasCar: function (id) {
     return <CostAnalysisGraph currGasCar={this.getGasCars()[id]} />
   },
-  // handleGraphUpdate: function () {
-  //   this.chart.load({
-  //           columns: [
-  //             ['Initial Investment', nextProps.currGasCar.msrp/6],
-  //             ['Maintenance', nextProps.currGasCar.annualFuelCost],
-  //             ['Energy Costs', nextProps.currGasCar.maintenance]
-  //           ]
-  //         })
-  // }
   getHybridCars: function () {
     const hybridCars = this.props.vehicleInfo.filter((car) => {
       return car.power === 'Plug-In Hybrid';
@@ -52,6 +43,7 @@ const ResultPage = React.createClass({
     )
   }
 })
+
 ResultPage.defaultProps = {
   stateInfo: [],
 };
