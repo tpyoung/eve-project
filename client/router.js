@@ -6,6 +6,7 @@ import App from './components/App';
 import InputContainer from './container/InputContainer';
 import ResultPage from './components/ResultPage';
 import store, { history } from './store';
+const MainCSS = require('./components/Main.scss')
 
 const router = (
   <Provider store = { store }>

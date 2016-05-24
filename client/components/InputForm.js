@@ -1,7 +1,9 @@
 import store from '../store';
+import Redux from 'redux';
 import { connect } from 'react-redux';
 import ResultPage from './ResultPage';
 import StateDropDown from './stateDropDown';
+import PriceSlider from './PriceSlider';
 import BodyTypeDropDown from './BodyTypeDropDown';
 const InputFormCSS = require("./inputForm.scss");
 
@@ -19,43 +21,44 @@ const InputForm = React.createClass({
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
   },
 
-  handleUserStateChange(event) {
+  handleUserStateChange(newValue) {
     this.setState({
-      userState: event.target.value
+      userState: newValue
     });
   },
-  handleMaxPriceChange(event) {
+  handleMaxPriceChange(newPrice) {
+    newPrice = newPrice * 1000
+    if (newPrice >= 100000) {
+      newPrice = 900000;
+    }
+    console.log(newPrice)
     this.setState({
-      maxPrice: event.target.value
+      maxPrice: newPrice
     });
   },
-  handleBodyTypeChange(event) {
-    console.log('BODY BODY BODY', event.target.value)
+  handleBodyTypeChange(newValue) {
     this.setState({
-      bodyType: event.target.value
+      bodyType: newValue
     });
   },
 
   render(){
     return (
-      <div>
-      <div className="landingPage">
-        <h1>EVE - Electric Vehicle Evaluator</h1>
-        <form onSubmit={ this.handleSubmit }>
-          <label for="userState">State: </label>
-          <StateDropDown value={this.state.userState} handleUserStateChange={this.handleUserStateChange} /> <br/>
+      <div className='InputContainerDivs'>
+        <div className="landingPage">
+          <h1>EVE - Electric Vehicle Evaluator</h1>
+          <form onSubmit={ this.handleSubmit }>
+            <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
+    
+            <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
 
-          <label for="maxPrice">Max Price: </label>
-          <input id="maxPrice" type="text" value={ this.state.maxPrice } onChange={ this.handleMaxPriceChange } /> <br/>
-          
-          <label for="bodyType">Vehicle Body Type: </label>
-          <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
-          
-          <button type="submit">Submit</button>
-        </form> 
-      </div>
+            <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
+            
+            <button type="submit">Submit</button>
+          </form> 
+        </div>
           <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
-    </div>
+      </div>
     )
   }
 });
