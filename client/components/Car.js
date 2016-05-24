@@ -49,10 +49,13 @@ const Car = React.createClass({
       backgroundColor: 'pink'
     }
     // Need to refactor to use 1 div
+    console.log('this.state.gasIndex',this.state.gasIndex);
+    console.log('this.state.hybridIndex',this.state.hybridIndex);
+    console.log('this.state.electricIndex',this.state.electricIndex);
     return (
       <div className="cars" style={style}>
         {this.props.gasCars[0] && <div className="gasCar">
-          <div style={{display: 'none'}}>{this.props.getCurrGasCar(this.state.gasIndex)}</div> 
+          <div style={{display: 'none'}}>{this.props.getCurrCar(this.state.gasIndex, null, null)}</div>
           <h3>Gas</h3>
           {this.props.gasCars[this.state.gasIndex].manufacturer}<br/>
           {this.props.gasCars[this.state.gasIndex].model}<br/>
@@ -63,7 +66,8 @@ const Car = React.createClass({
         </div>}
         {this.props.hybridCars[0] && <div className="hybridCar">
           <h3>Plug-In Hybrid</h3>
-          {this.props.hybridCars[this.state.hybridIndex].manufacturer}<br/> 
+          <div style={{display: 'none'}}>{this.props.getCurrCar(null, this.state.hybridIndex, null)}</div>
+          {this.props.hybridCars[this.state.hybridIndex].manufacturer}<br/>
           {this.props.hybridCars[this.state.hybridIndex].model}<br/>
           MSRP: {this.props.hybridCars[this.state.hybridIndex].msrp}<br/>
           MPGMPGE Electric: {this.props.hybridCars[this.state.hybridIndex].mpgmpge.electric}<br/>
@@ -73,7 +77,8 @@ const Car = React.createClass({
         </div>}
         {this.props.electricCars[0] && <div className="electricCar">
           <h3>Electric</h3>
-          {this.props.electricCars[this.state.electricIndex].manufacturer}<br/> 
+          <div style={{display: 'none'}}>{this.props.getCurrCar(null, null, this.state.electricIndex)}</div>
+          {this.props.electricCars[this.state.electricIndex].manufacturer}<br/>
           {this.props.electricCars[this.state.electricIndex].model}<br/>
           MSRP: {this.props.electricCars[this.state.electricIndex].msrp}<br/>
           MPGMPGE Electric: {this.props.electricCars[this.state.electricIndex].mpgmpge.electric}<br/>

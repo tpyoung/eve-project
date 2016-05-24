@@ -5,6 +5,7 @@ import c3 from '../resources/c3';
 
 const RangeGraph = React.createClass({
   renderChart: function(){
+    console.log('this.props',this.props);
     if (this.props.gasVehicle[0] !== undefined &&
       this.props.hybridVehicle[0] !== undefined &&
       this.props.electricVehicle[0] !== undefined) {

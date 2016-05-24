@@ -14,8 +14,16 @@ const ResultPage = React.createClass({
 
     return gasCars;
   },
-  getCurrGasCar: function (id) {
-    return <CostAnalysisGraph currGasCar={this.getGasCars()[id]} />
+  getCurrCar: function (gasId, hybridId, electricId) {
+    console.log(gasId);
+    console.log(hybridId);
+    console.log(electricId);
+    // return (
+    //   <div>
+    //     <CostAnalysisGraph currGasCar={this.getGasCars()[gasId]} />
+    //     <RangeGraph currGasCar={this.getGasCars()[gasId]} currHybridCar={this.getHybridCars()[hybridId]} currElectricCar={this.getElectricCars()[electricId]}/>
+    //   </div>
+    // )
   },
   // handleGraphUpdate: function () {
   //   this.chart.load({
@@ -41,14 +49,13 @@ const ResultPage = React.createClass({
   render: function () {
     return (
       <div className='ResultPage'>
-        <Car gasCars={this.getGasCars()} getCurrGasCar={this.getCurrGasCar} />
-        <Car hybridCars={this.getHybridCars()} />
-        <Car electricCars={this.getElectricCars()} />
+        <Car gasCars={this.getGasCars()} getCurrCar={this.getCurrCar} />
+        <Car hybridCars={this.getHybridCars()} getCurrCar={this.getCurrCar} />
+        <Car electricCars={this.getElectricCars()} getCurrCar={this.getCurrCar} />
         <EpaGHGRatingGraph />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
-        <RangeGraph gasVehicle={this.getGasCars()} hybridVehicle={this.getHybridCars()} electricVehicle={this.getElectricCars()} />
         <CostAnalysisGraph />
       </div>
     )
@@ -59,3 +66,4 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
+        // <RangeGraph />
