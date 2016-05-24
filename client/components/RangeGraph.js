@@ -16,12 +16,13 @@ const RangeGraph = React.createClass({
       var hybridElectricRange = hybridVehicle.range.electric;
       var electricRange = electricVehicle.range.electric;
       var chart = c3.generate({
+        bindto: '#RangeGraph',
         data: {
           columns: [
-              ['Gas', 0],
-              ['HybridGas', 0],
-              ['HybridElectric', 0],
-              ['Electric', 0]
+              ['Gas', gasRange],
+              ['HybridGas', hybridGasRange],
+              ['HybridElectric', hybridElectricRange],
+              ['Electric', electricRange]
           ],
           types: {
               Gas: 'bar',
@@ -52,7 +53,7 @@ const RangeGraph = React.createClass({
   }, //end RENDERCHART
 
   render: function() {
-
+    this.renderChart();
 
         // setTimeout(function () {
         //   chart.load({
@@ -81,7 +82,12 @@ const RangeGraph = React.createClass({
         //     ]
         //   })
         // }, 1200);
-    return (<p>Hello</p>)
+    return (
+      <div className="RangeGraph">
+        <h3>Range Graph</h3>
+        <div id="RangeGraph"></div>
+      </div>
+    )
   }
 });
 
