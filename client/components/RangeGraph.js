@@ -134,7 +134,6 @@ const RangeGraph = React.createClass({
   }, //end RENDERCHART
 
   render: function() {
-    console.log('this.renderChart()',this.renderChart());
     if (this.renderChart() !== null){
       this.renderChart()
       return (
