@@ -1,7 +1,9 @@
 import store from '../store';
+import Redux from 'redux';
 import { connect } from 'react-redux';
 import ResultPage from './ResultPage';
 import StateDropDown from './stateDropDown';
+import PriceSlider from './PriceSlider';
 import BodyTypeDropDown from './BodyTypeDropDown';
 const InputFormCSS = require("./inputForm.scss");
 
@@ -19,9 +21,9 @@ const InputForm = React.createClass({
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
   },
 
-  handleUserStateChange(event) {
+  handleUserStateChange(newValue) {
     this.setState({
-      userState: event.target.value
+      userState: newValue
     });
   },
   handleMaxPriceChange(event) {
@@ -29,10 +31,9 @@ const InputForm = React.createClass({
       maxPrice: event.target.value
     });
   },
-  handleBodyTypeChange(event) {
-    console.log('BODY BODY BODY', event.target.value)
+  handleBodyTypeChange(newValue) {
     this.setState({
-      bodyType: event.target.value
+      bodyType: newValue
     });
   },
 
@@ -42,13 +43,11 @@ const InputForm = React.createClass({
       <div className="landingPage">
         <h1>EVE - Electric Vehicle Evaluator</h1>
         <form onSubmit={ this.handleSubmit }>
-          <label for="userState">State: </label>
-          <StateDropDown value={this.state.userState} handleUserStateChange={this.handleUserStateChange} /> <br/>
-
+          <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
+  
           <label for="maxPrice">Max Price: </label>
-          <input id="maxPrice" type="text" value={ this.state.maxPrice } onChange={ this.handleMaxPriceChange } /> <br/>
-          
-          <label for="bodyType">Vehicle Body Type: </label>
+          <PriceSlider />
+
           <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
           
           <button type="submit">Submit</button>
