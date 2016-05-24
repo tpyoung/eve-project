@@ -3,6 +3,7 @@
 import StateIncentives from './StateIncentives';
 import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
+import RangeGraph from './RangeGraph';
 
 const ResultPage = React.createClass({
   getGasCars : function () {
@@ -42,8 +43,11 @@ const ResultPage = React.createClass({
         <Car gasCars={this.getGasCars()} getCurrGasCar={this.getCurrGasCar} />
         <Car hybridCars={this.getHybridCars()} />
         <Car electricCars={this.getElectricCars()} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
-        <CostAnalysisGraph  />
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
+        <RangeGraph gasVehicle={this.getGasCars()} hybridVehicle={this.getHybridCars()} electricVehicle={this.getElectricCars()} />
+        <CostAnalysisGraph />
       </div>
     )
   }

@@ -96,4 +96,3 @@ const CostAnalysisGraph = React.createClass({
 
         // <button onClick={this.handleClick.bind(this)}>next</button>
 export default CostAnalysisGraph;
-      
