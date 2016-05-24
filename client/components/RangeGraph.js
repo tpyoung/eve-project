@@ -14,6 +14,7 @@ const RangeGraph = React.createClass({
       var gasRange = gasVehicle.range.gas;
       var hybridGasRange = hybridVehicle.range.gas;
       var hybridElectricRange = hybridVehicle.range.electric;
+      console.log('hybridGasRange',hybridGasRange);
       var electricRange = electricVehicle.range.electric;
       var chart = c3.generate({
         bindto: '#RangeGraph',
@@ -26,13 +27,15 @@ const RangeGraph = React.createClass({
           ],
           types: {
               Gas: 'bar',
-              Hybrid: 'bar',
+              HybridGas: 'bar',
+              HybridElectric: 'bar',
               Electric: 'bar'
           },
           colors: {
-            Gas: '#FE944C',
-            Hybrid: '#414F6E',
-            Electric: '#9ED073'
+            Gas: '#4F4F4F',
+            HybridGas: '#4FA0CD',
+            HybridElectric: '#4FA9FF',
+            Electric: '#93CC5D'
           },
           transition: {
             duration: 2000
@@ -40,8 +43,8 @@ const RangeGraph = React.createClass({
         },
         axis: {
           rotated: true,
-          x: {show:false},
-          y: {show:false}
+          x: {show:true},
+          y: {show:true}
         },
         tooltip: {
           format: {
