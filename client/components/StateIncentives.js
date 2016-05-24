@@ -28,14 +28,14 @@ const StateIncentives = React.createClass({
         var gasKeys = Object.keys(grayImgs);
         var images = gasKeys.map(function(key){
           return (
-            <p key={key}>{grayImgs[key]}</p>
+            <div key={key}>{grayImgs[key]}</div>
           )
         });
 
         return (
           <div className="StateIncentives">
             <h1>Gas Vehicle</h1>
-            <p>{images}</p>
+            <div>{images}</div>
           </div>
         )
       }
