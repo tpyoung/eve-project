@@ -2,38 +2,79 @@ import React from 'react';
 import c3 from '../resources/c3';
 
 const CostAnalysisGraph = React.createClass({
+  getInitialState() {
+      return {
+          count: 10
+      };
+  },
   componentWillReceiveProps(nextProps) {
     if (nextProps.currGasCar) {
-      console.log('nextProps: ', nextProps.currGasCar);
-          this.chart.load({
-            columns: [
-              ['Initial Investment', nextProps.currGasCar.msrp/6],
-              ['Maintenance', nextProps.currGasCar.annualFuelCost],
-              ['Energy Costs', nextProps.currGasCar.maintenance]
-            ]
-          })
-        }
+      // this.chart.unload();
+      this.renderChart(nextProps.currGasCar);
+      // console.log('nextProps: ', nextProps.currGasCar);
+      //     this.chart.load({
+      //       bindto: 'costAnalysisGraph',
+      //       columns: [
+      //         ['Initial Investment', nextProps.currGasCar.msrp/6],
+      //         ['Maintenance', nextProps.currGasCar.annualFuelCost],
+      //         ['Energy Costs', nextProps.currGasCar.maintenance]
+      //       ]
+      //       // columns: [
+      //       //   ['Initial Investment', this.state.count],
+      //       //   ['Maintenance', this.state.count+Math.random()*10+1],
+      //       //   ['Energy Costs', this.state.count+Math.random()*10+1]
+      //       // ]
+      //     })
+      //     this.setState({count: this.state.count+10})
+          // console.log('this.state.count: ', this.state.count);
+      }
+        
   },
-  // componentDidMount() {
-  //   console.log('this.props.currGasCar: ', this.props.currGasCar);  
+  // handleClick(event) {
+  //   event.preventDefault();
+  //   if (this.chart) {
+  //     console.log('helloooooo');
+  //     this.chart.load({
+  //             bindto: 'costAnalysisGraph',
+  //             columns: [
+  //               ['Initial Investment', this.state.count],
+  //               ['Maintenance', this.state.count+Math.random()*10+1],
+  //               ['Energy Costs', this.state.count+Math.random()*10+1]
+  //             ]
+  //           })
+  //   }
+
   // },
-  renderChart: function () {
+  // componentDidMount() {
+  //   console.log('this.props.currGasCar: ', this.props.currGasCar);
+  //   if (this.props.currGasCar) {
+  //     this.renderChart();
+  //   } 
+  // },
+  renderChart(currGasCar) {
     // var initialInvestment = this.props.currGasCar.msrp / 6;
     // var annualFuelCost = this.props.currGasCar.annualFuelCost;
     // var maintenanceCost = this.props.currGasCar.maintenance;
-
+    console.log('generating graph');
+    console.log('currGasCar: ', currGasCar);
+    // console.log('this.props.currGasCar: ', this.props.currGasCar);
       this.chart = c3.generate({
-          bindto: '#CostAnalysisGraph',
+          bindto: '#costAnalysisGraph',
           data: {
               columns: [
-                  ['Initial Investment', this.props.currGasCar.msrp/6],
-                  ['Maintenance', this.props.currGasCar.annualFuelCost],
-                  ['Energy Costs', this.props.currGasCar.maintenance]
+                  ['Initial Investment', currGasCar.msrp/6],
+                  ['Maintenance', currGasCar.annualFuelCost],
+                  ['Energy Costs', currGasCar.maintenance]
               ],
+              // columns: [
+              //     ['Initial Investment', 346567],
+              //     ['Maintenance', 34234],
+              //     ['Energy Costs', 767]
+              // ],
               type : 'donut',
-              onclick: function (d, i) { console.log("onclick", d, i); },
-              onmouseover: function (d, i) { console.log("onmouseover", d, i); },
-              onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+              onclick: function (d, i) {  },
+              onmouseover: function (d, i) {  },
+              onmouseout: function (d, i) {  }
           },
           donut: {
               title: "Annual Fuel Cost"
@@ -42,15 +83,17 @@ const CostAnalysisGraph = React.createClass({
 
   },
   render() {
-    {this.props.currGasCar && this.renderChart()}
+    console.log('in render');
+    this.props.currGasCar ? this.renderChart(this.props.currGasCar) : null
     return (
       <div className="CostAnalysisGraph">
         <h3>ohhai cost analysis</h3>
-        <div id="CostAnalysisGraph"></div>
+        <div id="costAnalysisGraph"></div>
       </div>
     )
   }
 })
 
+        // <button onClick={this.handleClick.bind(this)}>next</button>
 export default CostAnalysisGraph;
       
