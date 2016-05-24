@@ -43,7 +43,6 @@ const ResultPage = React.createClass({
     )
   }
 })
-
 ResultPage.defaultProps = {
   stateInfo: [],
 };

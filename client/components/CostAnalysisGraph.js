@@ -22,7 +22,7 @@ const CostAnalysisGraph = React.createClass({
     if (!this.chart) {
       
       this.chart = c3.generate({
-          bindto: '#costAnalysisGraph',
+          bindto: '#gasCostAnalysis',
           data: {
               columns: [
                   ['Initial Investment', currGasCar.msrp/6],
@@ -46,7 +46,7 @@ const CostAnalysisGraph = React.createClass({
     return (
       <div className="CostAnalysisGraph">
         <h3>ohhai cost analysis</h3>
-        <div id="costAnalysisGraph"></div>
+        <div id="gasCostAnalysis"></div>
       </div>
     )
   }

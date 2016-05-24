@@ -48,11 +48,12 @@ const Car = React.createClass({
     const style = {
       backgroundColor: 'pink'
     }
+  console.log('this.props.gasCars[0]: ', this.props.gasCars[0]); 
     // Need to refactor to use 1 div
     return (
       <div className="cars" style={style}>
         {this.props.gasCars[0] && <div className="gasCar">
-          <div style={{display: 'none'}}>{this.props.getCurrGasCar(this.state.gasIndex)}</div> 
+         <div style={{display: 'none'}}>{this.props.getCurrGasCar(this.state.gasIndex)}</div>  
           <h3>Gas</h3>
           {this.props.gasCars[this.state.gasIndex].manufacturer}<br/>
           {this.props.gasCars[this.state.gasIndex].model}<br/>
