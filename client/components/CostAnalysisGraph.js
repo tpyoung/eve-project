@@ -11,10 +11,15 @@ const CostAnalysisGraph = React.createClass({
           bindto: '#CostAnalysisGraph',
           data: {
               columns: [
-                  ['Initial Investment', 21445],
+                  ['InitialInvestment', 21445],
                   ['Maintenance', 816.6],
-                  ['Energy Costs', 2000],
+                  ['EnergyCosts', 2000],
               ],
+            colors: {
+              InitialInvestment: '#4F4F4F',
+              Maintenance: '#4FA0CD',
+              EnergyCosts: '#93CC5D'
+            },
               type : 'donut',
               onclick: function (d, i) { console.log("onclick", d, i); },
               onmouseover: function (d, i) { console.log("onmouseover", d, i); },
@@ -37,4 +42,3 @@ const CostAnalysisGraph = React.createClass({
 })
 
 export default CostAnalysisGraph;
-      
