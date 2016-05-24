@@ -20,7 +20,6 @@ const CostAnalysisGraph = React.createClass({
   },
   renderChart(currGasCar) {
     if (!this.chart) {
-      
       this.chart = c3.generate({
           bindto: '#gasCostAnalysis',
           data: {

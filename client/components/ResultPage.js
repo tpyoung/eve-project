@@ -53,8 +53,6 @@ const ResultPage = React.createClass({
           this.setState({electricIndex: this.state.electricIndex+1})
         }
         break;
-      // default:
-      //   this.setState({gasIndex: this.state.gasIndex})
     }
   },
   getHybridCars: function () {
@@ -79,7 +77,7 @@ const ResultPage = React.createClass({
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
         <RangeGraph gasVehicle={this.getGasCars()} hybridVehicle={this.getHybridCars()} electricVehicle={this.getElectricCars()} />
-        <CostAnalysisGraph />
+        <CostAnalysisGraph vehicleInfo/>
       </div>
     )
   }
