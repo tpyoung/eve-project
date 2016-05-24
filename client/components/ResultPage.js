@@ -21,7 +21,6 @@ const ResultPage = React.createClass({
     return gasCars;
   },
   getCurrCar: function (directionPowerType) {
-    console.log('directionPowerType: ', directionPowerType);
     switch (directionPowerType) {
       case 'previous gas':
         if (this.state.gasIndex-1 >= 0) {
@@ -73,11 +72,12 @@ const ResultPage = React.createClass({
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+        <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
         <RangeGraph gasVehicle={this.getGasCars()} hybridVehicle={this.getHybridCars()} electricVehicle={this.getElectricCars()} />
-        <CostAnalysisGraph />
       </div>
     )
   }
