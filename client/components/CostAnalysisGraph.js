@@ -10,23 +10,26 @@ const CostAnalysisGraph = React.createClass({
   componentWillReceiveProps(nextProps) {
     if (nextProps.currGasCar) {
       // this.chart.unload();
-      this.renderChart(nextProps.currGasCar);
-      // console.log('nextProps: ', nextProps.currGasCar);
-      //     this.chart.load({
-      //       bindto: 'costAnalysisGraph',
-      //       columns: [
-      //         ['Initial Investment', nextProps.currGasCar.msrp/6],
-      //         ['Maintenance', nextProps.currGasCar.annualFuelCost],
-      //         ['Energy Costs', nextProps.currGasCar.maintenance]
-      //       ]
-      //       // columns: [
-      //       //   ['Initial Investment', this.state.count],
-      //       //   ['Maintenance', this.state.count+Math.random()*10+1],
-      //       //   ['Energy Costs', this.state.count+Math.random()*10+1]
-      //       // ]
-      //     })
+      // this.renderChart(nextProps.currGasCar);
+      console.log('nextProps: ', nextProps.currGasCar);
+      console.log('this.chart: ', this.chart);
+          this.chart.load({
+            columns: [
+              ['Initial Investment', nextProps.currGasCar.msrp/6],
+              ['Maintenance', nextProps.currGasCar.annualFuelCost],
+              ['Energy Costs', nextProps.currGasCar.maintenance]
+            ]
+            // columns: [
+            //   ['Initial Investment', this.state.count],
+            //   ['Maintenance', this.state.count+Math.random()*10+1],
+            //   ['Energy Costs', this.state.count+Math.random()*10+1]
+            // ]
+          })
       //     this.setState({count: this.state.count+10})
           // console.log('this.state.count: ', this.state.count);
+      }else {
+
+      console.log('sdlkfjsdlkfj');
       }
         
   },
@@ -58,6 +61,8 @@ const CostAnalysisGraph = React.createClass({
     console.log('generating graph');
     console.log('currGasCar: ', currGasCar);
     // console.log('this.props.currGasCar: ', this.props.currGasCar);
+    if (!this.chart) {
+      
       this.chart = c3.generate({
           bindto: '#costAnalysisGraph',
           data: {
@@ -80,6 +85,7 @@ const CostAnalysisGraph = React.createClass({
               title: "Annual Fuel Cost"
           }
       });
+    }
 
   },
   render() {
