@@ -26,14 +26,12 @@ const InputForm = React.createClass({
     this.setState({
       userState: newValue
     });
-    console.log(this.state.userState);
   },
   handleMaxPriceChange(newPrice) {
     newPrice = newPrice * 1000
     if (newPrice >= 100000) {
       newPrice = 900000;
     }
-    console.log(newPrice)
     this.setState({
       maxPrice: newPrice
     });
@@ -44,7 +42,6 @@ const InputForm = React.createClass({
     });
   },
   render(){
-    console.log(this.props.stateInfo)
     return (
       <div className='InputContainerDivs'>
         <div id="landingPage">

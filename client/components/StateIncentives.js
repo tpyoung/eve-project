@@ -1,12 +1,10 @@
-
-// {(this.props.vehicleInfo.power==='Gas') && 
-//         {(this.props.vehicleInfo.power==='Plug-In Hybrid') && 
-//         {(this.props.vehicleInfo.power==='Electric') && 
 'use strict';
 import React from 'react';
 
 const StateIncentives = React.createClass({
   render: function(){
+    console.log('this.props.stateInfo',this.props.stateInfo);
+    console.log('this.props.vehicleInfo',this.props.vehicleInfo);
     const iconArray = [
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
@@ -28,7 +26,7 @@ const StateIncentives = React.createClass({
     //GAS VEHICLES
     if (this.props.vehicleInfo !== undefined &&
       this.props.vehicleInfo.power === "Gas" &&
-      this.props.stateInfo[0] !== undefined) {
+      this.props.stateInfo !== undefined) {
       var count = 0;
       iconsNode = iconArray.map((icon) => {
         count++;
@@ -41,11 +39,12 @@ const StateIncentives = React.createClass({
     //HYBRID VEHICLES
     else if (this.props.vehicleInfo !== undefined &&
       this.props.vehicleInfo.power === "Plug-In Hybrid" &&
-      this.props.stateInfo[0] !== undefined) {
+      this.props.stateInfo !== undefined) {
+      console.log('Im a hybrid vehicle!');
       var trueArr = [];
       var falseArr = [];
-      for (var key in this.props.stateInfo[0].incentivesHybrid) {
-        if (this.props.stateInfo[0].incentivesHybrid[key] === "true") {
+      for (var key in this.props.stateInfo.incentivesHybrid) {
+        if (this.props.stateInfo.incentivesHybrid[key] === "true") {
           trueArr.push(key)
         }
         else {
@@ -64,11 +63,12 @@ const StateIncentives = React.createClass({
     //ELECTRIC VEHICLES
     else if (this.props.vehicleInfo !== undefined &&
       this.props.vehicleInfo.power === "Electric" &&
-      this.props.stateInfo[0] !== undefined) {
+      this.props.stateInfo !== undefined) {
+      console.log('Im an electric vehicle!');
       var trueArr = [];
       var falseArr = [];
-      for (var key in this.props.stateInfo[0].incentivesElectric) {
-        if (this.props.stateInfo[0].incentivesElectric[key] === "true") {
+      for (var key in this.props.stateInfo.incentivesElectric) {
+        if (this.props.stateInfo.incentivesElectric[key] === "true") {
           trueArr.push(key)
         }
         else {
