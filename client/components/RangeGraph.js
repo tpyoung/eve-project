@@ -8,7 +8,6 @@ const RangeGraph = React.createClass({
     if (this.props.gasCar === undefined) {
       return null;
     }
-    console.log('this.props',this.props);
     if (this.props.gasCar.range !== undefined &&
       this.props.hybridCar.range !== undefined &&
       this.props.electricCar.range !== undefined) {

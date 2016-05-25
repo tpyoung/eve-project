@@ -16,7 +16,7 @@ const InputForm = React.createClass({
     };
   },
   handleSubmit(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     this.props.getStateInfo(this.state.userState);
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
   },
@@ -43,19 +43,20 @@ const InputForm = React.createClass({
   },
 
   render(){
+    console.log(this.props.stateInfo)
     return (
       <div className='InputContainerDivs'>
         <div className="landingPage">
           <h1>EVE - Electric Vehicle Evaluator</h1>
           <form onSubmit={ this.handleSubmit }>
             <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
-    
+
             <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
 
             <BodyTypeDropDown value={ this.state.bodyType } handleBodyTypeChange={ this.handleBodyTypeChange } /> <br/>
-            
+
             <button type="submit">Submit</button>
-          </form> 
+          </form>
         </div>
           <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
