@@ -6,8 +6,10 @@ import c3 from '../resources/c3';
 const RangeGraph = React.createClass({
   renderChart: function(){
     if (this.props.gasCar === undefined) {
+      console.log('RANGEGRAPH this.props.gasCar is UNDEFINED');
       return null;
     }
+    console.log('RANGEGRAPH this.props.gasCar is NOT undefined')
     if (this.props.gasCar.range !== undefined &&
       this.props.hybridCar.range !== undefined &&
       this.props.electricCar.range !== undefined) {
@@ -133,6 +135,7 @@ const RangeGraph = React.createClass({
   }, //end RENDERCHART
 
   render: function() {
+    console.log("renderChart()", this.renderChart())
     if (this.renderChart() !== null){
       this.renderChart()
       return (
