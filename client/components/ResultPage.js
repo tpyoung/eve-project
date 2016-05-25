@@ -68,21 +68,21 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
-    
+
     return (
       <div className='ResultPage'>
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
         <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
         <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )
@@ -92,5 +92,9 @@ ResultPage.defaultProps = {
   stateInfo: [],
 };
 
+<<<<<<< HEAD
 export default ResultPage;
 
+=======
+export default ResultPage;
+>>>>>>> connect-state-incentives
