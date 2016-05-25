@@ -1,6 +1,6 @@
 'use strict'
 
-import StateIncentives from './StateIncentives';
+// import StateIncentives from './StateIncentives';
 import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
@@ -68,15 +68,11 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
-
     return (
       <div className='ResultPage'>
-        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
+        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
         <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
@@ -92,9 +88,8 @@ ResultPage.defaultProps = {
   stateInfo: [],
 };
 
-<<<<<<< HEAD
 export default ResultPage;
 
-=======
-export default ResultPage;
->>>>>>> connect-state-incentives
+        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
+        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
+        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
