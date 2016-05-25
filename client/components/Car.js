@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Car.scss';
 import StateIncentives from './StateIncentives';
+// import carPic from '../resources/carPhotos/BMWi3_El.png';
 
 const Car = React.createClass({
   nextGasCar: function () {
@@ -44,10 +45,12 @@ const Car = React.createClass({
           break;
       }
     }
+    console.log('this.props.vehicleInfo.photoLink: ', this.props.vehicleInfo.photoLink);
     return (
       <div className="carCards">
         {this.props.vehicleInfo && <div className="car">
           <h3>{header}</h3>
+          <img src={require('../resources/carPhotos/BMWi3_El.png')} />
           <div>Model</div> 
           {`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}<br/>
           MSRP: {this.props.vehicleInfo.msrp}<br/>
@@ -56,7 +59,7 @@ const Car = React.createClass({
             <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}<br/>
             MPG: {this.props.vehicleInfo.mpgmpge.gas}</div>}
           {(this.props.vehicleInfo.power==='Electric') && <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}</div>}
-         <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+          <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
         </div>}
         <button onClick={onClickPrev}>left</button>
         <button onClick={onClickNext}>right</button>

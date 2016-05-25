@@ -72,9 +72,9 @@ const ResultPage = React.createClass({
       <div className='resultPage'>
         {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
           <div className="carContainer">
-            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
-            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
-            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           </div>
         }
         <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />

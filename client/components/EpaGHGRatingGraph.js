@@ -29,7 +29,7 @@ const EpaGHGRatingGraph = React.createClass({
           break;
       }
 
-      console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
+      // console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
       this.chart = c3.generate({
         bindto: `#${chartId}`,
           data: {

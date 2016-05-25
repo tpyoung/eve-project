@@ -25,7 +25,7 @@
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Audi",
       "hybridComparableModel": "A3 E-Tron",
-      "photoLink": "../client/resources/carPhotos/BMWi3_El.png"
+      "photoLink": "../resources/carPhotos/BMWi3_El.png"
     },
     {
       "country": "USA",
@@ -53,7 +53,7 @@
       "gasComparableModel": "Spark",
       "hybridComparableManufacturer": "Ford",
       "hybridComparableModel": "C-Max Energi",
-      "photoLink": "../client/resources/carPhotos/ChevySpark_El.png"
+      "photoLink": "../resources/carPhotos/ChevySpark_El.png"
     },
     {
       "country": "European",
@@ -81,7 +81,7 @@
       "gasComparableModel": "500",
       "hybridComparableManufacturer": "Chevrolet",
       "hybridComparableModel": "Volt",
-      "photoLink": "../client/resources/carPhotos/Fiat500e_El.png"
+      "photoLink": "../resources/carPhotos/Fiat500e_El.png"
     },
     {
       "country": "USA",
@@ -109,7 +109,7 @@
       "gasComparableModel": "Focus",
       "hybridComparableManufacturer": "Chevrolet",
       "hybridComparableModel": "Volt",
-      "photoLink": "../client/resources/carPhotos/FordFocus_El.png"
+      "photoLink": "../resources/carPhotos/FordFocus_El.png"
     },
     {
       "country": "Asian",
@@ -137,7 +137,7 @@
       "gasComparableModel": "Soul",
       "hybridComparableManufacturer": "Toyota",
       "hybridComparableModel": "Prius",
-      "photoLink": "../client/resources/carPhotos/KiaSoul_El.png"
+      "photoLink": "../resources/carPhotos/KiaSoul_El.png"
     },
     {
       "country": "European",
@@ -165,7 +165,7 @@
       "gasComparableModel": "A3",
       "hybridComparableManufacturer": "Ford",
       "hybridComparableModel": "C-Max Energi",
-      "photoLink": "../client/resources/carPhotos/MercedesB250e_El.png"
+      "photoLink": "../resources/carPhotos/MercedesB250e_El.png"
     },
     {
       "country": "Asian",
@@ -193,7 +193,7 @@
       "gasComparableModel": "Mirage",
       "hybridComparableManufacturer": "Chevrolet",
       "hybridComparableModel": "Volt",
-      "photoLink": "../client/resources/carPhotos/Mitsubishii-miEV_El.png"
+      "photoLink": "../resources/carPhotos/Mitsubishii-miEV_El.png"
     },
     {
       "country": "Asian",
@@ -221,7 +221,7 @@
       "gasComparableModel": "Versa S",
       "hybridComparableManufacturer": "Ford",
       "hybridComparableModel": "Fusion Energi",
-      "photoLink": "../client/resources/carPhotos/NissanLeaf_El.png"
+      "photoLink": "../resources/carPhotos/NissanLeaf_El.png"
     },
     {
       "country": "European",
@@ -249,7 +249,7 @@
       "gasComparableModel": "forTwo",
       "hybridComparableManufacturer": "Ford",
       "hybridComparableModel": "C-Max Energi",
-      "photoLink": "../client/resources/carPhotos/SmartForTwo_El.png"
+      "photoLink": "../resources/carPhotos/SmartForTwo_El.png"
     },
     {
       "country": "USA",
@@ -277,7 +277,7 @@
       "gasComparableModel": "528i",
       "hybridComparableManufacturer": "BMW",
       "hybridComparableModel": "i8",
-      "photoLink": "../client/resources/carPhotos/TeslaModelS_El.png"
+      "photoLink": "../resources/carPhotos/TeslaModelS_El.png"
     },
     {
       "country": "USA",
@@ -305,7 +305,7 @@
       "gasComparableModel": "QX60",
       "hybridComparableManufacturer": "Volvo",
       "hybridComparableModel": "XC90 T8",
-      "photoLink": "../client/resources/carPhotos/TeslaModelS_El.png"
+      "photoLink": "../resources/carPhotos/TeslaModelS_El.png"
     },
     {
       "country": "European",
@@ -333,7 +333,7 @@
       "gasComparableModel": "Golf",
       "hybridComparableManufacturer": "Hyundai",
       "hybridComparableModel": "Sonata",
-      "photoLink": "../client/resources/carPhotos/VolkswagenGolf_El.png"
+      "photoLink": "../resources/carPhotos/VolkswagenGolf_El.png"
     },
     {
       "country": "European",
@@ -359,7 +359,7 @@
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Audi",
       "gasComparableModel": "A3",
-      "photoLink": "../client/resources/carPhotos/AudiA3Etron_El.png"
+      "photoLink": "../resources/carPhotos/AudiA3Etron_El.png"
     },
     {
       "country": "European",
@@ -385,7 +385,7 @@
       "fuelEconomyGHGRating": 8,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
-      "photoLink": "../client/resources/carPhotos/BMWi8_Hy.png"
+      "photoLink": "../resources/carPhotos/BMWi8_Hy.png"
     },
     {
       "country": "European",
@@ -411,7 +411,7 @@
       "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60",
-      "photoLink": "../client/resources/carPhotos/BMWX5_El.png"
+      "photoLink": "../resources/carPhotos/BMWX5_El.png"
 
     },
     {
@@ -438,7 +438,7 @@
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
-      "photoLink": "../client/resources/carPhotos/CadillacELR_Hy.png"
+      "photoLink": "../resources/carPhotos/CadillacELR_Hy.png"
 
     },
     {
@@ -465,7 +465,7 @@
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
-      "photoLink": "../client/resources/carPhotos/ChevyVolt_Hy.png"
+      "photoLink": "../resources/carPhotos/ChevyVolt_Hy.png"
 
     },
     {
@@ -492,7 +492,7 @@
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
-      "photoLink": "../client/resources/carPhotos/FordEneri_Hy.png"
+      "photoLink": "../resources/carPhotos/FordEneri_Hy.png"
 
     },
     {
@@ -519,7 +519,7 @@
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
       "gasComparableModel": "Focus",
-      "photoLink": "../client/resources/carPhotos/FordFusion_Hy.png"
+      "photoLink": "../resources/carPhotos/FordFusion_Hy.png"
     },
     {
       "country": "Asian",
@@ -545,7 +545,7 @@
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Hyundai",
       "gasComparableModel": "Sonata",
-      "photoLink": "../client/resources/carPhotos/HundaiSonata_Hy.png"
+      "photoLink": "../resources/carPhotos/HundaiSonata_Hy.png"
     },
     {
       "country": "European",
@@ -571,7 +571,7 @@
       "fuelEconomyGHGRating": 6,
       "gasComparableManufacturer": "Porsche",
       "gasComparableModel": "Cayenne",
-      "photoLink": "../client/resources/carPhotos/PorcheCayenne_Hy.png"
+      "photoLink": "../resources/carPhotos/PorcheCayenne_Hy.png"
     },
     {
       "country": "European",
@@ -597,7 +597,7 @@
       "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
-      "photoLink": "../client/resources/carPhotos/PorschePanamera_Hy.png"
+      "photoLink": "../resources/carPhotos/PorschePanamera_Hy.png"
     },
      {
       "country": "Asian",
@@ -623,7 +623,7 @@
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Kia",
       "gasComparableModel": "Soul",
-      "photoLink": "../client/resources/carPhotos/ToyotaPrius_Hy.png"
+      "photoLink": "../resources/carPhotos/ToyotaPrius_Hy.png"
     },
     {
       "country": "European",
@@ -649,7 +649,7 @@
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Infiniti",
       "gasComparableModel": "QX60",
-      "photoLink": "../client/resources/carPhotos/VolvoXC90_Hy.png"
+      "photoLink": "../resources/carPhotos/VolvoXC90_Hy.png"
     },
     {
       "country": "European",
@@ -675,7 +675,7 @@
       "fuelEconomyGHGRating": 8,
       "gasComparableManufacturer": "BMW",
       "gasComparableModel": "528i",
-      "photoLink": "../client/resources/carPhotos/Porche918Spyder_Hy.png"
+      "photoLink": "../resources/carPhotos/Porche918Spyder_Hy.png"
     },
     {
       "country": "European",
@@ -699,7 +699,7 @@
       "maintenance": 1252.80,
       "annualFuelCost": 1650,
       "fuelEconomyGHGRating": 6,
-      "photoLink": "../client/resources/carPhotos/AudiA3_Ga.png"
+      "photoLink": "../resources/carPhotos/AudiA3_Ga.png"
     },
     {
       "country": "USA",
@@ -723,7 +723,7 @@
       "maintenance": 842.80,
       "annualFuelCost": 1300,
       "fuelEconomyGHGRating": 8,
-      "photoLink": "../client/resources/carPhotos/ChevySpark_Hatch_El.png"
+      "photoLink": "../resources/carPhotos/ChevySpark_Hatch_El.png"
     },
     {
       "country": "European",
@@ -747,7 +747,7 @@
       "maintenance": 816.60,
       "annualFuelCost": 2000,
       "fuelEconomyGHGRating": 6,
-      "photoLink": "../client/resources/carPhotos/Fiat500_Ga.png"
+      "photoLink": "../resources/carPhotos/Fiat500_Ga.png"
     },
     {
       "country": "USA",
@@ -771,7 +771,7 @@
       "maintenance": 949.20,
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
-      "photoLink": "../client/resources/carPhotos/FordFocus_Ga.png"
+      "photoLink": "../resources/carPhotos/FordFocus_Ga.png"
     },
     {
       "country": "Asian",
@@ -795,7 +795,7 @@
       "maintenance": 873.80,
       "annualFuelCost": 1750,
       "fuelEconomyGHGRating": 6,
-      "photoLink": "../client/resources/carPhotos/KiaSoul_Hatch_Ga.png"
+      "photoLink": "../resources/carPhotos/KiaSoul_Hatch_Ga.png"
     },
     {
       "country": "Asian",
@@ -819,7 +819,7 @@
       "maintenance": 907.20,
       "annualFuelCost": 900,
       "fuelEconomyGHGRating": 9,
-      "photoLink": "../client/resources/carPhotos/MitsubishiMirage_Ga.png"
+      "photoLink": "../resources/carPhotos/MitsubishiMirage_Ga.png"
     },
     {
       "country": "Asian",
@@ -843,7 +843,7 @@
       "maintenance": 726.40,
       "annualFuelCost": 1500,
       "fuelEconomyGHGRating": 7,
-      "photoLink": "../client/resources/carPhotos/NissanVersa_Ga.png"
+      "photoLink": "../resources/carPhotos/NissanVersa_Ga.png"
     },
     {
       "country": "European",
@@ -867,7 +867,7 @@
       "maintenance": 1080.40,
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
-      "photoLink": "../client/resources/carPhotos/SmartForTwo_Ga.png"
+      "photoLink": "../resources/carPhotos/SmartForTwo_Ga.png"
     },
     {
       "country": "European",
@@ -891,7 +891,7 @@
       "maintenance": 1668.40,
       "annualFuelCost": 1850,
       "fuelEconomyGHGRating": 6,
-      "photoLink": "../client/resources/carPhotos/BMW528i_Ga.png"
+      "photoLink": "../resources/carPhotos/BMW528i_Ga.png"
     },
     {
       "country": "Asian",
@@ -915,7 +915,7 @@
       "maintenance": 1411.60,
       "annualFuelCost": 2500,
       "fuelEconomyGHGRating": 5,
-      "photoLink": "../client/resources/carPhotos/InfinitiQX60_Ga.png"
+      "photoLink": "../resources/carPhotos/InfinitiQX60_Ga.png"
 
     },
     {
@@ -940,7 +940,7 @@
       "maintenance": 1083.80,
       "annualFuelCost": 1550,
       "fuelEconomyGHGRating": 7,
-      "photoLink": "../client/resources/carPhotos/VolkswagenGolf_Ga.png"
+      "photoLink": "../resources/carPhotos/VolkswagenGolf_Ga.png"
     },
     {
       "country": "Asian",
@@ -964,7 +964,7 @@
       "maintenance": 851.20,
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
-      "photoLink": "../client/resources/carPhotos/HundaiSonata_Ga.png"
+      "photoLink": "../resources/carPhotos/HundaiSonata_Ga.png"
     },
    {
     "country": "European",
@@ -988,7 +988,7 @@
     "maintenance": 1860.40,
     "annualFuelCost": 2350,
     "fuelEconomyGHGRating": 5,
-    "photoLink": "../client/resources/carPhotos/PorscheCayenne_Ga.png"
+    "photoLink": "../resources/carPhotos/PorscheCayenne_Ga.png"
   }
 ]
 

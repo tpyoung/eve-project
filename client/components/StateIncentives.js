@@ -3,8 +3,8 @@ import React from 'react';
 
 const StateIncentives = React.createClass({
   render: function(){
-    console.log('this.props.stateInfo',this.props.stateInfo);
-    console.log('this.props.vehicleInfo',this.props.vehicleInfo);
+    // console.log('this.props.stateInfo',this.props.stateInfo);
+    // console.log('this.props.vehicleInfo',this.props.vehicleInfo);
     const iconArray = [
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
@@ -40,7 +40,7 @@ const StateIncentives = React.createClass({
     else if (this.props.vehicleInfo !== undefined &&
       this.props.vehicleInfo.power === "Plug-In Hybrid" &&
       this.props.stateInfo !== undefined) {
-      console.log('Im a hybrid vehicle!');
+      // console.log('Im a hybrid vehicle!');
       var trueArr = [];
       var falseArr = [];
       for (var key in this.props.stateInfo.incentivesHybrid) {
@@ -64,7 +64,7 @@ const StateIncentives = React.createClass({
     else if (this.props.vehicleInfo !== undefined &&
       this.props.vehicleInfo.power === "Electric" &&
       this.props.stateInfo !== undefined) {
-      console.log('Im an electric vehicle!');
+      // console.log('Im an electric vehicle!');
       var trueArr = [];
       var falseArr = [];
       for (var key in this.props.stateInfo.incentivesElectric) {
