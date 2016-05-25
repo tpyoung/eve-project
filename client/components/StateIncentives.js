@@ -3,8 +3,8 @@ import React from 'react';
 
 const StateIncentives = React.createClass({
   render: function(){
-    // console.log('this.props.stateinfo[0]',this.props.stateinfo);
-    // console.log('this.props.vehicleInfo',this.props.vehicleInfo);
+    console.log('this.props.stateInfo',this.props.stateInfo);
+    console.log('this.props.vehicleInfo',this.props.vehicleInfo);
     const iconArray = [
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
       "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png",
