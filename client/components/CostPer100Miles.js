@@ -4,37 +4,48 @@ import React from 'react';
 
 const costPer100Miles = React.createClass({
   render() {
-    console.log('this.props',this.props);
-    return <h1>HALLOOOOO!</h1>
+    if (this.props.stateInfo === undefined ||
+      this.props.vehicleInfo === undefined){
+      return null;
+    }
+    var electricPer100;
+    var gasPer100;
 
-    // var electricPer100 = this.props.energyPer100Miles.electric * this.props.state.electricCost;
-    // var gasPer100 = this.props.energyPer100Miles.gas * this.props.state.gasCost;
+    //Gas Vehicle
+    if (this.props.vehicleInfo.energyPer100Miles.electric === null &&
+      this.props.stateInfo !== undefined) {
+      gasPer100 = (this.props.vehicleInfo.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      return (
+        <div className='costPer100Miles'>
+          <h3>Cost Per 100 Miles</h3>
+          <p>Gas: ${ gasPer100 }</p>
+        </div>
+      )
+    }
 
-    // if (electricPer100 !== null && gasPer100 !== null) {
-    //   return (
-    //     <div className='costPer100Miles'>
-    //       <p>Cost Per 100 Miles</p>
-    //       <p>Electric: { electricPer100 }</p>
-    //       <p>Gas: { gasPer100 }</p>
-    //     </div>
-    //   )
-    // }
-    // else if (gasPer100 !== null) {
-    //   return (
-    //     <div className='costPer100Miles'>
-    //       <p>Cost Per 100 Miles</p>
-    //       <p>Gas: { gasPer100 }</p>
-    //     </div>
-    //   )
-    // }
-    // else if (electricPer100 !== null) {
-    //   return (
-    //     <div className='costPer100Miles'>
-    //       <p>Cost Per 100 Miles</p>
-    //       <p>Electric: { electricPer100 }</p>
-    //     </div>
-    //   )
-    // }
+    //Electric Vehicle
+    else if (this.props.vehicleInfo.energyPer100Miles.gas === null &&
+      this.props.stateInfo !== undefined) {
+      electricPer100 = (this.props.vehicleInfo.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      return (
+        <div className='costPer100Miles'>
+          <h3>Cost Per 100 Miles</h3>
+          <p>Electricity: ${electricPer100 }</p>
+        </div>
+      )
+    }
+    else {
+      electricPer100 = (this.props.vehicleInfo.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      gasPer100 = (this.props.vehicleInfo.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      return (
+        <div className='costPer100Miles'>
+          <h3>Cost Per 100 Miles</h3>
+          <p>Electricity: ${electricPer100 } per 100 miles (no gas)</p>
+          <p>Gas: ${gasPer100} per 100 miles (no electric)</p>
+          <p>**Hybrid vehicles use a combination of gas and electricity, these values are for theoretical comparisons only.</p>
+        </div>
+      )
+    }
   }
 });
 
