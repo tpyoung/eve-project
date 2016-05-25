@@ -5,7 +5,7 @@ import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
-const resultpageCSS = require('./ResultPage.scss')
+import styles from './ResultPage.scss';
 
 const ResultPage = React.createClass({
   getInitialState() {
@@ -72,18 +72,27 @@ const ResultPage = React.createClass({
     
     return (
       <div className='ResultPage'>
-        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
-        <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
-        <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
-        <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
-        <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
-        <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
-        <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
+        <div id="carContainer">
+          <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
+          <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
+          <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+        </div>
+        <div id="epaContainer">
+          <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
+          <EpaGHGRatingGraph id='epaGasIndex' vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
+          <EpaGHGRatingGraph id='epaHybridIndex' vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
+          <EpaGHGRatingGraph id='epaElectricIndex' vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+        </div>
+        <div id="costContainer">
+          <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+          <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
+          <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+        </div>
+        <div id="incentiveContainer">
+          <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
+          <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
+          <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
+        </div>
         <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )
