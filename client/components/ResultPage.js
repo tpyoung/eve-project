@@ -71,7 +71,7 @@ const ResultPage = React.createClass({
   render: function () {
     return (
       <div className='ResultPage'>
-        <CostPer100Miles vehicleInfo={this.getGasCars()[this.state.gasIndex]} stateInfo={this.props.stateInfo} />
+      <CostPer100Miles vehicleInfo={this.getGasCars()[this.state.gasIndex]} stateInfo={this.props.stateInfo[0]} />
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
