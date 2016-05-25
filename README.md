@@ -1,1 +1,3 @@
 #EVE - Electric Vehicle Evaluator
+
+###Electric Vehicle Evaluator (EVE) is an assistive selection tool for those looking at the benefits of purchasing an electric car. Through cross referencing various charging, distance, and emissions data within our databases, EVE provides users a more thorough understanding of often overlooked details of vehicle differences. One of the main focuses of this project is the initial and projected costs of owning a vehicle, regardless of fuel type. With a wide selection of gas, hybrid, and electric vehicles tailored to their requests, EVE sets a precedent for future car comparisons.
