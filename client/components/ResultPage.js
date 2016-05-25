@@ -1,6 +1,5 @@
 'use strict'
 
-// import StateIncentives from './StateIncentives';
 import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
@@ -89,7 +88,3 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
-
-        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
-        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
-        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
