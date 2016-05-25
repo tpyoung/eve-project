@@ -4,6 +4,7 @@ import StateIncentives from './StateIncentives';
 import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
+import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 
 const ResultPage = React.createClass({
   getInitialState() {
@@ -21,7 +22,6 @@ const ResultPage = React.createClass({
     return gasCars;
   },
   getCurrCar: function (directionPowerType) {
-    console.log('directionPowerType: ', directionPowerType);
     switch (directionPowerType) {
       case 'previous gas':
         if (this.state.gasIndex-1 >= 0) {
@@ -73,11 +73,16 @@ const ResultPage = React.createClass({
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+        <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+        <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
+        <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
-        <RangeGraph gasVehicle={this.getGasCars()} hybridVehicle={this.getHybridCars()} electricVehicle={this.getElectricCars()} />
-        <CostAnalysisGraph />
+        <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )
   }
@@ -87,3 +92,4 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
+

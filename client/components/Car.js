@@ -42,7 +42,6 @@ const Car = React.createClass({
           break;
       }
     }
-
     return (
       <div className="cars" style={{backgroundColor: 'pink'}}>
         {this.props.vehicleInfo && <div className="gasCar">

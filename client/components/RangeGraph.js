@@ -5,16 +5,16 @@ import c3 from '../resources/c3';
 
 const RangeGraph = React.createClass({
   renderChart: function(){
-    if (this.props.gasVehicle[0] !== undefined &&
-      this.props.hybridVehicle[0] !== undefined &&
-      this.props.electricVehicle[0] !== undefined) {
-      var gasVehicle = this.props.gasVehicle[0];
-      var hybridVehicle = this.props.hybridVehicle[0];
-      var electricVehicle = this.props.electricVehicle[0];
-      var gasRange = gasVehicle.range.gas;
-      var hybridGasRange = hybridVehicle.range.gas;
-      var hybridElectricRange = hybridVehicle.range.electric;
-      var electricRange = electricVehicle.range.electric;
+    if (this.props.gasCar === undefined) {
+      return null;
+    }
+    if (this.props.gasCar.range !== undefined &&
+      this.props.hybridCar.range !== undefined &&
+      this.props.electricCar.range !== undefined) {
+      var gasRange = this.props.gasCar.range.gas;
+      var hybridGasRange = this.props.hybridCar.range.gas;
+      var hybridElectricRange = this.props.hybridCar.range.electric;
+      var electricRange = this.props.electricCar.range.electric;
       var chart = c3.generate({
         bindto: '#RangeGraph',
         data: {
@@ -52,12 +52,10 @@ const RangeGraph = React.createClass({
         }
       }); //end of CHART
     } //end IF
-    else if (this.props.gasVehicle[0] !== undefined &&
-      this.props.electricVehicle[0] !== undefined) {
-      var gasVehicle = this.props.gasVehicle[0];
-      var electricVehicle = this.props.electricVehicle[0];
-      var gasRange = gasVehicle.range.gas;
-      var electricRange = electricVehicle.range.electric;
+    else if (this.props.gasCar.range !== undefined &&
+      this.props.electricCar.range !== undefined) {
+      var gasRange = this.props.gasCar.range.gas;
+      var electricRange = this.props.electricCar.range.electric;
       var chart = c3.generate({
         bindto: '#RangeGraph',
         data: {
@@ -89,13 +87,11 @@ const RangeGraph = React.createClass({
         }
       }); //end of CHART
     } //ELSE IF
-    else if (this.props.gasVehicle[0] !== undefined &&
-      this.props.hybridVehicle[0] !== undefined) {
-      var gasVehicle = this.props.gasVehicle[0];
-      var hybridVehicle = this.props.hybridVehicle[0];
-      var gasRange = gasVehicle.range.gas;
-      var hybridGasRange = hybridVehicle.range.gas;
-      var hybridElectricRange = hybridVehicle.range.electric;
+    else if (this.props.gasCar.range !== undefined &&
+      this.props.hybridCar.range !== undefined) {
+      var gasRange = this.props.gasCar.range.gas;
+      var hybridGasRange = this.props.hybridCar.range.gas;
+      var hybridElectricRange = hybridCar.range.electric;
       var chart = c3.generate({
         bindto: '#RangeGraph',
         data: {
@@ -130,8 +126,8 @@ const RangeGraph = React.createClass({
         }
       }); //end of CHART
     } //end IF
-    else if (this.props.hybridVehicle[0] === undefined &&
-      this.props.electricVehicle[0] === undefined) {
+    else if (this.props.hybridCar === undefined &&
+      this.props.electricCar === undefined) {
       return null;
     }
   }, //end RENDERCHART
