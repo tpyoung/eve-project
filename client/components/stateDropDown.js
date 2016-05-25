@@ -1,9 +1,9 @@
 'use strict';
-import React from 'react';
 import Redux from 'redux';
 import Select from 'react-select';
-import styles from '../../node_modules/react-select/scss/default.scss';
-import STATES from '../../node_modules/react-select/examples/src/data/states.js';
+// import styles from '';
+import styles from './stateDropDown.scss'
+import STATES from '../resources/states.js';
 
 
 var StateDropDown = React.createClass({
@@ -25,10 +25,12 @@ var StateDropDown = React.createClass({
 		};
 	},
 	updateValue (newValue) {
+		console.log(newValue)
 		this.setState({
 			selectValue: newValue
 		});
 		this.props.handleUserStateChange(newValue)
+
 	},
 	focusStateSelect () {
 		this.refs.stateSelect.focus();
@@ -37,11 +39,12 @@ var StateDropDown = React.createClass({
 		var options = STATES.US;
 		return (
 			<div className="section">
-				<h3 className="section-heading">{this.props.label}</h3>
+				<h3 className="section-heading">State</h3>
 				<Select 
 				autofocus 
 				simpleValue 
 				options={options} 
+				placeholder='Select Your State'
 				ref="stateSelect" 
 				name="selected-state" 
 				onChange={this.updateValue} 

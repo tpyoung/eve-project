@@ -27,6 +27,7 @@ function vehicleSeed(){
         gasComparableModel: vehicleData.gasComparableModel,
         hybridComparableManufacturer: vehicleData.hybridComparableManufacturer,
         hybridComparableModel: vehicleData.hybridComparableModel,
+        photoLink: vehicleData.photoLink
       });
     }
     else if (vehicleData.power === "Plug-In Hybrid"){

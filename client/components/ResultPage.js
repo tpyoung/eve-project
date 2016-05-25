@@ -5,7 +5,7 @@ import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
-// import styles from './ResultPage.scss';
+const resultpageCSS = require('./ResultPage.scss')
 
 const ResultPage = React.createClass({
   getInitialState() {
@@ -69,6 +69,7 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
+    
     return (
       <div className='resultPage'>
         {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&

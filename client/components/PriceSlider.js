@@ -21,7 +21,10 @@ var PriceSlider = React.createClass({
 			}
 		return(
 			<div>
-				<h3 className="section-heading">Max Price:</h3>
+				<h3 className="section-heading">Budget:
+				<br />
+				<output value={'$' + this.state.newPriceState + dollarAmount} for='pSlider'></output>
+			</h3>
 				<input id="pSlider" 
 				type="range" 
 				min="20" 
@@ -29,7 +32,6 @@ var PriceSlider = React.createClass({
 				step="10"
 				onChange={this.updateValue}
 				/>
-				<output value={'$' + this.state.newPriceState + dollarAmount} for='pSlider'></output>
 
 		</div>
 		);
