@@ -33,8 +33,8 @@ const CostAnalysisGraph = React.createClass({
           data: {
               columns: [
                   ['Initial Investment', vehicleInfo.msrp/6],
-                  ['Maintenance', vehicleInfo.annualFuelCost],
-                  ['Energy Costs', vehicleInfo.maintenance]
+                  ['Maintenance', vehicleInfo.maintenance],
+                  ['Energy Costs', vehicleInfo.annualFuelCost]
               ],
               type : 'donut',
               onclick: function (d, i) {  },
@@ -51,7 +51,6 @@ const CostAnalysisGraph = React.createClass({
     this.props.vehicleInfo ? this.renderChart(this.props.vehicleInfo) : null
     return (
       <div className="CostAnalysisGraph">
-        <h3>ohhai cost analysis</h3>
         <div id="gasCostAnalysis"></div>
         <div id="hybridCostAnalysis"></div>
         <div id="electricCostAnalysis"></div>
@@ -61,6 +60,3 @@ const CostAnalysisGraph = React.createClass({
 })
 
 export default CostAnalysisGraph;
-// {(this.props.vehicleInfo.power==='Gas') && 
-//         {(this.props.vehicleInfo.power==='Plug-In Hybrid') && 
-//         {(this.props.vehicleInfo.power==='Electric') && 
