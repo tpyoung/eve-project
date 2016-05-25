@@ -1,6 +1,5 @@
 'use strict'
 
-import StateIncentives from './StateIncentives';
 import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
@@ -69,7 +68,6 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
-    
     return (
       <div className='resultPage'>
         {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
@@ -85,9 +83,6 @@ const ResultPage = React.createClass({
         <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
-        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
         <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )

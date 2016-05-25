@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Car.scss';
+import StateIncentives from './StateIncentives';
 
 const Car = React.createClass({
   nextGasCar: function () {
@@ -55,6 +56,7 @@ const Car = React.createClass({
             <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}<br/>
             MPG: {this.props.vehicleInfo.mpgmpge.gas}</div>}
           {(this.props.vehicleInfo.power==='Electric') && <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}</div>}
+         <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
         </div>}
         <button onClick={onClickPrev}>left</button>
         <button onClick={onClickNext}>right</button>

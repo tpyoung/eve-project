@@ -25,7 +25,6 @@ var StateDropDown = React.createClass({
 		};
 	},
 	updateValue (newValue) {
-		console.log(newValue)
 		this.setState({
 			selectValue: newValue
 		});
@@ -40,18 +39,18 @@ var StateDropDown = React.createClass({
 		return (
 			<div className="section">
 				<h3 className="section-heading">State</h3>
-				<Select 
-				autofocus 
-				simpleValue 
-				options={options} 
+				<Select
+				autofocus
+				simpleValue
+				options={options}
 				placeholder='Select Your State'
-				ref="stateSelect" 
-				name="selected-state" 
-				onChange={this.updateValue} 
-				value={this.state.selectValue} 
-				disabled={this.state.disabled} 
-				clearable={this.state.clearable} 
-				searchable={this.state.searchable} 
+				ref="stateSelect"
+				name="selected-state"
+				onChange={this.updateValue}
+				value={this.state.selectValue}
+				disabled={this.state.disabled}
+				clearable={this.state.clearable}
+				searchable={this.state.searchable}
 				/>
 			</div>
 		);

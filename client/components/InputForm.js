@@ -17,7 +17,7 @@ const InputForm = React.createClass({
     };
   },
   handleSubmit(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     this.props.getStateInfo(this.state.userState);
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
   },
@@ -26,14 +26,12 @@ const InputForm = React.createClass({
     this.setState({
       userState: newValue
     });
-    console.log(this.state.userState);
   },
   handleMaxPriceChange(newPrice) {
     newPrice = newPrice * 1000
     if (newPrice >= 100000) {
       newPrice = 900000;
     }
-    console.log(newPrice)
     this.setState({
       maxPrice: newPrice
     });
@@ -48,7 +46,7 @@ const InputForm = React.createClass({
       <div className='InputContainerDivs'>
         <div id="landingPage">
         <div id="header">
-          <h1 id='siteTitle'>EVE - Electric Vehicle Evaluator</h1> 
+          <h1 id='siteTitle'>EVE - Electric Vehicle Evaluator</h1>
         </div>
           <br/>
           <form onSubmit={ this.handleSubmit } id='dataInput'>
@@ -62,7 +60,7 @@ const InputForm = React.createClass({
             <div id="buttonContainer">
               <button type="submit" id='submitButton' >Search</button>
             </div>
-          </form> 
+          </form>
         </div>
           <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
       </div>
