@@ -1,0 +1,9 @@
+.epaGraphs {
+  background-color: lavender;
+  display: flex;
+  flex-flow: row nowrap;
+
+  div {
+    flex: 1 2 25%;
+  }
+}
