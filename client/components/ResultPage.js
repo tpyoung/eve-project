@@ -68,6 +68,7 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
+    
     return (
       <div className='ResultPage'>
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />

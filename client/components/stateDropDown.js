@@ -25,10 +25,12 @@ var StateDropDown = React.createClass({
 		};
 	},
 	updateValue (newValue) {
+		console.log(newValue)
 		this.setState({
 			selectValue: newValue
 		});
 		this.props.handleUserStateChange(newValue)
+
 	},
 	focusStateSelect () {
 		this.refs.stateSelect.focus();
