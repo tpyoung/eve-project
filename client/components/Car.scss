@@ -1,0 +1,17 @@
+.carContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.carCards {
+  flex: 0 1 25%;
+  padding: 0 1em 1em 1em;
+  border: 1px solid gray;
+  height: 30em;
+
+  .car {
+    background-color: lavender;
+    height: 92%;
+  }
+}

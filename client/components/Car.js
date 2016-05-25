@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Car.scss';
 
 const Car = React.createClass({
   nextGasCar: function () {
@@ -43,18 +44,20 @@ const Car = React.createClass({
       }
     }
     return (
-      <div className="cars" style={{backgroundColor: 'pink'}}>
-        {this.props.vehicleInfo && <div className="gasCar">
+      <div className="carCards">
+        {this.props.vehicleInfo && <div className="car">
           <h3>{header}</h3>
-          {this.props.vehicleInfo.manufacturer}<br/>
-          {this.props.vehicleInfo.model}<br/>
+          <div>Model</div> 
+          {`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}<br/>
           MSRP: {this.props.vehicleInfo.msrp}<br/>
           {(this.props.vehicleInfo.power==='Gas') && <div>MPG: {this.props.vehicleInfo.mpgmpge.gas}</div>}
-          {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}<br/>MPG: {this.props.vehicleInfo.mpgmpge.gas}</div>}
+          {(this.props.vehicleInfo.power==='Plug-In Hybrid') &&
+            <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}<br/>
+            MPG: {this.props.vehicleInfo.mpgmpge.gas}</div>}
           {(this.props.vehicleInfo.power==='Electric') && <div>MPGe: {this.props.vehicleInfo.mpgmpge.electric}</div>}
-          <button onClick={onClickPrev}>left</button>
-          <button onClick={onClickNext}>right</button>
         </div>}
+        <button onClick={onClickPrev}>left</button>
+        <button onClick={onClickNext}>right</button>
       </div>
     )
   }

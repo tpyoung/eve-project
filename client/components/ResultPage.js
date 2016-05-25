@@ -5,6 +5,7 @@ import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
+// import styles from './ResultPage.scss';
 
 const ResultPage = React.createClass({
   getInitialState() {
@@ -69,10 +70,14 @@ const ResultPage = React.createClass({
   },
   render: function () {
     return (
-      <div className='ResultPage'>
-        <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
-        <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+      <div className='resultPage'>
+        {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
+          <div className="carContainer">
+            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
+            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
+            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+          </div>
+        }
         <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
