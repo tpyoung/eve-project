@@ -73,6 +73,7 @@ const ResultPage = React.createClass({
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
+        <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
         <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
@@ -86,7 +87,3 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
-
-// <EpaGHGRatingGraph />
-        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
-        // <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()[this.state.electricIndex]}/>
