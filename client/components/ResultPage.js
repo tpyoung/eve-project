@@ -93,9 +93,5 @@ ResultPage.defaultProps = {
   stateInfo: [],
 };
 
-<<<<<<< HEAD
 export default ResultPage;
 
-=======
-export default ResultPage;
->>>>>>> connect-state-incentives
