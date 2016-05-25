@@ -1,5 +1,5 @@
 exports.US = [
-    { value: 'Alabama', label: 'Alabama', disabled: true },
+    { value: 'Alabama', label: 'Alabama'},
     { value: 'Alaska', label: 'Alaska' },
     { value: 'Arizona', label: 'Arizona' },
     { value: 'Arkansas', label: 'Arkansas' },
