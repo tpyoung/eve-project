@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Car.scss';
 import StateIncentives from './StateIncentives';
-// import carPic from '../resources/carPhotos/BMWi3_El.png';
 
 const Car = React.createClass({
   nextGasCar: function () {
@@ -50,7 +49,7 @@ const Car = React.createClass({
       <div className="carCards">
         {this.props.vehicleInfo && <div className="car">
           <h3>{header}</h3>
-          <img src={require('../resources/carPhotos/BMWi3_El.png')} />
+          <img src={require(this.props.vehicleInfo.photoLink)} />
           <div>Model</div> 
           {`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}<br/>
           MSRP: {this.props.vehicleInfo.msrp}<br/>
