@@ -20,7 +20,6 @@ const StateIncentives = React.createClass({
       taxCredits: "http://i.dailymail.co.uk/i/pix//2011/tim/icons/car_icon.png"
     };
     var iconsNode;
-    //1: cashRebates 2: charging 3: hov 4: install 5:parking 6: taxCredits
 
     //GAS VEHICLES
     if (this.props.vehicleInfo !== undefined &&
@@ -49,7 +48,6 @@ const StateIncentives = React.createClass({
           falseArr.push(key)
         }
       }
-      console.log('trueArr',trueArr);
       var trueNode = trueArr.map((trueKey) => {
         return <Icon key={trueKey} source={iconObj[trueKey]} className="blueIcon" />
       });
@@ -73,7 +71,6 @@ const StateIncentives = React.createClass({
           falseArr.push(key)
         }
       }
-      console.log('trueArr',trueArr);
       var trueNode = trueArr.map((trueKey) => {
         return <Icon key={trueKey} source={iconObj[trueKey]} className="greenIcon" />
       });
@@ -102,11 +99,3 @@ const Icon = React.createClass({
 })
 
 export default StateIncentives;
-// <img src={"https://cdn1.iconfinder.com/data/icons/automotix/128/bug_car_small_vintage_limousine-128.png"} />
-
-          // {this.props.vehicleInfo.hybridIncentives.cashRebates ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
-          // {this.props.vehicleInfo.hybridIncentives.charging ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
-          // {this.props.vehicleInfo.hybridIncentives.hov ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
-          // {this.props.vehicleInfo.hybridIncentives.install ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
-          // {this.props.vehicleInfo.hybridIncentives.parking ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
-          // {this.props.vehicleInfo.hybridIncentives.taxCredits ? <Image className="blueIcon" /> : <Image className="grayIcon" />}
