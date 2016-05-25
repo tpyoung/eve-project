@@ -1,3 +1,7 @@
+
+// {(this.props.vehicleInfo.power==='Gas') && 
+//         {(this.props.vehicleInfo.power==='Plug-In Hybrid') && 
+//         {(this.props.vehicleInfo.power==='Electric') && 
 'use strict';
 import React from 'react';
 

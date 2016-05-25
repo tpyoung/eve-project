@@ -2,31 +2,39 @@ import React from 'react';
 import c3 from '../resources/c3';
 
 const CostAnalysisGraph = React.createClass({
-  getInitialState() {
-      return {
-          count: 10
-      };
-  },
   componentWillReceiveProps(nextProps) {
-    if (nextProps.currGasCar) {
+    if (nextProps.vehicleInfo !== undefined && this.chart !== undefined) {
       this.chart.load({
         columns: [
-          ['Initial Investment', nextProps.currGasCar.msrp/6],
-          ['Maintenance', nextProps.currGasCar.annualFuelCost],
-          ['Energy Costs', nextProps.currGasCar.maintenance]
+          ['Initial Investment', nextProps.vehicleInfo.msrp/6],
+          ['Maintenance', nextProps.vehicleInfo.annualFuelCost],
+          ['Energy Costs', nextProps.vehicleInfo.maintenance]
         ]
       })
     }
   },
-  renderChart(currGasCar) {
+  renderChart(vehicleInfo) {
     if (!this.chart) {
+      let chartId;
+      switch (vehicleInfo.power) {
+        case 'Gas':
+          chartId = 'gasCostAnalysis';
+          break;
+        case 'Plug-In Hybrid':
+          chartId = 'hybridCostAnalysis';
+          break;
+        case 'Electric':
+          chartId = 'electricCostAnalysis';
+          break;
+      }
+
       this.chart = c3.generate({
-          bindto: '#gasCostAnalysis',
+          bindto: `#${chartId}`,
           data: {
               columns: [
-                  ['Initial Investment', currGasCar.msrp/6],
-                  ['Maintenance', currGasCar.annualFuelCost],
-                  ['Energy Costs', currGasCar.maintenance]
+                  ['Initial Investment', vehicleInfo.msrp/6],
+                  ['Maintenance', vehicleInfo.maintenance],
+                  ['Energy Costs', vehicleInfo.annualFuelCost]
               ],
               type : 'donut',
               onclick: function (d, i) {  },
@@ -38,14 +46,15 @@ const CostAnalysisGraph = React.createClass({
           }
       });
     }
-
   },
   render() {
-    this.props.currGasCar ? this.renderChart(this.props.currGasCar) : null
+    this.props.vehicleInfo ? this.renderChart(this.props.vehicleInfo) : null
     return (
       <div className="CostAnalysisGraph">
-        <h3>ohhai cost analysis</h3>
+        <h3>Cost Analysis</h3>
         <div id="gasCostAnalysis"></div>
+        <div id="hybridCostAnalysis"></div>
+        <div id="electricCostAnalysis"></div>
       </div>
     )
   }

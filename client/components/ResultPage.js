@@ -22,7 +22,6 @@ const ResultPage = React.createClass({
     return gasCars;
   },
   getCurrCar: function (directionPowerType) {
-    console.log('directionPowerType: ', directionPowerType);
     switch (directionPowerType) {
       case 'previous gas':
         if (this.state.gasIndex-1 >= 0) {
@@ -71,14 +70,19 @@ const ResultPage = React.createClass({
   render: function () {
     return (
       <div className='ResultPage'>
-        <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} />
         <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} />
+        <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+        <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
+        <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
+        <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getGasCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getHybridCars()}/>
         <StateIncentives stateInfo={this.props.stateInfo} vehicleInfo={this.getElectricCars()}/>
-        <CostAnalysisGraph />
+        <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )
   }
@@ -89,4 +93,3 @@ ResultPage.defaultProps = {
 
 export default ResultPage;
 
-// <EpaGHGRatingGraph />
