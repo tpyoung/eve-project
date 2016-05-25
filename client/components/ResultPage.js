@@ -22,7 +22,6 @@ const ResultPage = React.createClass({
     return gasCars;
   },
   getCurrCar: function (directionPowerType) {
-    console.log('directionPowerType: ', directionPowerType);
     switch (directionPowerType) {
       case 'previous gas':
         if (this.state.gasIndex-1 >= 0) {
@@ -69,7 +68,6 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
-    console.log('this.props',this.props);
     return (
       <div className='ResultPage'>
         <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} />
