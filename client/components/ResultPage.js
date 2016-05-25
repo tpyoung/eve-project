@@ -5,6 +5,7 @@ import Car from './Car';
 import CostAnalysisGraph from './CostAnalysisGraph';
 import RangeGraph from './RangeGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
+const resultpageCSS = require('./ResultPage.scss')
 
 const ResultPage = React.createClass({
   getInitialState() {

@@ -1,19 +1,13 @@
-/**
- * React Select
- * ============
- * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
- * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
- * MIT License: https://github.com/keystonejs/react-select
-*/
 
+//
 // Variables
 // ------------------------------
 
 // control options
 $select-input-bg:                  #fff !default;
 $select-input-bg-disabled:         #f9f9f9 !default;
-$select-input-border-color:        #ccc !default;
-$select-input-border-radius:       4px !default;
+$select-input-border-color:        #f4f4f4 !default;
+$select-input-border-radius:       0px !default;
 $select-input-border-focus:        #08c !default; // blue
 $select-input-border-width:        1px !default;
 $select-input-height:              36px !default;
@@ -22,7 +16,7 @@ $select-input-placeholder:         #aaa !default;
 $select-text-color:                #333 !default;
 $select-link-hover-color:          $select-input-border-focus !default;
 
-$select-padding-vertical:          8px !default;
+$select-padding-vertical:          1px !default;
 $select-padding-horizontal:        10px !default;
 
 // menu options
@@ -46,8 +40,8 @@ $select-clear-hover-color:         #D0021B !default; // red
 $select-clear-width:               ($select-input-internal-height / 2) !default;
 
 // arrow indicator
-$select-arrow-color:               #999 !default;
-$select-arrow-color-hover:         #666 !default;
+$select-arrow-color:               #fff !default;
+$select-arrow-color-hover:         #fff !default;
 $select-arrow-width:               5px !default;
 
 // loading indicator

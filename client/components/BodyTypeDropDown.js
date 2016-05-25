@@ -2,7 +2,7 @@
 import React from 'react';
 import Redux from 'redux';
 import Select from 'react-select';
-import styles from '../../node_modules/react-select/scss/default.scss';
+import styles from './stateDropDown.scss'
 
 
 var BodyTypeDropDown = React.createClass({
@@ -44,10 +44,17 @@ var BodyTypeDropDown = React.createClass({
     return (
       <div className="section">
         <h3 className="section-heading">{this.props.label}</h3>
-        <Select ref="bodyTypeSelect" autofocus options={options} onChange={this.updateValue} simpleValue clearable={this.state.clearable} name="selected-type" disabled={this.state.disabled} value={this.state.selectValue} searchable={this.state.searchable} />
-
-
-        
+        <Select 
+        simpleValue 
+        options={options} 
+        name="selected-type" 
+        ref="bodyTypeSelect" 
+        placeholder='Select A Body Type'
+        onChange={this.updateValue} 
+        value={this.state.selectValue} 
+        disabled={this.state.disabled} 
+        clearable={this.state.clearable} 
+        searchable={this.state.searchable} />
       </div>
     );
   }
