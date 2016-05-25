@@ -56,7 +56,6 @@ const EpaGHGRatingGraph = React.createClass({
     }
   },
   render() {
-    console.log('this.props.vehicleInfo: ', this.props.vehicleInfo);
     {this.props.vehicleInfo && this.renderChart(this.props.vehicleInfo)}
       return (
         <div className="EpaGHGRatingGraph">
