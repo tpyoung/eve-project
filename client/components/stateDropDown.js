@@ -2,8 +2,8 @@
 import React from 'react';
 import Redux from 'redux';
 import Select from 'react-select';
-import styles from '../../node_modules/react-select/scss/default.scss';
-import STATES from '../../node_modules/react-select/examples/src/data/states.js';
+import styles from '../styles/Selectors/default.scss';
+import STATES from '../resources/states.js';
 
 
 var StateDropDown = React.createClass({
@@ -25,10 +25,12 @@ var StateDropDown = React.createClass({
 		};
 	},
 	updateValue (newValue) {
+		console.log(newValue)
 		this.setState({
 			selectValue: newValue
 		});
 		this.props.handleUserStateChange(newValue)
+
 	},
 	focusStateSelect () {
 		this.refs.stateSelect.focus();

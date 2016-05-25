@@ -25,6 +25,7 @@ const InputForm = React.createClass({
     this.setState({
       userState: newValue
     });
+    console.log(this.state.userState);
   },
   handleMaxPriceChange(newPrice) {
     newPrice = newPrice * 1000
@@ -46,8 +47,10 @@ const InputForm = React.createClass({
     return (
       <div className='InputContainerDivs'>
         <div className="landingPage">
-          <h1>EVE - Electric Vehicle Evaluator</h1>
-          <form onSubmit={ this.handleSubmit }>
+          <h1 id='siteTitle'>EVE - Electric Vehicle Evaluator</h1> 
+          <br/>
+          <form onSubmit={ this.handleSubmit } id='dataInput'>
+          
             <StateDropDown value={this.state.userState}  handleUserStateChange={this.handleUserStateChange} /> <br/>
     
             <PriceSlider value={this.state.maxPrice} handleMaxPriceChange={this.handleMaxPriceChange} />
