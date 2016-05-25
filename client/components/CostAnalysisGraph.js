@@ -12,7 +12,6 @@ const CostAnalysisGraph = React.createClass({
         ]
       })
     }
-    console.log('nextProps.vehicleInfo: ', nextProps.vehicleInfo);
   },
   renderChart(vehicleInfo) {
     if (!this.chart) {
@@ -30,7 +29,7 @@ const CostAnalysisGraph = React.createClass({
       }
 
       this.chart = c3.generate({
-          bindto: '#gasCostAnalysis',
+          bindto: `#${chartId}`,
           data: {
               columns: [
                   ['Initial Investment', vehicleInfo.msrp/6],
@@ -49,12 +48,13 @@ const CostAnalysisGraph = React.createClass({
     }
   },
   render() {
-    console.log('this.props.vehicleInfo: ', this.props.vehicleInfo);
     this.props.vehicleInfo ? this.renderChart(this.props.vehicleInfo) : null
     return (
       <div className="CostAnalysisGraph">
         <h3>ohhai cost analysis</h3>
         <div id="gasCostAnalysis"></div>
+        <div id="hybridCostAnalysis"></div>
+        <div id="electricCostAnalysis"></div>
       </div>
     )
   }
