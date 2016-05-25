@@ -7,12 +7,12 @@ const StateIncentives = React.createClass({
       var vehicle = this.props.vehicleInfo[0];
       var state = this.props.stateInfo[0];
       var grayImgs = {
-        cashRebates: 'gray1',
-        charging: 'gray2',
-        hov: 'gray3',
-        install: 'gray4',
-        parking: 'gray5',
-        taxCredits: 'gray6'
+        cashRebates: '../../data/icons/gas-car-black.png',
+        charging: '../../data/icons/gas-car-black.png',
+        hov: '../../data/icons/gas-car-black.png',
+        install: '../../data/icons/gas-car-black.png',
+        parking: '../../data/icons/gas-car-black.png',
+        taxCredits: '../../data/icons/gas-car-black.png'
       };
       var colorImgArr = {
         cashRebates: 'color1',
@@ -28,7 +28,8 @@ const StateIncentives = React.createClass({
         var gasKeys = Object.keys(grayImgs);
         var images = gasKeys.map(function(key){
           return (
-            <div key={key}>{grayImgs[key]}</div>
+            // <div key={key}>{grayImgs[key]}</div>
+            <img key={key} src={grayImgs[key]}>
           )
         });
 
