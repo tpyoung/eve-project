@@ -5,6 +5,7 @@
 }
 
 .carCards {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -23,6 +24,42 @@
     background-color: #FFFFFF;
     border-radius: 0.5em;
   }
+}
+
+.flag {
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 65px solid #727272;
+  left: 22.8em;
+  top: 0.8em;
+}
+
+.flagHybrid {
+  border-bottom: 65px solid #4FA9CD;
+}
+
+.flagElectric {
+  border-bottom: 65px solid #93CC5D;
+}
+
+.flagPowerType {
+  transform: rotate(45deg);
+  position: absolute;
+  left: 25.5em;
+  top: 3em;
+  color: #FFFFFF;
+}
+
+.flagPowerHybrid {
+  left: 24.5em;
+}
+
+.flagPowerElectric {
+  left: 24.5em;
 }
 
 .car {

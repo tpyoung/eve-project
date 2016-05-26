@@ -24,25 +24,31 @@ const Car = React.createClass({
   render: function () {
     let onClickNext;
     let onClickPrev;
+    let flagName;
     if (this.props.vehicleInfo) {
       switch (this.props.vehicleInfo.power) {
         case 'Gas':
           onClickNext = this.nextGasCar;
           onClickPrev = this.prevGasCar;
+          flagName = 'Gas';
           break;
         case 'Plug-In Hybrid':
           onClickNext = this.nextHybridCar;
           onClickPrev = this.prevHybridCar;
+          flagName = 'Hybrid';
           break;
         case 'Electric':
           onClickNext = this.nextElectricCar;
           onClickPrev = this.prevElectricCar;
+          flagName = 'Electric';
           break;
       }
     }
     return (
       <div className="carCards">
         {this.props.vehicleInfo && <div className="car">
+          <div className={`flag flag${flagName}`}></div>
+          <div className={`flagPowerType flagPower${flagName}`}>{flagName}</div>
           <img className="carPhotos" src={this.props.vehicleInfo.photoLink} />
           <div className="carInfoContainer">
             <div className="modelLabel">Model</div>
@@ -62,8 +68,8 @@ const Car = React.createClass({
           <div className="stateIncentiveHeader">State Incentives</div>
           <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
         </div>}
-        <button className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>
-        <button className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>
+        {this.props.vehicleInfo && <button className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
+        {this.props.vehicleInfo && <button className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
       </div>
     )
   }
