@@ -6,6 +6,7 @@ import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 import styles from './ResultPage.scss';
 import CostPer100Miles from './CostPer100Miles';
 import Disclaimer from './Disclaimer';
+import MaintLineGraph from './MaintLineGraph';
 const resultpageCSS = require('./ResultPage.scss')
 
 const ResultPage = React.createClass({
@@ -69,7 +70,7 @@ const ResultPage = React.createClass({
     })
     return electricCars;
   },
-  render: function () {    
+  render: function () {
     return (
       <div className='ResultPage'>
         {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
@@ -79,6 +80,7 @@ const ResultPage = React.createClass({
             <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           </div>
         }
+        <MaintLineGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
         <div id="epaContainer">
           <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
           <EpaGHGRatingGraph id='epaGasIndex' vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
