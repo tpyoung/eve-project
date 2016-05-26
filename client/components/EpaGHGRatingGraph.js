@@ -28,6 +28,7 @@ const EpaGHGRatingGraph = React.createClass({
           break;
       }
 
+      // console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
       this.chart = c3.generate({
         bindto: `.${chartClass}`,
           data: {
@@ -70,9 +71,10 @@ const EpaGHGRatingGraph = React.createClass({
     {this.props.vehicleInfo && this.renderChart(this.props.vehicleInfo)}
       return (
         <div className="epaGraphs">
-          <div className="gasEpa"></div>
-          <div className="hybridEpa"></div>
-          <div className="electricEpa"></div>
+          <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
+          <div id="gasEpa"></div>
+          <div id="hybridEpa"></div>
+          <div id="electricEpa"></div>
         </div>
       )
     }

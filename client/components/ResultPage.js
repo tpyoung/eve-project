@@ -5,6 +5,7 @@ import CostAnalysisGraph from './CostAnalysisGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 import styles from './ResultPage.scss';
 import CostPer100Miles from './CostPer100Miles';
+import Disclaimer from './Disclaimer';
 const resultpageCSS = require('./ResultPage.scss')
 
 const ResultPage = React.createClass({
@@ -71,11 +72,13 @@ const ResultPage = React.createClass({
   render: function () {    
     return (
       <div className='ResultPage'>
-        <div id="carContainer">
-          <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar}  stateInfo={this.props.stateInfo}/>
-          <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo}/>
-          <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo}/>
-        </div>
+        {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
+          <div className="carContainer">
+            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+          </div>
+        }
         <div id="epaContainer">
           <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
           <EpaGHGRatingGraph id='epaGasIndex' vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
@@ -88,9 +91,10 @@ const ResultPage = React.createClass({
           <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+          <Disclaimer />
         </div>
       </div>
-      )
+    )
   }
 })
 ResultPage.defaultProps = {

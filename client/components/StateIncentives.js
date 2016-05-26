@@ -80,8 +80,7 @@ const StateIncentives = React.createClass({
       iconsNode = trueNode.concat(falseNode);
     }
     return (
-      <div>
-      <h1>State Incentives</h1>
+      <div className="stateIncentiveIcons">
         {iconsNode}
       </div>
     )
