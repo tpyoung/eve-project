@@ -74,12 +74,7 @@ const ResultPage = React.createClass({
     else {
       return (
         <div className='ResultPage'>
-          <div className="costPer100Miles">
-            <div id="costPer100Header">Cost To Drive 100 Miles</div>
-            <CostPer100Miles vehicleInfo={this.getGasCars()[this.state.gasIndex]} stateInfo={this.props.stateInfo[0]} />
-            <CostPer100Miles vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} stateInfo={this.props.stateInfo[0]} />
-            <CostPer100Miles vehicleInfo={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
-          </div>
+          <CostPer100Miles gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
           <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
