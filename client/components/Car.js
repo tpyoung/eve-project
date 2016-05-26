@@ -46,6 +46,7 @@ const Car = React.createClass({
     }
     return (
       <div className="carCards">
+        <div className="carAmount">{this.props.vehicleLength} matches</div>
         {this.props.vehicleInfo && <div className="car">
           <div className={`flag flag${flagName}`}></div>
           <div className={`flagPowerType flagPower${flagName}`}>{flagName}</div>
@@ -68,8 +69,8 @@ const Car = React.createClass({
           <div className="stateIncentiveHeader">State Incentives</div>
           <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
         </div>}
-        {this.props.vehicleInfo && <button className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
-        {this.props.vehicleInfo && <button className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
+        {(this.props.vehicleInfo && this.props.currIndex===0) ? <button disabled className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
+        {(this.props.vehicleInfo && this.props.currIndex===this.props.vehicleLength-1) ? <button disabled className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
       </div>
     )
   }
