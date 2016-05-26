@@ -7,7 +7,7 @@ import ResultPage from './ResultPage';
 import StateDropDown from './stateDropDown';
 import PriceSlider from './PriceSlider';
 import BodyTypeDropDown from './BodyTypeDropDown';
-const InputFormCSS = require("./inputForm.scss");
+const InputFormCSS = require("./InputForm.scss");
 
 const InputForm = React.createClass({
   getInitialState() {

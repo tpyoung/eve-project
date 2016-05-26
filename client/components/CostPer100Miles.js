@@ -1,7 +1,7 @@
 'use strict';
-
-import React from 'react';
 import c3 from '../resources/c3';
+import styles from './c3Styles.scss';
+
 const costPer100MilesCSS = require('./CostPer100Miles.scss');
 
 const costPer100Miles = React.createClass({
@@ -26,15 +26,23 @@ const costPer100Miles = React.createClass({
         bindto: '#barGraph',
         data: {
           columns: [
-            ['Gas', gasCost],
-            ['Hybrid Gas', hybridGasCost],
+            ['Electric', electricCost],
             ['Hybrid Electric', hybridElectricCost],
-            ['Electric', electricCost]
+            ['Hybrid Gas', hybridGasCost],
+            ['Gas', gasCost]
           ],
           type: 'bar'
+        }, 
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        color: {
+          pattern: ['#93CC5D', '#82D5BA', '#4FA9CD',  '#4F4F4F' ]
         },
         bar: {
-          width: 200
+          width: 50
         }
       }); //end of CHART
     }

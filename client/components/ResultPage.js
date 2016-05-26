@@ -5,6 +5,7 @@ import CostAnalysisGraph from './CostAnalysisGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 import styles from './ResultPage.scss';
 import CostPer100Miles from './CostPer100Miles';
+import Disclaimer from './Disclaimer';
 const resultpageCSS = require('./ResultPage.scss')
 
 const ResultPage = React.createClass({
@@ -90,6 +91,7 @@ const ResultPage = React.createClass({
           <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+          <Disclaimer />
         </div>
       </div>
     )
