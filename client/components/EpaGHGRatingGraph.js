@@ -28,7 +28,6 @@ const EpaGHGRatingGraph = React.createClass({
           break;
       }
 
-      // console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
       this.chart = c3.generate({
         bindto: `.${chartClass}`,
           data: {
@@ -39,9 +38,6 @@ const EpaGHGRatingGraph = React.createClass({
               onclick: function (d, i) {},
               onmouseover: function (d, i) {},
               onmouseout: function (d, i) {}
-          },
-          tooltip: {
-            show: true
           },
           color: {
             pattern: ['#F56262', '#FE944C', '#FEE770', '#B9F27C', '#B9F27C', '#7CD85B'],
@@ -61,8 +57,8 @@ const EpaGHGRatingGraph = React.createClass({
             min: 0,
             max: 10
           },
-          size: {
-            height: 225
+          size: { 
+            height: 240 
           }
       });
     }
@@ -71,10 +67,9 @@ const EpaGHGRatingGraph = React.createClass({
     {this.props.vehicleInfo && this.renderChart(this.props.vehicleInfo)}
       return (
         <div className="epaGraphs">
-          <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
-          <div id="gasEpa"></div>
-          <div id="hybridEpa"></div>
-          <div id="electricEpa"></div>
+          <div className="gasEpa"></div>
+          <div className="hybridEpa"></div>
+          <div className="electricEpa"></div>
         </div>
       )
     }
