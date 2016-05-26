@@ -55,14 +55,14 @@ const Car = React.createClass({
             <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
             <div className="carLabels">MSRP</div>
             {(this.props.vehicleInfo.power==='Gas') && <div className="carLabels">MPG</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels">MPGe</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels">MPG</div>}
+            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels hybridM">MPGe</div>}
+            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels hybridM">MPG</div>}
             {(this.props.vehicleInfo.power==='Electric') && <div className="carLabels">MPGe</div>}
             {(this.props.vehicleInfo.power==='Gas' || this.props.vehicleInfo.power==='Electric') && <div className="carInfo">{this.props.vehicleInfo.msrp}</div>}
             {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo">{this.props.vehicleInfo.msrp}</div>}
             {(this.props.vehicleInfo.power==='Gas') && <div className="carInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>}
+            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.electric}</div>}
+            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>}
             {(this.props.vehicleInfo.power==='Electric') && <div className="carInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>}
           </div>
           <div className="stateIncentiveHeader">State Incentives</div>
