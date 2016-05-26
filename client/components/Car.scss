@@ -2,6 +2,8 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin-top: 2%;
+  margin-left: 4%;
 }
 
 .carCards {
@@ -13,6 +15,7 @@
   padding: 1em;
   border: 1px solid gray;
   height: 40em;
+  margin-right: 4%;
 
   button {
     margin-top: 1em;
