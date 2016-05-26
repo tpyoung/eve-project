@@ -43,13 +43,13 @@ var BodyTypeDropDown = React.createClass({
     ];
     return (
       <div className="section">
-        <h3 className="section-heading">{this.props.label}</h3>
+        <h3 className="section-heading">Type</h3>
         <Select 
         simpleValue 
         options={options} 
         name="selected-type" 
         ref="bodyTypeSelect" 
-        placeholder='Select A Body Type'
+        placeholder='Vehicle Type'
         onChange={this.updateValue} 
         value={this.state.selectValue} 
         disabled={this.state.disabled} 

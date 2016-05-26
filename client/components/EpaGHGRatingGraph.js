@@ -1,5 +1,4 @@
 'use strict';
-
 import React from 'react';
 import c3 from '../resources/c3';
 import styles from './EpaGHGRatingGraph.scss';
@@ -16,22 +15,22 @@ const EpaGHGRatingGraph = React.createClass({
   },
   renderChart: function(vehicleInfo){
     if (!this.chart) {
-      let chartId;
+      let chartClass;
       switch (vehicleInfo.power) {
         case 'Gas':
-          chartId = 'gasEpa';
+          chartClass = 'gasEpa';
           break;
         case 'Plug-In Hybrid':
-          chartId = 'hybridEpa';
+          chartClass = 'hybridEpa';
           break;
         case 'Electric':
-          chartId = 'electricEpa';
+          chartClass = 'electricEpa';
           break;
       }
 
       // console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
       this.chart = c3.generate({
-        bindto: `#${chartId}`,
+        bindto: `.${chartClass}`,
           data: {
               columns: [
                 ['rating', vehicleInfo.fuelEconomyGHGRating]
@@ -41,8 +40,16 @@ const EpaGHGRatingGraph = React.createClass({
               onmouseover: function (d, i) {},
               onmouseout: function (d, i) {}
           },
+          tooltip: {
+            show: false
+          },
           color: {
-            pattern: ['#FF0000', '#F97600', '#F6C600', '#60B044']
+            pattern: ['#F56262', '#FE944C', '#FEE770', '#B9F27C', '#B9F27C', '#7CD85B'],
+            threshold: {
+    //            unit: 'value', // percentage is default
+    //            max: 200, // 100 is default
+                values: [3, 6, 9, 10]
+            }
           },
           gauge: {
             label: {
@@ -53,6 +60,9 @@ const EpaGHGRatingGraph = React.createClass({
             },
             min: 0,
             max: 10
+          },
+          size: {
+            height: 225
           }
       });
     }
