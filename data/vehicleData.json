@@ -46,7 +46,7 @@
         "electric": 28,
         "gas": null
       },
-      "maintenance": 917,
+      "maintenance": [142, 429, 1121, 1321, 1572],
       "annualFuelCost": 550,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Chevrolet",
@@ -74,7 +74,7 @@
         "electric": 30,
         "gas": null
       },
-      "maintenance": null,
+      "maintenance": [68, 515, 443, 1140, 1177],
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Fiat",
@@ -102,7 +102,7 @@
         "electric": 32,
         "gas": null
       },
-      "maintenance": 1047.80,
+      "maintenance": [206, 533, 469, 1045, 1781],
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
@@ -130,7 +130,7 @@
         "electric": 32,
         "gas": null
       },
-      "maintenance": 888.60,
+      "maintenance": [215, 444, 215, 880, 3359],
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Kia",
@@ -158,7 +158,7 @@
         "electric": 40,
         "gas": null
       },
-      "maintenance": null,
+      "maintenance": [536, 938, 3000, 1925, 1782],
       "annualFuelCost": 800,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Audi",
@@ -186,7 +186,7 @@
         "electric": 30,
         "gas": null
       },
-      "maintenance": null,
+      "maintenance": [153, 173, 1902, 464, 834],
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Mitsubishi",
@@ -214,7 +214,7 @@
         "electric": 30,
         "gas": null
       },
-      "maintenance": 965.60,
+      "maintenance": [197, 374, 353, 868, 1297],
       "annualFuelCost": 600,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Nissan",
@@ -326,7 +326,7 @@
         "electric": 29,
         "gas": null
       },
-      "maintenance": null,
+      "maintenance": [119, 418, 2630, 1092, 965],
       "annualFuelCost": 750,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Volkswagen",
@@ -354,7 +354,7 @@
         "electric": 40,
         "gas": 2.9
       },
-      "maintenance": 1252.80,
+      "maintenance": [304, 229, 2507, 1220, 2004],
       "annualFuelCost": 1200,
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Audi",
@@ -406,7 +406,7 @@
         "electric": 59,
         "gas": 4.2
       },
-      "maintenance": null,
+      "maintenance": [0, 0, 3215, 1496, 1626],
       "annualFuelCost": 1750,
       "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "Infiniti",
@@ -433,7 +433,7 @@
         "electric": 39,
         "gas": 3.1
       },
-      "maintenance": 1009.60,
+      "maintenance": [65, 65, 2166, 1235, 1515],
       "annualFuelCost": 1000,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "BMW",
@@ -460,7 +460,7 @@
         "electric": 31,
         "gas": 2.4
       },
-      "maintenance": 964.40,
+      "maintenance": [63, 270, 2524, 1139, 1044],
       "annualFuelCost": 700,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
@@ -487,7 +487,7 @@
         "electric": 37,
         "gas": 2.6
       },
-      "maintenance": 897.60,
+      "maintenance": [234, 642, 517, 1204, 2004],
       "annualFuelCost": 1000,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
@@ -514,7 +514,7 @@
         "electric": 37,
         "gas": 2.6
       },
-      "maintenance": 1030.20,
+      "maintenance": [238, 652, 516, 1215, 1720],
       "annualFuelCost": 1000,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Ford",
@@ -540,7 +540,7 @@
         "electric": null,
         "gas": 2.4
       },
-      "maintenance": 857.20,
+      "maintenance": [350, 365, 2050, 630, 978],
       "annualFuelCost": 850,
       "fuelEconomyGHGRating": 10,
       "gasComparableManufacturer": "Hyundai",
@@ -566,7 +566,7 @@
         "electric": 69,
         "gas": 4.5
       },
-      "maintenance": 1901.20,
+      "maintenance": [414, 803, 5085, 2081, 2549],
       "annualFuelCost": 1900,
       "fuelEconomyGHGRating": 6,
       "gasComparableManufacturer": "Porsche",
@@ -592,7 +592,7 @@
         "electric": 51,
         "gas": 4.0
       },
-      "maintenance": 2173,
+      "maintenance": [342, 584, 7720, 1946, 2334],
       "annualFuelCost": 1650,
       "fuelEconomyGHGRating": 7,
       "gasComparableManufacturer": "BMW",
@@ -618,7 +618,7 @@
         "electric": null,
         "gas": 1.9
       },
-      "maintenance": 797.20,
+      "maintenance": [97, 268, 2307, 1055, 890],
       "annualFuelCost": 800,
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Kia",
@@ -644,7 +644,7 @@
         "electric": 58,
         "gas": 4.0
       },
-      "maintenance": 1271,
+      "maintenance": [136, 242, 3168, 1531, 1288],
       "annualFuelCost": 1700,
       "fuelEconomyGHGRating": 9,
       "gasComparableManufacturer": "Infiniti",
@@ -696,7 +696,7 @@
         "electric": null,
         "gas": 3.7
       },
-      "maintenance": 1252.80,
+      "maintenance": [304, 229, 2507, 1220, 2004],
       "annualFuelCost": 1650,
       "fuelEconomyGHGRating": 6,
       "photoLink": "https://i.imgur.com/fB74MuH.jpg"
@@ -720,7 +720,7 @@
         "electric": null,
         "gas": 2.9
       },
-      "maintenance": 842.80,
+      "maintenance": [76, 458, 817, 1224, 1818],
       "annualFuelCost": 1300,
       "fuelEconomyGHGRating": 8,
       "photoLink": "https://i.imgur.com/JDXiqBl.jpg"
@@ -744,7 +744,7 @@
         "electric": null,
         "gas": 3.3
       },
-      "maintenance": 816.60,
+      "maintenance": [198, 753, 498, 1417, 1472],
       "annualFuelCost": 2000,
       "fuelEconomyGHGRating": 6,
       "photoLink": "http://imgur.com/zZeJdbO.png"
@@ -768,7 +768,7 @@
         "electric": null,
         "gas": 3.1
       },
-      "maintenance": 949.20,
+      "maintenance": [313, 769, 580, 1291, 1593],
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
       "photoLink": "https://i.imgur.com/ajM909o.jpg"
@@ -792,7 +792,7 @@
         "electric": null,
         "gas": 3.7
       },
-      "maintenance": 873.80,
+      "maintenance": [462, 651, 578, 951, 2010],
       "annualFuelCost": 1750,
       "fuelEconomyGHGRating": 6,
       "photoLink": "https://i.imgur.com/WvYzE9s.jpg"
@@ -816,7 +816,7 @@
         "electric": null,
         "gas": 2.5
       },
-      "maintenance": 907.20,
+      "maintenance": [325, 363, 2269, 654, 925],
       "annualFuelCost": 900,
       "fuelEconomyGHGRating": 9,
       "photoLink": "https://i.imgur.com/wz7mzid.jpg"
@@ -840,7 +840,7 @@
         "electric": null,
         "gas": 2.9
       },
-      "maintenance": 726.40,
+      "maintenance": [270, 449, 427, 1021, 1465],
       "annualFuelCost": 1500,
       "fuelEconomyGHGRating": 7,
       "photoLink": "https://i.imgur.com/YVQ36bM.jpg"
@@ -864,7 +864,7 @@
         "electric": null,
         "gas": 2.8
       },
-      "maintenance": 1080.40,
+      "maintenance": [263, 965, 705, 1802, 1667],
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
       "photoLink": "https://i.imgur.com/XaaiGAq.jpg"
@@ -888,7 +888,7 @@
         "electric": null,
         "gas": 3.7
       },
-      "maintenance": 1668.40,
+      "maintenance": [0, 0, 0, 3782, 4701],
       "annualFuelCost": 1850,
       "fuelEconomyGHGRating": 6,
       "photoLink": "https://i.imgur.com/Mg7zYAI.jpg"
@@ -912,7 +912,7 @@
         "electric": null,
         "gas": 4.3
       },
-      "maintenance": 1411.60,
+      "maintenance": [437, 734, 928, 2111, 2848],
       "annualFuelCost": 2500,
       "fuelEconomyGHGRating": 5,
       "photoLink": "https://i.imgur.com/tCjFGa1.jpg"
@@ -937,7 +937,7 @@
         "electric": null,
         "gas": 3.4
       },
-      "maintenance": 1083.80,
+      "maintenance": [250, 726, 574, 1492, 2377],
       "annualFuelCost": 1550,
       "fuelEconomyGHGRating": 7,
       "photoLink": "https://i.imgur.com/O9B97lv.jpg"
@@ -961,7 +961,7 @@
         "electric": null,
         "gas": 3.3
       },
-      "maintenance": 851.20,
+      "maintenance": [288, 471, 361, 836, 2292],
       "annualFuelCost": 1400,
       "fuelEconomyGHGRating": 8,
       "photoLink": "https://i.imgur.com/61UR12c.jpg"
@@ -985,7 +985,7 @@
         "electric": null,
         "gas": 4.8
       },
-    "maintenance": 1860.40,
+    "maintenance": [91, 905, 723, 4156, 3427],
     "annualFuelCost": 2350,
     "fuelEconomyGHGRating": 5,
     "photoLink": "https://i.imgur.com/JhtItWc.jpg"
