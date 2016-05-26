@@ -21,7 +21,6 @@ const costPer100Miles = React.createClass({
       hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
       hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
       electricCost = (this.props.electricCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
-
       var chart = c3.generate({
         bindto: '#barGraph',
         data: {
@@ -32,7 +31,7 @@ const costPer100Miles = React.createClass({
             ['Gas', gasCost]
           ],
           type: 'bar'
-        }, 
+        },
         axis: {
           rotated: true,
           x: {show:true},
@@ -58,18 +57,12 @@ const costPer100Miles = React.createClass({
     }
     return chart;
   },
-  NewFunction: function() {
-    return (
-      <p>Hello</p>
-    )
-  },
   render() {
       this.props.gasCar ? this.CreateBarGraph() : null
-      return (
+    return (
         <div className="costPer100MilesGraph">
           <h3>Cost To Drive 100 Miles</h3>
           <div id="barGraph"></div>
-
         </div>
       )
   }
