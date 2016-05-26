@@ -605,7 +605,7 @@
       "model": "Prius",
       "body": "Hatchback",
       "power": "Plug-In Hybrid",
-      "msrp": 31770,
+      "msrp": 21499,
       "mpgmpge": {
         "electric": 95,
         "gas":  50
@@ -989,6 +989,54 @@
     "annualFuelCost": 2350,
     "fuelEconomyGHGRating": 5,
     "photoLink": "https://i.imgur.com/JhtItWc.jpg"
+  },
+  {
+    "country": "Asian",
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "body": "Coupe",
+    "power": "Gas",
+    "msrp": 19050,
+    "mpgmpge": {
+      "gas": 35,
+      "electric": null
+    },
+    "range": {
+      "gas": 434,
+      "electric": null
+    },
+    "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.9
+      },
+    "maintenance": [70, 404, 1112, 1509, 1391],
+    "annualFuelCost": 2350,
+    "fuelEconomyGHGRating": 8,
+    "photoLink": "http://i.imgur.com/lc1YmKF.jpg"
+  },
+  {
+    "country": "Asian",
+    "manufacturer": "Honda",
+    "model": "CR-Z",
+    "body": "Hatchback",
+    "power": "Plug-In Hybrid",
+    "msrp": 21615,
+    "mpgmpge": {
+      "gas": 37,
+      "electric": null
+    },
+    "range": {
+      "gas": 365.7,
+      "electric": null
+    },
+    "energyPer100Miles": {
+        "electric": null,
+        "gas": 2.7
+      },
+    "maintenance": [147, 562, 510, 1147, 1545],
+    "annualFuelCost": 1133,
+    "fuelEconomyGHGRating": 8,
+    "photoLink": "http://i.imgur.com/GhQmJW4.jpg"
   }
 ]
 
