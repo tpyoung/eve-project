@@ -55,7 +55,6 @@ const StateIncentives = React.createClass({
         return <Icon key={falseKey} source={iconObj[falseKey]} className="grayIcon" />
       });
       iconsNode = trueNode.concat(falseNode);
-      console.log('iconsNode: ', iconsNode);
     }
 
     //ELECTRIC VEHICLES
