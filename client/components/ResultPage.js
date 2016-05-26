@@ -68,25 +68,20 @@ const ResultPage = React.createClass({
     return electricCars;
   },
   render: function () {
-    if (this.getGasCars().length < 1) {
-      return null;
-    }
-    else {
       return (
         <div className='ResultPage'>
-          <CostPer100Miles gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
           <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
           <EpaGHGRatingGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
           <EpaGHGRatingGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
           <EpaGHGRatingGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+          <CostPer100Miles gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
           <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         </div>
       )
-    }
   }
 })
 ResultPage.defaultProps = {
