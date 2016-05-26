@@ -43,7 +43,17 @@ const costPer100Miles = React.createClass({
         },
         bar: {
           width: 50
+        },
+        tooltip: {
+        format: {
+            title: function () { 'Hi' },
+            value: function (value, ratio, id) {
+                var format = id === 'data1' ? d3.format(',') : d3.format('$');
+                return format(value);
+            }
+//            value: d3.format(',') // apply this format to both y and y2
         }
+    }
       }); //end of CHART
     }
     return chart;

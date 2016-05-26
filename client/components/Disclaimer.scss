@@ -1,0 +1,19 @@
+.disclaimers {
+	display: flex;
+	margin-top: 3%;
+	flex-flow: column nowrap;
+	text-align: center;
+	font-size: .5em;
+	background-color: #323E47;
+}
+p{
+	flex: 1 1 20%;
+	color: #BFC4C7;
+	opacity: 0.2;
+}
+
+.links {
+	color: #BFC4C7;
+	text-decoration: none;
+	margin-top: -.5%;
+}
