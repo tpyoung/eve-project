@@ -2,6 +2,7 @@
 
 import React from 'react';
 import c3 from '../resources/c3';
+import styles from './EpaGHGRatingGraph.scss';
 
 const EpaGHGRatingGraph = React.createClass({
   componentWillReceiveProps(nextProps) {
@@ -28,6 +29,7 @@ const EpaGHGRatingGraph = React.createClass({
           break;
       }
 
+      // console.log('vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating: ', vehicleInfo.power, vehicleInfo.fuelEconomyGHGRating);
       this.chart = c3.generate({
         bindto: `#${chartId}`,
           data: {
@@ -58,7 +60,7 @@ const EpaGHGRatingGraph = React.createClass({
   render() {
     {this.props.vehicleInfo && this.renderChart(this.props.vehicleInfo)}
       return (
-        <div className="EpaGHGRatingGraph">
+        <div className="epaGraphs">
           <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
           <div id="gasEpa"></div>
           <div id="hybridEpa"></div>

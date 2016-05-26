@@ -55,6 +55,7 @@ const StateIncentives = React.createClass({
         return <Icon key={falseKey} source={iconObj[falseKey]} className="grayIcon" />
       });
       iconsNode = trueNode.concat(falseNode);
+      console.log('iconsNode: ', iconsNode);
     }
 
     //ELECTRIC VEHICLES
@@ -80,8 +81,7 @@ const StateIncentives = React.createClass({
       iconsNode = trueNode.concat(falseNode);
     }
     return (
-      <div>
-      <h1>State Incentives</h1>
+      <div className="stateIncentiveIcons">
         {iconsNode}
       </div>
     )
