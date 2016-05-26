@@ -49,7 +49,7 @@ const Car = React.createClass({
       <div className="carCards">
         {this.props.vehicleInfo && <div className="car">
           <h3>{header}</h3>
-          <img src={require(this.props.vehicleInfo.photoLink)} />
+          <img src={this.props.vehicleInfo.photoLink} />
           <div>Model</div> 
           {`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}<br/>
           MSRP: {this.props.vehicleInfo.msrp}<br/>

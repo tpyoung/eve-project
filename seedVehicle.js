@@ -46,7 +46,8 @@ function vehicleSeed(){
         annualFuelCost: vehicleData.annualFuelCost,
         fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
         gasComparableManufacturer: vehicleData.gasComparableManufacturer,
-        gasComparableModel: vehicleData.gasComparableModel
+        gasComparableModel: vehicleData.gasComparableModel,
+        photoLink: vehicleData.photoLink
       });
     }
     else {
@@ -63,7 +64,8 @@ function vehicleSeed(){
         energyPer100Miles: vehicleData.energyPer100Miles,
         maintenance: vehicleData.maintenance,
         annualFuelCost: vehicleData.annualFuelCost,
-        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating
+        fuelEconomyGHGRating: vehicleData.fuelEconomyGHGRating,
+        photoLink: vehicleData.photoLink
       });
     };
 
