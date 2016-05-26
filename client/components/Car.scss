@@ -37,8 +37,7 @@
     }
 
     &:disabled {
-      background-color: lighten(gray, 30%);
-      border-radius: 0.5em;
+      display: none;
     }
   }
 
@@ -149,4 +148,16 @@
 
 .leftButton {
   margin-right: 5em;
+}
+
+.placeholder {
+  width: 25em;
+  height: 20em;
+  margin: 1em;
+}
+
+.placeholderMsg {
+  font-size: 2em;
+  font-style: italic;
+  margin: 1em; 
 }
