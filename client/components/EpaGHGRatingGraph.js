@@ -40,7 +40,7 @@ const EpaGHGRatingGraph = React.createClass({
               onmouseout: function (d, i) {}
           },
           tooltip: {
-            show: false
+            show: true
           },
           color: {
             pattern: ['#F56262', '#FE944C', '#FEE770', '#B9F27C', '#B9F27C', '#7CD85B'],
