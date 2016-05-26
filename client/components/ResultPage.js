@@ -1,7 +1,6 @@
 'use strict'
 
 import Car from './Car';
-import CostAnalysisGraph from './CostAnalysisGraph';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
 import styles from './ResultPage.scss';
 import CostPer100Miles from './CostPer100Miles';
@@ -88,13 +87,7 @@ const ResultPage = React.createClass({
           <EpaGHGRatingGraph id='epaElectricIndex' vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         </div>
           <CostPer100Miles gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
-        <div id="costContainer">
-        <h3>Cost Analysis</h3>
-          <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
-          <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
-          <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
           <Disclaimer />
-        </div>
       </div>
     )
   }
@@ -104,4 +97,3 @@ ResultPage.defaultProps = {
 };
 
 export default ResultPage;
-
