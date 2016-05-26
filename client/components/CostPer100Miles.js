@@ -1,38 +1,62 @@
 'use strict';
 
 import React from 'react';
+import c3 from '../resources/c3';
+const costPer100MilesCSS = require('./CostPer100Miles.scss');
 
-const CostPerMileGraph = React.createClass({
+const costPer100Miles = React.createClass({
+  CreateBarGraph: function(){
+  console.log('this.props',this.props);
+    var gasCost;
+    var hybridGasCost;
+    var hybridElectricCost;
+    var electricCost;
+
+    if (this.props.stateInfo === undefined ||
+      this.props.gasCar === undefined){
+      return null;
+    }
+    if (this.props.hybridCar !== undefined && this.props.electricCar !== undefined) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      electricCost = (this.props.electricCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Gas', gasCost],
+            ['Hybrid Gas', hybridGasCost],
+            ['Hybrid Electric', hybridElectricCost],
+            ['Electric', electricCost]
+          ],
+          type: 'bar'
+        },
+        bar: {
+          width: 200
+        }
+      }); //end of CHART
+    }
+    return chart;
+  },
+  NewFunction: function() {
+    return (
+      <p>Hello</p>
+    )
+  },
   render() {
+      this.props.gasCar ? this.CreateBarGraph() : null
+      return (
+        <div className="costPer100MilesGraph">
+          <h3>Cost To Drive 100 Miles</h3>
+          <div id="barGraph"></div>
 
-    var electricPer100 = this.props.energyPer100Miles.electric * this.props.state.electricCost;
-    var gasPer100 = this.props.energyPer100Miles.gas * this.props.state.gasCost;
-
-    if (electricPer100 !== null && gasPer100 !== null) {
-      return (
-        <div className='costPer100Miles'>
-          <p>Cost Per 100 Miles</p>
-          <p>Electric: { electricPer100 }</p>
-          <p>Gas: { gasPer100 }</p>
         </div>
       )
-    }
-    else if (gasPer100 !== null) {
-      return (
-        <div className='costPer100Miles'>
-          <p>Cost Per 100 Miles</p>
-          <p>Gas: { gasPer100 }</p>
-        </div>
-      )
-    }
-    else if (electricPer100 !== null) {
-      return (
-        <div className='costPer100Miles'>
-          <p>Cost Per 100 Miles</p>
-          <p>Electric: { electricPer100 }</p>
-        </div>
-      )
-    }
   }
 });
 
+export default costPer100Miles;
+
+// <p>**Hybrid vehicles use a combination of gas and electricity, these values are for theoretical comparisons only.</p>

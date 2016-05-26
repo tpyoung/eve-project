@@ -25,7 +25,6 @@ var StateDropDown = React.createClass({
 		};
 	},
 	updateValue (newValue) {
-		console.log(newValue)
 		this.setState({
 			selectValue: newValue
 		});

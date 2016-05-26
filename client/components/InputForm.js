@@ -18,7 +18,7 @@ const InputForm = React.createClass({
     };
   },
   handleSubmit(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     this.props.getStateInfo(this.state.userState);
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
     if (this.state.userState && this.state.maxPrice && this.state.bodyType !== null) {
@@ -37,14 +37,12 @@ const InputForm = React.createClass({
     this.setState({
       userState: newValue
     });
-    console.log(this.state.userState);
   },
   handleMaxPriceChange(newPrice) {
     newPrice = newPrice * 1000
     if (newPrice >= 100000) {
       newPrice = 900000;
     }
-    console.log(newPrice)
     this.setState({
       maxPrice: newPrice
     });
@@ -57,6 +55,7 @@ const InputForm = React.createClass({
   render(){
     return (
       <div className='InputContainerDivs'>
+
         <div id="landingPage" className='initLand'>
         <div id="header" className='initHeader'>
           <h1 id='siteTitle'>EVE - Electric Vehicle Evaluator</h1> 
