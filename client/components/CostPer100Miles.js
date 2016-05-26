@@ -1,45 +1,54 @@
 'use strict';
 
 import React from 'react';
+import c3 from '../resources/c3';
 const costPer100MilesCSS = require('./CostPer100Miles.scss');
 
 const costPer100Miles = React.createClass({
-  render() {
+  CreateBarGraph: function(){
+  console.log('this.props',this.props);
+    var gasCost;
+    var hybridGasCost;
+    var hybridElectricCost;
+    var electricCost;
+
     if (this.props.stateInfo === undefined ||
-      this.props.vehicleInfo === undefined){
+      this.props.gasCar === undefined){
       return null;
     }
-    var electricPer100;
-    var gasPer100;
+    if (this.props.hybridCar !== undefined && this.props.electricCar !== undefined) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      electricCost = (this.props.electricCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
 
-    //Gas Vehicle
-    if (this.props.vehicleInfo.energyPer100Miles.electric === null &&
-      this.props.stateInfo !== undefined) {
-      gasPer100 = (this.props.vehicleInfo.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
-      return (
-        <div id="gasCostPer100">
-          <p>Gas: ${ gasPer100 }</p>
-        </div>
-      )
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Gas', gasCost],
+            ['Hybrid Gas', hybridGasCost],
+            ['Hybrid Electric', hybridElectricCost],
+            ['Electric', electricCost]
+          ],
+          type: 'bar'
+        },
+        bar: {
+          width: 200
+        }
+      }); //end of CHART
     }
-
-    //Electric Vehicle
-    else if (this.props.vehicleInfo.energyPer100Miles.gas === null &&
-      this.props.stateInfo !== undefined) {
-      electricPer100 = (this.props.vehicleInfo.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
-      return (
-        <div id="electricCostPer100">
-          <p>Electricity: ${electricPer100 }</p>
-        </div>
-      )
+  },
+  render() {
+    if (this.CreateBarGraph() === null) {
+      return null
     }
     else {
-      electricPer100 = (this.props.vehicleInfo.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
-      gasPer100 = (this.props.vehicleInfo.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      this.CreateBarGraph()
       return (
-        <div id="hybridCostPer100">
-            <p>Electricity: ${electricPer100 } per 100 miles (no gas)</p>
-            <p>Gas: ${gasPer100} per 100 miles (no electric)</p>
+        <div className="costPer100MilesGraph">
+          <h3>Cost To Drive 100 Miles</h3>
+          <div id="barGraph"></div>
         </div>
       )
     }
@@ -48,4 +57,4 @@ const costPer100Miles = React.createClass({
 
 export default costPer100Miles;
 
-          // <p>**Hybrid vehicles use a combination of gas and electricity, these values are for theoretical comparisons only.</p>
+// <p>**Hybrid vehicles use a combination of gas and electricity, these values are for theoretical comparisons only.</p>
