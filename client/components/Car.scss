@@ -10,12 +10,17 @@
   flex-flow: row wrap;
   justify-content: center;
   flex: 0 1 10%;
-  padding: 1em;
-  border: 1px solid gray;
+  padding: 2em;
+  border-right: 1px solid lighten(gray, 30%);
+  border-bottom: 1px solid lighten(gray, 30%);
   height: 40em;
 
+  &:nth-of-type(3) {
+    border-right: 0;
+  }
+
   button {
-    margin-top: 1em;
+    margin-top: 1.5em;
     background-color: transparent;
     border-color: transparent;
   }
@@ -34,8 +39,8 @@
   border-left: 65px solid transparent;
   border-right: 65px solid transparent;
   border-bottom: 65px solid #727272;
-  left: 22.8em;
-  top: 0.8em;
+  left: 23.8em;
+  top: 1.8em;
 }
 
 .flagHybrid {
@@ -50,16 +55,13 @@
   transform: rotate(45deg);
   position: absolute;
   left: 25.5em;
-  top: 3em;
+  top: 4em;
   color: #FFFFFF;
 }
 
-.flagPowerHybrid {
-  left: 24.5em;
-}
-
-.flagPowerElectric {
-  left: 24.5em;
+.flagPowerGas {
+  top: 3.8em;
+  left: 26em;
 }
 
 .car {
@@ -73,12 +75,13 @@
 
 .carPhotos {
   max-height: 20em;
-  margin-bottom: 1em;
+  // margin-bottom: 1em;
 }
 
 .carInfoContainer{
   display: flex;
   flex-flow: row wrap;
+  padding: 0.5em;
 }
 
 .modelLabel {
@@ -94,24 +97,33 @@
 .carLabels {
   // background-color: pink;
   color: #878787;
-  flex: 1 2 33%;
+  flex: 1 0 33%;
 }
     
 .carInfo {
   flex: 0 1 50%;
   font-size: 2em;
   margin: 0.3em 0 0.3em 0;
+  color: #000000;
 }
-//hybrid car gets its own class for extra info
+
 .hybridCarInfo {
   flex: 0 1 33%;
   font-size: 2em;
   margin: 0.3em 0 0.3em 0;
 }
 
+.stateIncentiveHeader {
+  flex: 0 1 100%;
+  color: #878787;
+  margin: 0.3em 0 0.3em 0;
+  padding-left: 0.5em;
+}
+
 .stateIncentiveIcons {
   display: flex;
   flex-flow: row nowrap;
+  padding: 0.5em;
 }
 
 .icons {
@@ -122,11 +134,6 @@
   margin-right: 5em;
 }
 
-.stateIncentiveHeader {
-  flex: 0 1 100%;
-  color: #878787;
-  margin: 0.3em 0 0.3em 0;
-}
 
 .nextButton {
   height: 3em;
