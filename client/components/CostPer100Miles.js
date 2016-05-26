@@ -38,20 +38,22 @@ const costPer100Miles = React.createClass({
         }
       }); //end of CHART
     }
+    return chart;
+  },
+  NewFunction: function() {
+    return (
+      <p>Hello</p>
+    )
   },
   render() {
-    if (this.CreateBarGraph() === null) {
-      return null
-    }
-    else {
-      this.CreateBarGraph()
+      this.props.gasCar ? this.CreateBarGraph() : null
       return (
         <div className="costPer100MilesGraph">
           <h3>Cost To Drive 100 Miles</h3>
           <div id="barGraph"></div>
+
         </div>
       )
-    }
   }
 });
 
