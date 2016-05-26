@@ -84,6 +84,7 @@ const ResultPage = React.createClass({
           <EpaGHGRatingGraph id='epaElectricIndex' vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
         </div>
         <div id="costContainer">
+        <h3>Cost Analysis</h3>
           <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
           <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />

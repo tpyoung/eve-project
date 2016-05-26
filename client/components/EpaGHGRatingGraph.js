@@ -39,6 +39,9 @@ const EpaGHGRatingGraph = React.createClass({
               onmouseover: function (d, i) {},
               onmouseout: function (d, i) {}
           },
+          tooltip: {
+            show: false
+          },
           color: {
             pattern: ['#F56262', '#FE944C', '#FEE770', '#B9F27C', '#B9F27C', '#7CD85B'],
             threshold: {
@@ -56,6 +59,9 @@ const EpaGHGRatingGraph = React.createClass({
             },
             min: 0,
             max: 10
+          },
+          size: {
+            height: 225
           }
       });
     }

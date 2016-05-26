@@ -1,5 +1,6 @@
 import React from 'react';
 import c3 from '../resources/c3';
+import styles from './CostAnalysisGraph.scss';
 
 const CostAnalysisGraph = React.createClass({
   componentWillReceiveProps(nextProps) {
@@ -43,6 +44,9 @@ const CostAnalysisGraph = React.createClass({
           },
           donut: {
               title: "Annual Fuel Cost"
+          },
+          size: {
+            height: 400
           }
       });
     }
@@ -51,10 +55,9 @@ const CostAnalysisGraph = React.createClass({
     this.props.vehicleInfo ? this.renderChart(this.props.vehicleInfo) : null
     return (
       <div className="CostAnalysisGraph">
-        <h3>Cost Analysis</h3>
-        <div id="gasCostAnalysis"></div>
-        <div id="hybridCostAnalysis"></div>
-        <div id="electricCostAnalysis"></div>
+        <div className='innerCostGraph' id="gasCostAnalysis"></div>
+        <div className='innerCostGraph' id="hybridCostAnalysis"></div>
+        <div className='innerCostGraph' id="electricCostAnalysis"></div>
       </div>
     )
   }

@@ -44,7 +44,7 @@ var StateDropDown = React.createClass({
 				autofocus 
 				simpleValue 
 				options={options} 
-				placeholder='Select Your State'
+				placeholder='State'
 				ref="stateSelect" 
 				name="selected-state" 
 				onChange={this.updateValue} 

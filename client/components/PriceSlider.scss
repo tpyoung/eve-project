@@ -1,45 +1,49 @@
+#slideContainer {
+  margin-top: 4%;
+  text-align: center;
+}
+
+
 input[type=range] {
   -webkit-appearance: none;
-  width: 100%;
+  width: 85%;
   margin: 6.45px 0;
 }
 input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 15px;
+  width: 90%;
+  height:8px;
   cursor: pointer;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28), 0px 0px 1px rgba(13, 13, 13, 0.28);
-  background: rgba(72, 77, 77, 0.60);
-  border-radius: 1.3px;
-  border: 0px solid rgba(0, 1, 1, 0);
-  transition: background-color 1.5s ease;
+  background: rgba(72, 77, 77, 0.40);
+  border-radius: 2px;
+  
+  transition: background-color 0.8s ease;
 }
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0px 0px 0px rgba(103, 0, 0, 0.88), 0px 0px 0px rgba(129, 0, 0, 0.88);
   border: 0.5px solid rgba(0, 0, 0, 0.02);
   height: 30px;
-  width: 18px;
-  border-radius: 2px;
-  background: #64ace3;
+  width: 16px;
+  background: RGBA(90, 209, 153, 1.00);
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -7px;
+  margin-top: -11px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-    transition: background-color 1.5s ease;
-  background: rgba(77, 82, 82, 0.75);
+    transition: background-color 0.8s ease;
+  background: rgba(77, 82, 82, 0.68);
 
 }
 input[type=range]::-moz-range-track {
-  width: 100%;
+  width: 90%;
   height: 15px;
   cursor: pointer;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28), 0px 0px 1px rgba(13, 13, 13, 0.28);
   background: rgba(72, 77, 77, 0.62);
-  border-radius: 1.3px;
-  border: 0px solid rgba(0, 1, 1, 0);
+  
 }
 input[type=range]::-moz-range-thumb {
   box-shadow: 0px 0px 0px rgba(103, 0, 0, 0.88), 0px 0px 0px rgba(129, 0, 0, 0.88);
@@ -51,7 +55,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 input[type=range]::-ms-track {
-  width: 100%;
+  width: 90%;
   height: 21.1px;
   cursor: pointer;
   background: transparent;
@@ -60,13 +64,13 @@ input[type=range]::-ms-track {
 }
 input[type=range]::-ms-fill-lower {
   background: rgba(67, 72, 72, 0.62);
-  border: 0px solid rgba(0, 1, 1, 0);
+  
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28), 0px 0px 1px rgba(13, 13, 13, 0.28);
 }
 input[type=range]::-ms-fill-upper {
   background: rgba(72, 77, 77, 0.62);
-  border: 0px solid rgba(0, 1, 1, 0);
+  
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28), 0px 0px 1px rgba(13, 13, 13, 0.28);
 }
