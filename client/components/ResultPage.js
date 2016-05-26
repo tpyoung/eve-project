@@ -86,7 +86,6 @@ const ResultPage = React.createClass({
         <CostAnalysisGraph vehicleInfo={this.getGasCars()[this.state.gasIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} />
         <CostAnalysisGraph vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
-        <RangeGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
       </div>
     )
   }
