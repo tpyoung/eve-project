@@ -19,8 +19,12 @@ var PriceSlider = React.createClass({
 	},
 	render(){
 			let dollarAmount = ',000'
-			if (this.state.newPriceState > 90) {
+			if (this.state.newPriceState > 95) {
 				dollarAmount = ',000 and Above'
+			}
+			let dollarAmount2 = ',000'
+			if (this.state.newPriceState > 95) {
+				dollarAmount2 = ',000 +'
 			}
 		return(
 			<div>
@@ -36,6 +40,12 @@ var PriceSlider = React.createClass({
 				step="5"
 				onChange={this.updateValue}
 				/>
+				</div>
+				<div id="sliderBox">
+					<div id="triangle"></div>
+					<div id='box'>
+						<output value={'$' + this.state.newPriceState + dollarAmount2} for='pSlider'></output>
+					</div>
 				</div>
 			</div>
 		);

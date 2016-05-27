@@ -92,7 +92,7 @@ const Car = React.createClass({
               <div className="carInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
-            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} />
           </div>
           {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
           {(this.props.currIndex===this.props.electricLength-1) ? <button disabled className="rightButton" onClick={this.nextElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}

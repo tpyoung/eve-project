@@ -23,14 +23,15 @@ input[type=range]::-webkit-slider-runnable-track {
   transition: background-color 0.8s ease;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px rgba(103, 0, 0, 0.88), 0px 0px 0px rgba(129, 0, 0, 0.88);
+  box-shadow: 0px 4.5px 0px 0px RGBA(70, 189, 133, 1.00);
   border: 0.5px solid rgba(0, 0, 0, 0.02);
-  height: 30px;
+  border-radius: 2px;
+  height: 26.5px;
   width: 16px;
   background: RGBA(90, 209, 153, 1.00);
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -11px;
+  margin-top: -11.5px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
     transition: background-color 0.8s ease;
@@ -46,8 +47,10 @@ input[type=range]::-moz-range-track {
   
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px rgba(103, 0, 0, 0.88), 0px 0px 0px rgba(129, 0, 0, 0.88);
+
+  // box-shadow: 0px 0px 0px rgba(103, 0, 0, 0.88), 0px 0px 0px rgba(129, 0, 0, 0.88);
   border: 0.5px solid rgba(0, 0, 0, 0.02);
+
   height: 34px;
   width: 21px;
   border-radius: 2px;
@@ -95,3 +98,38 @@ output {
  font-size: 14.5px;
  padding-left: 2%;
 }
+
+#sliderBox {
+  margin-top: 10%;
+  margin-left: 6%;
+  opacity: 0.0;
+  transition: .4s ease-in-out;
+  #triangle {
+    margin-left: 37%;
+    width: 0px;
+    height: 0px;
+    border-left: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-bottom: 10px white solid;
+  }
+  #box {
+    background-color: white;
+    height: 3vh;
+    width: 90%;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    output{
+    }
+  }
+}
+#slideContainer:hover ~ #sliderBox {
+  opacity: 1.0;
+  transition: .4s ease-in-out;
+}
+
+
+
+
+

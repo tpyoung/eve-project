@@ -92,6 +92,11 @@ const Icon = React.createClass({
     return (
       <div className="icons">
         <img src={this.props.source} className={this.props.className} />
+        <div className="incentiveBox">
+          <div className="triangle"></div>
+          <div className='box'>
+          </div>
+        </div>
       </div>
     )
   }
