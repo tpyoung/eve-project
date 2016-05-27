@@ -26,9 +26,13 @@ const Car = React.createClass({
   },
   render: function () {
     if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Gas') {
+      let matches = "matches";
+      if (this.props.gasLength === 1){
+        matches = "match";
+      }
       return (
         <div className="carCards">
-          <div className="carAmount">{this.props.gasLength} matches</div>
+          <div className="carAmount">{this.props.gasLength} {matches}</div>
           <div className="car">
             <div className={`flag flagGas`}></div>
             <div className={`flagPowerType flagPowerGas`}>Gas</div>
@@ -42,7 +46,7 @@ const Car = React.createClass({
               <div className="carInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
-            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} />
           </div>
           {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
           {(this.props.currIndex===this.props.gasLength-1) ? <button disabled className="rightButton" onClick={this.nextGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
@@ -50,9 +54,13 @@ const Car = React.createClass({
       )
     }
     else if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Plug-In Hybrid') {
+      let matches = "matches";
+      if (this.props.hybridLength === 1){
+        matches = "match";
+      }
       return (
         <div className="carCards">
-          <div className="carAmount">{this.props.hybridLength} matches</div>
+          <div className="carAmount">{this.props.hybridLength} {matches}</div>
           <div className="car">
             <div className={`flag flagHybrid`}></div>
             <div className={`flagPowerType flagPowerHybrid`}>Hybrid</div>
@@ -68,7 +76,7 @@ const Car = React.createClass({
               <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
-            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} />
           </div>
           {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
           {(this.props.currIndex===this.props.hybridLength-1) ? <button disabled className="rightButton" onClick={this.nextHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
@@ -76,9 +84,13 @@ const Car = React.createClass({
       )
     }
     else if (this.props.vehicleInfo && this.props.vehicleInfo.power==='Electric') {
+      let matches = "matches";
+      if (this.props.electricLength === 1){
+        matches = "match";
+      }
       return (
         <div className="carCards">
-          <div className="carAmount">{this.props.electricLength} matches</div>
+          <div className="carAmount">{this.props.electricLength} {matches}</div>
           <div className="car">
             <div className={`flag flagElectric`}></div>
             <div className={`flagPowerType flagPowerElectric`}>Electric</div>
