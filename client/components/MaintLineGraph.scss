@@ -11,12 +11,14 @@
   color: #727272;
   font-size: 2.5em;
   margin: 1em;
+  flex: 0 1 100%
 }
 
 .maintCarNameContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
+  flex: 0 1 100%
 }
 
 .maintCar {
