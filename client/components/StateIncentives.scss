@@ -18,6 +18,7 @@
   width: 100%;
   opacity: 1.0;
   transition: .4s ease-in-out;
+  position: relative;
   .triangle {
     margin-left: 35%;
     width: 0px;
@@ -28,14 +29,15 @@
   }
   .box {
     background-color: white;
-    // height: 3vh;
-    // width: 90%;
+    padding: 0.5em;
     margin-left: 8%;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     output{
+      font-size: 1em;
     }
   }
 }

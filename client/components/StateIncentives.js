@@ -291,7 +291,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
-              <output value="Cash rebates available" />
+              <output value="Cash rebates" />
             </div>
           </div>
         </div>
@@ -308,7 +308,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
-              <output value="Free/discounted meter parking" />
+              <output value="Free or discounted meter parking" />
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
-              <output value="Tax credits available" />
+              <output value="Tax credits" />
             </div>
           </div>
         </div>
