@@ -36,6 +36,9 @@ const InputForm = React.createClass({
 
         document.getElementById('priceTab').classList.remove('initSliderBox');
         document.getElementById('priceTab').classList.add('sliderBox');
+
+        document.getElementById('h2').classList.remove('initH2');
+        document.getElementById('h2').classList.add('clickH2');
       }
   },
 
@@ -72,10 +75,13 @@ const InputForm = React.createClass({
       <div className='InputContainerDivs'>
 
         <div id="landingPage" className='initLand'>
+        <div id='pluggy'>
+        </div>
         <div id="header" className='initHeader'>
-          <h1 id='siteTitle'>EVE - Electric Vehicle Evaluator</h1>
+          <h1 id='siteTitle'>E V E  - Electric Vehicle Evaluator</h1>
         </div>
           <br/>
+          <a href='/'><h2 id='h2' className='initH2'>E V E  </h2></a>
           <form onSubmit={ this.handleSubmit } id='dataInput' className='initFormStyles'>
 
            <div className='dropDownContainer'>

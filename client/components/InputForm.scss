@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
 
 body {
-	background-color: #323E47;
+	// background-color: #323E47;
+	background-color: #20282D;
 	font-family: Roboto;
 	margin: 0;
 }
@@ -15,9 +16,15 @@ body {
 .initHeader{
 	margin: 0 auto;
 	text-align: center;
-	background-color: #4F4F4F;
+	background-color: RGBA(55, 62, 66, 1.00);
 	color: #F4F4F4;
 	width: 100vw;
+	
+	#siteTitle {
+		margin: 0 auto;
+		font-weight: 100;
+		padding: 1%;
+	}
 }
 
 .clickHeader {
@@ -33,7 +40,7 @@ display: none;
 .initLand {
 	height: 100vh;
 	width: 100vw;
-	// background-image: url("https://static.pexels.com/photos/57645/pexels-photo-57645.jpeg");
+	background-image: url("http://i.imgur.com/41FTY6E.jpg");
 	background-size: cover;
 	flex-flow: column nowrap; 
 }
@@ -46,6 +53,12 @@ display: none;
 #dataInput {
 	font-weight: 300;
 }
+
+		.initH2 {
+		display: none;
+	}
+
+
 
 .initFormStyles {
 	margin: 0 auto;
@@ -89,6 +102,15 @@ display: none;
 	 	top:2px;
 	 }
 }
+	.clickH2 {
+		display: float;
+		position: absolute;
+		margin-left: 3%;
+		font-weight: 100;
+		font-size: 1.75em;
+		text-decoration: none;
+		color: RGBA(239, 239, 239, 1.00);
+	}
 
 .clickFormStyles {
 	h3 {
@@ -144,9 +166,7 @@ display: none;
 	 }
 }
 
-#siteTitle {
-	margin: 0 auto;
-}
+
 
 .ResultPage {
 	background-color: #efefef;
