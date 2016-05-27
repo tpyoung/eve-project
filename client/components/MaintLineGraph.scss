@@ -1,0 +1,12 @@
+.maintGraph {
+	margin-top: 5%;
+	width: 100vw;
+	height: 35vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	div {
+	width: 85vw;
+	}
+}

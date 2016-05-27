@@ -80,12 +80,15 @@ const ResultPage = React.createClass({
           </div>
         }
         <MaintLineGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>
+        
         <div id="epaContainer">
           <h3>EPA Greenhouse Gas and Fuel Economy Rating</h3>
           <EpaGHGRatingGraph id='epaGasIndex' vehicleInfo={this.getGasCars()[this.state.gasIndex]}/>
           <EpaGHGRatingGraph id='epaHybridIndex' vehicleInfo={this.getHybridCars()[this.state.hybridIndex]}/>
           <EpaGHGRatingGraph id='epaElectricIndex' vehicleInfo={this.getElectricCars()[this.state.electricIndex]} />
+          <div className='bottomBorder'></div>
         </div>
+
           <CostPer100Miles gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]} stateInfo={this.props.stateInfo[0]} />
           <Disclaimer />
       </div>

@@ -16,17 +16,24 @@ const EpaGHGRatingGraph = React.createClass({
  renderChart: function(vehicleInfo){
    if (!this.chart) {
      let chartClass;
+     let gaugeColor;
      switch (vehicleInfo.power) {
        case 'Gas':
-         chartClass = 'gasEpa';
+        chartClass = 'gasEpa',
+        gaugeColor = '#4F4F4F';
+            
          break;
        case 'Plug-In Hybrid':
-         chartClass = 'hybridEpa';
+         chartClass = 'hybridEpa',
+         gaugeColor = '#4FA9CD';
+
          break;
        case 'Electric':
-         chartClass = 'electricEpa';
+         chartClass = 'electricEpa',
+         gaugeColor = '#93CC5D';
          break;
      }
+
 
       this.chart = c3.generate({
         bindto: `.${chartClass}`,
@@ -40,12 +47,12 @@ const EpaGHGRatingGraph = React.createClass({
               onmouseout: function (d, i) {}
           },
           color: {
-            pattern: ['#F56262', '#FE944C', '#FEE770', '#B9F27C', '#B9F27C', '#7CD85B'],
-            threshold: {
-    //            unit: 'value', // percentage is default
-    //            max: 200, // 100 is default
-                values: [3, 6, 9, 10]
-            }
+            pattern: [ gaugeColor ],
+    //         threshold: {
+    // //            unit: 'value', // percentage is default
+    // //            max: 200, // 100 is default
+    //             values: [3, 6, 9, 10]
+    //         }
           },
           gauge: {
             label: {

@@ -29,6 +29,9 @@ const InputForm = React.createClass({
 
         document.getElementById('header').classList.remove('initHeader');
         document.getElementById('header').classList.add('clickHeader');
+
+        document.getElementById('resultPage').classList.remove('initResult');
+        document.getElementById('resultPage').classList.add('clickResult');
       }
   },
 
@@ -85,7 +88,9 @@ const InputForm = React.createClass({
           </div>
           </form>
         </div>
-          <ResultPage stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
+        <div id='resultPage' className='initResult'>
+          <ResultPage  stateInfo={this.props.stateInfo} vehicleInfo={this.props.vehicleInfo}/>
+        </div>
       </div>
     )
   }

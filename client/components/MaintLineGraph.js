@@ -1,6 +1,7 @@
 'use strict';
-import React from 'react';
+
 import c3 from '../resources/c3';
+import styles from './maintLineGraph.scss'
 
 const MaintLineGraph = React.createClass({
   renderLineGraph(){
@@ -147,6 +148,9 @@ const MaintLineGraph = React.createClass({
         color: {
           pattern: ['#4F4F4F', '#4FA9CD', '#93CC5D']
         },
+          size: {
+            width: 50
+        }
       });
     }
   },
