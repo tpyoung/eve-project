@@ -139,11 +139,13 @@
 .stateIncentiveIcons {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   padding: 0.5em;
 }
 
 .icons {
-  flex: 0 1 25%;
+  flex: 0 1 16%;
+  text-align: center;
 }
 
 .placeholderCar {
@@ -174,31 +176,31 @@
 }
 
 
-#sliderBox {
-  margin-top: 10%;
-  margin-left: 6%;
-  opacity: 0.0;
-  transition: .4s ease-in-out;
-  #triangle {
-    margin-left: 37%;
-    width: 0px;
-    height: 0px;
-    border-left: 10px transparent solid;
-    border-right: 10px transparent solid;
-    border-bottom: 10px white solid;
-  }
-  #box {
-    background-color: white;
-    height: 3vh;
-    width: 90%;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    output{
-    }
-  }
-}
+// #sliderBox {
+//   margin-top: 10%;
+//   margin-left: 6%;
+//   opacity: 0.0;
+//   transition: .4s ease-in-out;
+//   #triangle {
+//     margin-left: 37%;
+//     width: 0px;
+//     height: 0px;
+//     border-left: 10px transparent solid;
+//     border-right: 10px transparent solid;
+//     border-bottom: 10px white solid;
+//   }
+//   #box {
+//     background-color: white;
+//     height: 3vh;
+//     width: 90%;
+//     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     output{
+//     }
+//   }
+// }
 
 
 
