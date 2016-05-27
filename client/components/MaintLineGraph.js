@@ -200,8 +200,31 @@ const MaintLineGraph = React.createClass({
         color: {
           pattern: ['#4F4F4F', '#4FA9CD']
         },
-          size: {
-            width: 50
+        axis: {
+          x: {
+            label: {
+              text: 'Years',
+              position: 'outer-center',
+            },
+            min: 1
+          },
+          y: {
+            label: {
+              text: 'Dollars',
+              position: 'outer-middle'
+            }
+          }
+        },
+        size: {
+          width: 1200,
+          height: 400
+        },
+        padding: {
+          bottom: 23,
+          right: 25
+        },
+        legend: {
+          position: 'inset'
         }
       });
     }
