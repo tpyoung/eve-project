@@ -116,6 +116,64 @@ const costPer100Miles = React.createClass({
         }
       }); //end of CHART
     }
+
+    //IF GAS & HYBRID ONLY
+    else if (this.props.hybridCar !== undefined &&
+      this.props.hybridCar.energyPer100Miles.electric !== null) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Hybrid Electric', hybridElectricCost],
+            ['Hybrid Gas', hybridGasCost],
+            ['Gas', gasCost]
+          ],
+          type: 'bar'
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        color: {
+          pattern: ['#82D5BA', '#4FA9CD',  '#4F4F4F' ]
+        },
+        bar: {
+          width: 50
+        }
+      }); //end of CHART
+    }
+
+    //IF GAS & HYBRID ONLY NO ELECTRIC
+    else if (this.props.hybridCar !== undefined &&
+      this.props.hybridCar.energyPer100Miles.electric === null) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Hybrid Gas', hybridGasCost],
+            ['Gas', gasCost]
+          ],
+          type: 'bar'
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        color: {
+          pattern: ['#4FA9CD',  '#4F4F4F' ]
+        },
+        bar: {
+          width: 50
+        }
+      }); //end of CHART
+    }
   },
   render() {
       this.props.gasCar ? this.CreateBarGraph() : null
@@ -127,5 +185,6 @@ const costPer100Miles = React.createClass({
       )
   }
 });
+
 
 export default costPer100Miles;
