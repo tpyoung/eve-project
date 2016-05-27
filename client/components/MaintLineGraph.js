@@ -102,7 +102,7 @@ const MaintLineGraph = React.createClass({
           ]
         },
         color: {
-          pattern: ['#4F4F4F', '#4FA9CD', '#93CC5D']
+          pattern: ['#4F4F4F','#93CC5D']
         },
       });
     }
@@ -145,7 +145,7 @@ const MaintLineGraph = React.createClass({
           ]
         },
         color: {
-          pattern: ['#4F4F4F', '#4FA9CD', '#93CC5D']
+          pattern: ['#4F4F4F', '#4FA9CD']
         },
       });
     }
