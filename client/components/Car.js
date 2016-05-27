@@ -21,59 +21,115 @@ const Car = React.createClass({
   prevElectricCar: function () {
     this.props.getCurrCar('previous electric');
   },
+  addCommas: function (num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  },
   render: function () {
-    let onClickNext;
-    let onClickPrev;
-    let flagName;
-    if (this.props.vehicleInfo) {
-      switch (this.props.vehicleInfo.power) {
-        case 'Gas':
-          onClickNext = this.nextGasCar;
-          onClickPrev = this.prevGasCar;
-          flagName = 'Gas';
-          break;
-        case 'Plug-In Hybrid':
-          onClickNext = this.nextHybridCar;
-          onClickPrev = this.prevHybridCar;
-          flagName = 'Hybrid';
-          break;
-        case 'Electric':
-          onClickNext = this.nextElectricCar;
-          onClickPrev = this.prevElectricCar;
-          flagName = 'Electric';
-          break;
-      }
-    }
-    return (
-      <div className="carCards">
-        {this.props.vehicleInfo && <div className="car">
-          <div className={`flag flag${flagName}`}></div>
-          <div className={`flagPowerType flagPower${flagName}`}>{flagName}</div>
-          <img className="carPhotos" src={this.props.vehicleInfo.photoLink} />
-          <div className="carInfoContainer">
-            <div className="modelLabel">Model</div>
-            <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
-            <div className="carLabels">MSRP</div>
-            {(this.props.vehicleInfo.power==='Gas') && <div className="carLabels">MPG</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels hybridM">MPGe</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="carLabels hybridM">MPG</div>}
-            {(this.props.vehicleInfo.power==='Electric') && <div className="carLabels">MPGe</div>}
-            {(this.props.vehicleInfo.power==='Gas' || this.props.vehicleInfo.power==='Electric') && <div className="carInfo">{this.props.vehicleInfo.msrp}</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo">{this.props.vehicleInfo.msrp}</div>}
-            {(this.props.vehicleInfo.power==='Gas') && <div className="carInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.electric}</div>}
-            {(this.props.vehicleInfo.power==='Plug-In Hybrid') && <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>}
-            {(this.props.vehicleInfo.power==='Electric') && <div className="carInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>}
+    if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Gas') {
+      return (
+        <div className="carCards">
+          <div className="carAmount">{this.props.gasLength} matches</div>
+          <div className="car">
+            <div className={`flag flagGas`}></div>
+            <div className={`flagPowerType flagPowerGas`}>Gas</div>
+            <img className="carPhotos" src={this.props.vehicleInfo.photoLink} />
+            <div className="carInfoContainer">
+              <div className="modelLabel">Model</div>
+              <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
+              <div className="carLabels">MSRP</div>
+              <div className="carLabels">MPG</div>
+              <div className="carInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
+              <div className="carInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>
+            </div>
+            <div className="stateIncentiveHeader">State Incentives</div>
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
           </div>
-          <div className="stateIncentiveHeader">State Incentives</div>
-          <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
-        </div>}
-        {this.props.vehicleInfo && <button className="leftButton" onClick={onClickPrev}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
-        {this.props.vehicleInfo && <button className="rightButton" onClick={onClickNext}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
-      </div>
-    )
+          {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
+          {(this.props.currIndex===this.props.gasLength-1) ? <button disabled className="rightButton" onClick={this.nextGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextGasCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
+        </div>
+      )
+    }
+    else if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Plug-In Hybrid') {
+      return (
+        <div className="carCards">
+          <div className="carAmount">{this.props.hybridLength} matches</div>
+          <div className="car">
+            <div className={`flag flagHybrid`}></div>
+            <div className={`flagPowerType flagPowerHybrid`}>Hybrid</div>
+            <img className="carPhotos" src={this.props.vehicleInfo.photoLink} />
+            <div className="carInfoContainer">
+              <div className="modelLabel">Model</div>
+              <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
+              <div className="carLabels">MSRP</div>
+              <div className="carLabels hybridM">MPGe</div>
+              <div className="carLabels hybridM">MPG</div>
+              <div className="hybridCarInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
+              <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.electric}</div>
+              <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>
+            </div>
+            <div className="stateIncentiveHeader">State Incentives</div>
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+          </div>
+          {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
+          {(this.props.currIndex===this.props.hybridLength-1) ? <button disabled className="rightButton" onClick={this.nextHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextHybridCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
+        </div>
+      )
+    }
+    else if (this.props.vehicleInfo && this.props.vehicleInfo.power==='Electric') {
+      return (
+        <div className="carCards">
+          <div className="carAmount">{this.props.electricLength} matches</div>
+          <div className="car">
+            <div className={`flag flagElectric`}></div>
+            <div className={`flagPowerType flagPowerElectric`}>Electric</div>
+            <img className="carPhotos" src={this.props.vehicleInfo.photoLink} />
+            <div className="carInfoContainer">
+              <div className="modelLabel">Model</div>
+              <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
+              <div className="carLabels">MSRP</div>
+              <div className="carLabels">MPGe</div>
+              <div className="carInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
+              <div className="carInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>
+            </div>
+            <div className="stateIncentiveHeader">State Incentives</div>
+            <StateIncentives stateInfo={this.props.stateInfo[0]} vehicleInfo={this.props.vehicleInfo} /> 
+          </div>
+          {this.props.currIndex===0 ? <button disabled className="leftButton" onClick={this.prevElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button> : <button className="leftButton" onClick={this.prevElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Left-icon.png" /></button>}
+          {(this.props.currIndex===this.props.electricLength-1) ? <button disabled className="rightButton" onClick={this.nextElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button> : <button className="rightButton" onClick={this.nextElectricCar}><img src="http://icons.iconarchive.com/icons/iconsmind/outline/32/Arrow-Right-icon.png" /></button>}
+        </div>
+      )
+    }
+    else if (this.props.vehicleInfo === undefined && this.props.gasLength===0) {
+      return (
+        <div className="carCards">
+          <div className="car placeholderCar gasPlaceholder">
+            <div className="placeholderMsg">No Matches</div>
+          </div>
+        </div>
+      )
+    }
+    else if (this.props.vehicleInfo === undefined && this.props.hybridLength===0) {
+      return (
+        <div className="carCards">
+          <div className="car placeholderCar hybridPlaceholder">
+            <div className="placeholderMsg">No Matches</div>
+          </div>
+        </div>
+      )
+    }
+    else if (this.props.vehicleInfo === undefined && this.props.electricLength===0) {
+      return (
+        <div className="carCards">
+          <div className="car placeholderCar electricPlaceholder">
+            <div className="placeholderMsg">No Matches</div>
+          </div>
+        </div>
+      )
+    }
   }
 })
+
+
 
 Car.defaultProps = {
   gasCars: [],

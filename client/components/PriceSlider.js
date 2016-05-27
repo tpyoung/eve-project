@@ -14,7 +14,7 @@ var PriceSlider = React.createClass({
 	updateValue (newPrice) {
 		this.setState({
 			newPriceState: newPrice.target.value
-		}),	
+		}),
 		this.props.handleMaxPriceChange(newPrice.target.value)
 	},
 	render(){
@@ -29,12 +29,11 @@ var PriceSlider = React.createClass({
 				<output value={'$' + this.state.newPriceState + dollarAmount} for='pSlider'></output>
 			</h3>
 			<div id='slideContainer'>
-				<input id="pSlider" 
-				type="range" 
-				min="30" 
-				max="100"  
+				<input id="pSlider"
+				type="range"
+				min="30"
+				max="100"
 				step="5"
-				onLoad={this.updateValue}
 				onChange={this.updateValue}
 				/>
 				</div>

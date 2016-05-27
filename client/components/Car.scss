@@ -6,13 +6,19 @@
   // margin-left: 4%;
 }
 
+.carAmount {
+  color: #727272;
+  margin: 1em;
+}
+
 .carCards {
   position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  justify-content: space-around;
   flex: 0 1 10%;
-  padding: 2em;
+  padding: 0 2em 4em 2em;
   border-right: 1px solid lighten(gray, 30%);
   border-bottom: 1px solid lighten(gray, 30%);
   height: 40em;
@@ -25,12 +31,17 @@
     margin-top: 1.5em;
     background-color: transparent;
     border-color: transparent;
+    
+    &:hover {
+      background-color: #FFFFFF;
+      border-radius: 0.5em;
+    }
+
+    &:disabled {
+      display: none;
+    }
   }
 
-  button:hover {
-    background-color: #FFFFFF;
-    border-radius: 0.5em;
-  }
 }
 
 .flag {
@@ -42,7 +53,7 @@
   border-right: 65px solid transparent;
   border-bottom: 65px solid #727272;
   left: 23.8em;
-  top: 1.8em;
+  top: 3em;
 }
 
 .flagHybrid {
@@ -57,19 +68,19 @@
   transform: rotate(45deg);
   position: absolute;
   left: 25.5em;
-  top: 4em;
+  top: 5em;
   color: #FFFFFF;
 }
 
 .flagPowerGas {
-  top: 3.8em;
+  top: 4.8em;
   left: 26em;
 }
 
 .car {
   flex: 0 1 100%;
   background-color: #FFFFFF;
-  height: 90%;
+  height: 88%;
   padding: 0.5em;
   box-shadow: 1px 1px 1px 2px lighten(gray, 20%);
   border-radius: 0.2em;
@@ -77,7 +88,6 @@
 
 .carPhotos {
   max-height: 20em;
-  // margin-bottom: 1em;
 }
 
 .carInfoContainer{
@@ -136,11 +146,29 @@
   flex: 0 1 25%;
 }
 
-.leftButton {
-  margin-right: 5em;
+.placeholderCar {
+  margin-top: 3.4em;
+  width: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
 }
 
+.gasPlaceholder {
+  background-color: #727272; 
+}
 
-.nextButton {
-  height: 3em;
+.hybridPlaceholder {
+  background-color: lighten(#4FA9CD, 10%);
+}
+
+.electricPlaceholder {
+  background-color: lighten(#93CC5D, 10%);
+}
+
+.placeholderMsg {
+  font-size: 2em;
+  font-style: italic;
+  margin: 1em; 
 }

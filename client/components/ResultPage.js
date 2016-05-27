@@ -74,9 +74,9 @@ const ResultPage = React.createClass({
       <div className='ResultPage'>
         {(this.getGasCars()[0] || this.getHybridCars()[0] || this.getElectricCars()[0]) &&
           <div className="carContainer">
-            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
-            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
-            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} />
+            <Car vehicleInfo={this.getGasCars()[this.state.gasIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} currIndex={this.state.gasIndex} gasLength={this.getGasCars().length} />
+            <Car vehicleInfo={this.getHybridCars()[this.state.hybridIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} currIndex={this.state.hybridIndex} hybridLength={this.getHybridCars().length} />
+            <Car vehicleInfo={this.getElectricCars()[this.state.electricIndex]} getCurrCar={this.getCurrCar} stateInfo={this.props.stateInfo} currIndex={this.state.electricIndex} electricLength={this.getElectricCars().length} />
           </div>
         }
         <MaintLineGraph gasCar={this.getGasCars()[this.state.gasIndex]} hybridCar={this.getHybridCars()[this.state.hybridIndex]} electricCar={this.getElectricCars()[this.state.electricIndex]}/>

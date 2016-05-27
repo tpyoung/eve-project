@@ -65,7 +65,7 @@ const MaintLineGraph = React.createClass({
     }
 
     //IF ONLY GAS AND ELECTRIC
-    else if (this.props.electricCar !== undefined) {
+    else if (this.props.electricCar !== undefined && this.props.hybridCar === undefined) {
       let gasMaintArr;
       let electricMaintArr;
 
@@ -93,7 +93,7 @@ const MaintLineGraph = React.createClass({
       }
 
       //LINE GRAPH
-     let chart = c3.generate({
+      let chart = c3.generate({
         bindto: '#maintLineGraph',
         data: {
           columns: [
@@ -108,7 +108,7 @@ const MaintLineGraph = React.createClass({
     }
 
     //IF ONLY GAS AND HYBRID
-    else if (this.props.hybridCar !== undefined) {
+    else if (this.props.hybridCar !== undefined && this.props.electricCar === undefined) {
       let gasMaintArr;
       let electricMaintArr;
 

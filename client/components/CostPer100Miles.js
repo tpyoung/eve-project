@@ -15,7 +15,42 @@ const costPer100Miles = React.createClass({
       this.props.gasCar === undefined){
       return null;
     }
-    if (this.props.hybridCar !== undefined && this.props.electricCar !== undefined) {
+
+    //IF ALL GAS HYBRID & ELECTRIC WITHOUT HYBRID ELECTRIC
+    if (this.props.hybridCar !== undefined &&
+      this.props.electricCar !== undefined &&
+      this.props.hybridCar.energyPer100Miles.electric === null) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
+      hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      electricCost = (this.props.electricCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Electric', electricCost],
+            ['Hybrid Gas', hybridGasCost],
+            ['Gas', gasCost]
+          ],
+          type: 'bar'
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        color: {
+          pattern: ['#93CC5D', '#4FA9CD',  '#4F4F4F' ]
+        },
+        bar: {
+          width: 50
+        }
+      }); //end of CHART
+    }
+
+    //If ALL GAS HYBRID AND ELECTRIC
+    else if (this.props.hybridCar !== undefined &&
+      this.props.electricCar !== undefined) {
       gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
       hybridGasCost = (this.props.hybridCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2);
       hybridElectricCost = (this.props.hybridCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
@@ -54,7 +89,33 @@ const costPer100Miles = React.createClass({
     }
       }); //end of CHART
     }
-    return chart;
+
+    //IF GAS & ELECTRIC ONLY
+    else if (this.props.electricCar !== undefined) {
+      gasCost = (this.props.gasCar.energyPer100Miles.gas * this.props.stateInfo.gasCost).toFixed(2)
+      electricCost = (this.props.electricCar.energyPer100Miles.electric * this.props.stateInfo.electricCost).toFixed(2);
+      var chart = c3.generate({
+        bindto: '#barGraph',
+        data: {
+          columns: [
+            ['Electric', electricCost],
+            ['Gas', gasCost]
+          ],
+          type: 'bar'
+        },
+        axis: {
+          rotated: true,
+          x: {show:true},
+          y: {show:true}
+        },
+        color: {
+          pattern: ['#93CC5D', '#4F4F4F' ]
+        },
+        bar: {
+          width: 50
+        }
+      }); //end of CHART
+    }
   },
   render() {
       this.props.gasCar ? this.CreateBarGraph() : null
@@ -68,5 +129,3 @@ const costPer100Miles = React.createClass({
 });
 
 export default costPer100Miles;
-
-// <p>**Hybrid vehicles use a combination of gas and electricity, these values are for theoretical comparisons only.</p>
