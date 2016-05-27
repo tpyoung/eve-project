@@ -55,8 +55,12 @@ const Car = React.createClass({
     }
     else if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Plug-In Hybrid') {
       let matches = "matches";
+      let mpgmpge = this.props.vehicleInfo.mpgmpge.electric;
       if (this.props.hybridLength === 1){
         matches = "match";
+      }
+      if (this.props.vehicleInfo.mpgmpge.electric === null) {
+        mpgmpge = 'N/A';
       }
       return (
         <div className="carCards">
@@ -72,7 +76,7 @@ const Car = React.createClass({
               <div className="carLabels hybridM">MPGe</div>
               <div className="carLabels hybridM">MPG</div>
               <div className="hybridCarInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
-              <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.electric}</div>
+              <div className="hybridCarInfo hybridM">{mpgmpge}</div>
               <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
