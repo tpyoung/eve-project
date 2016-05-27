@@ -36,14 +36,45 @@ const costPer100Miles = React.createClass({
         },
         axis: {
           rotated: true,
-          x: {show:true},
-          y: {show:true}
+          x: {
+            show:false,
+            tick:{
+              outer: false
+            }
+          },
+          y: {
+            show:true,
+            label: {
+              text: "Dollars",
+              position: 'outer-center'
+            }
+          }
+        },
+        size: {
+          width: 1200,
+          height: 400
+        },
+        padding: {
+          bottom: 100,
+          right: 25
+        },
+        legend: {
+          position: 'right'
         },
         color: {
           pattern: ['#93CC5D', '#4FA9CD',  '#4F4F4F' ]
         },
         bar: {
           width: 50
+        },
+        tooltip: {
+          format: {
+            title: function () { 'Hi' },
+            value: function (value, ratio, id) {
+                var format = id === 'data1' ? d3.format(',') : d3.format('$');
+                return format(value);
+            }
+          }
         }
       }); //end of CHART
     }

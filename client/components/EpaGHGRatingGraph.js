@@ -21,7 +21,7 @@ const EpaGHGRatingGraph = React.createClass({
        case 'Gas':
         chartClass = 'gasEpa',
         gaugeColor = '#4F4F4F';
-            
+
          break;
        case 'Plug-In Hybrid':
          chartClass = 'hybridEpa',
@@ -64,8 +64,8 @@ const EpaGHGRatingGraph = React.createClass({
             min: 0,
             max: 10
           },
-          size: { 
-            height: 240 
+          size: {
+            height: 240
           }
       });
     }
