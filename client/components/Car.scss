@@ -88,7 +88,6 @@
 
 .carPhotos {
   max-height: 20em;
-  // margin-bottom: 1em;
 }
 
 .carInfoContainer{
@@ -147,10 +146,25 @@
   flex: 0 1 25%;
 }
 
-.placeholder {
+.placeholderCar {
+  margin-top: 3.4em;
   width: 25em;
-  height: 20em;
-  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.gasPlaceholder {
+  background-color: #727272; 
+}
+
+.hybridPlaceholder {
+  background-color: lighten(#4FA9CD, 10%);
+}
+
+.electricPlaceholder {
+  background-color: lighten(#93CC5D, 10%);
 }
 
 .placeholderMsg {
