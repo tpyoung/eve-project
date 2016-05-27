@@ -3,6 +3,9 @@ import store from '../store';
 
 function requestStateInfo (userState) {
   return new Promise((resolve, reject) => {
+    if(!userState) {
+      // reject(new Error('Invalid Input'))
+    } else {
     $.ajax({
       url: `/api/states/${userState}`,
       dataType: 'json',
@@ -15,23 +18,27 @@ function requestStateInfo (userState) {
         reject(err);
       }
     });
+  }
   })
 }
 
 function requestCarInfo (maxPrice, bodyType) {
   return new Promise((resolve, reject) => {
-    $.ajax({
-      url: `/api/vehicles/${maxPrice}/${bodyType}`,
-      dataType: 'json',
-      crossDomain: true,
-      cache: false,
-      success: function (data) {
-        return resolve(data);
-      },
-      error: function (xhr, status, err) {
-        reject(err);
-      }
-    });
+    if(!maxPrice || !bodyType) {
+    } else {
+      $.ajax({
+        url: `/api/vehicles/${maxPrice}/${bodyType}`,
+        dataType: 'json',
+        crossDomain: true,
+        cache: false,
+        success: function (data) {
+          return resolve(data);
+        },
+        error: function (xhr, status, err) {
+          reject(err);
+        }
+      });
+    }
   })
 }
 

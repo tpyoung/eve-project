@@ -4,10 +4,13 @@ const PriceSliderCSS = require("./PriceSlider.scss");
 var PriceSlider = React.createClass({
 	getInitialState() {
     return {
-        newPriceState: '60'
+        newPriceState: 60
       }
     },
-
+	componentDidMount() {
+		this.state.newPriceState = 60
+		this.props.handleMaxPriceChange(this.state.newPriceState)
+	},
 	updateValue (newPrice) {
 		this.setState({
 			newPriceState: newPrice.target.value
@@ -28,9 +31,10 @@ var PriceSlider = React.createClass({
 			<div id='slideContainer'>
 				<input id="pSlider" 
 				type="range" 
-				min="20" 
+				min="30" 
 				max="100"  
-				step="10"
+				step="5"
+				onLoad={this.updateValue}
 				onChange={this.updateValue}
 				/>
 				</div>

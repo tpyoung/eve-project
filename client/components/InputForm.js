@@ -20,19 +20,22 @@ const InputForm = React.createClass({
     event.preventDefault();
     this.props.getStateInfo(this.state.userState);
     this.props.getCarInfo(this.state.maxPrice, this.state.bodyType);
-    if (this.state.userState && this.state.maxPrice && this.state.bodyType !== null) {
-      document.getElementById('landingPage').classList.remove('initLand');
-      document.getElementById('landingPage').classList.add('clickLand');
+      if (this.state.userState && this.state.maxPrice && this.state.bodyType !== '') {
+        document.getElementById('landingPage').classList.remove('initLand');
+        document.getElementById('landingPage').classList.add('clickLand');
 
-      document.getElementById('dataInput').classList.remove('initFormStyles');
-      document.getElementById('dataInput').classList.add('clickFormStyles');
+        document.getElementById('dataInput').classList.remove('initFormStyles');
+        document.getElementById('dataInput').classList.add('clickFormStyles');
 
-      document.getElementById('header').classList.remove('initHeader');
-      document.getElementById('header').classList.add('clickHeader');
-    }
+        document.getElementById('header').classList.remove('initHeader');
+        document.getElementById('header').classList.add('clickHeader');
+      }
   },
 
   handleUserStateChange(newValue) {
+    this.setState({
+      userState: ''
+    }),
     this.setState({
       userState: newValue
     });
@@ -43,10 +46,16 @@ const InputForm = React.createClass({
       newPrice = 900000;
     }
     this.setState({
+      maxPrice: ''
+    }),
+    this.setState({
       maxPrice: newPrice
     });
   },
   handleBodyTypeChange(newValue) {
+    this.setState({
+      bodyType: ''
+    }),
     this.setState({
       bodyType: newValue
     });

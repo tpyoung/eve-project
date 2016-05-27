@@ -93,7 +93,7 @@ const MaintLineGraph = React.createClass({
       }
 
       //LINE GRAPH
-      chart = c3.generate({
+     let chart = c3.generate({
         bindto: '#maintLineGraph',
         data: {
           columns: [

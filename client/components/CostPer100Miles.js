@@ -6,7 +6,6 @@ const costPer100MilesCSS = require('./CostPer100Miles.scss');
 
 const costPer100Miles = React.createClass({
   CreateBarGraph: function(){
-  console.log('this.props',this.props);
     var gasCost;
     var hybridGasCost;
     var hybridElectricCost;
