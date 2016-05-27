@@ -44,7 +44,8 @@
 }
 
 svg:hover ~ .incentiveBox {
-  opacity: .9;
+  opacity: 0.9;
   transition: opacity 1s ease-in-out;
   display: block;
+  z-index: 1;
 }
