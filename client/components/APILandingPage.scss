@@ -1,0 +1,30 @@
+#apiBody{
+  background-color: lighten(gainsboro, 10%);
+  color: black;
+  width: 75%;
+  margin: auto;
+  border-radius: .5em;
+  border: 1px solid yellowgreen;
+
+  h1{
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .allTheThings{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    // width: 50%;
+
+    .example{
+      text-decoration: underline;
+    }
+
+  }
+
+  .infoDetails{
+    font-size: .8em;
+    padding: 10px;
+    margin-left: 2vw;
+  }
+}
