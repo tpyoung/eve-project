@@ -207,8 +207,16 @@ const MaintLineGraph = React.createClass({
     this.props.gasCar ? this.renderLineGraph() : null
     return (
       <div className="maintLineGraph">
-        <h3>5 Year Maintenance Schedule (Dollars)</h3>
-        <div id="maintLineGraph"></div>
+        <div>
+          <div className="maintHeader">5 Year Maintenance Schedule</div>
+          <div className="maintCarNameContainer">
+            {this.props.gasCar && <div className="maintCar maintGasCar">{this.props.gasCar.manufacturer} {this.props.gasCar.model}</div>}
+            {this.props.hybridCar && <div className="maintCar maintHybridCar">{this.props.hybridCar.manufacturer} {this.props.hybridCar.model}</div>}
+            {this.props.electricCar && <div className="maintCar maintElectricCar">{this.props.electricCar.manufacturer} {this.props.electricCar.model}</div>}
+          </div>
+          <div id="maintLineGraph"></div>
+        </div>
+        <div className="borderLine"></div>
       </div>
     )
   }
