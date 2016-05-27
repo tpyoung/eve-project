@@ -1,16 +1,42 @@
 .costPer100MilesGraph{
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 3em;
   font-weight: 300;
 
   #header{
-    margin: 1em;
-    flex: 1 1 100%;
     text-align: center;
-    font-size: 2.5em;
+    flex: 0 1 100%;
     color: #727272;
+    font-size: 2.5em;
+    margin: 1em;
   }
 
+  .CostCarNameContainer100{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 0 1 100%;
+
+    .Cars100{
+      flex: 0 1 33%;
+      text-align: center;
+      margin-bottom: 2em;
+      font-size: 1.5em;
+    }
+
+    #GasCar100{
+      color: #727272;
+    }
+
+    #HybridCar100{
+      color: #4FA9CD;
+    }
+
+    #ElectricCar100{
+      color: #93CC5D;
+    }
+  }
 
 }
