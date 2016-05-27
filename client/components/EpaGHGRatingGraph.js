@@ -1,7 +1,6 @@
 'use strict';
-import React from 'react';
 import c3 from '../resources/c3';
-import styles from './EpaGHGRatingGraph.scss';
+import styles from './componentStyles/EpaGHGRatingGraph.scss';
 
 const EpaGHGRatingGraph = React.createClass({
  componentWillReceiveProps(nextProps) {

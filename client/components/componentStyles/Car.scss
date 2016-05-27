@@ -29,8 +29,10 @@
     background-color: transparent;
     border-color: transparent;
     outline: none;
+    user-select: none;
     transition: .4s ease-in-out;
     &:hover {
+      user-select: none;
       transition: .4s ease-in-out;
       background-color: #FFFFFF;
       border-radius: 0.5em;

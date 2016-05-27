@@ -1,6 +1,5 @@
 'use strict';
-import React from 'react';
-import styles from './StateIncentives.scss';
+import styles from './componentStyles/StateIncentives.scss';
 
 const StateIncentives = React.createClass({
   render: function(){

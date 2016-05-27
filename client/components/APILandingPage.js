@@ -1,6 +1,5 @@
 'use strict';
-import React from 'react';
-import APILandingPageSCSS from './APILandingPage.scss';
+import APILandingPageSCSS from './componentStyles/APILandingPage.scss';
 
 const APILandingPage = React.createClass({
   render(){

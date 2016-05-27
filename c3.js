@@ -1,5 +1,5 @@
 const c3 = (function (window) {
-    'use strict';
+'use strict';
 
     /*global define, module, exports, require */
 

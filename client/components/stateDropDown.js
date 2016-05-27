@@ -1,8 +1,7 @@
 'use strict';
 import Redux from 'redux';
 import Select from 'react-select';
-// import styles from '';
-import styles from './stateDropDown.scss'
+import styles from './componentStyles/stateDropDown.scss'
 import STATES from '../resources/states.js';
 
 

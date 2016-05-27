@@ -1,5 +1,6 @@
-const $ = require('jquery');
+'use strict';
 import store from '../store';
+const $ = require('jquery');
 
 function requestStateInfo (userState) {
   return new Promise((resolve, reject) => {

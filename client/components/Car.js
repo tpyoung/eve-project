@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Car.scss';
+'use strict';
+import styles from './componentStyles/Car.scss';
 import StateIncentives from './StateIncentives';
 
 const Car = React.createClass({

@@ -1,7 +1,6 @@
 'use strict';
-
 import c3 from '../resources/c3';
-import styles from './MaintLineGraph.scss';
+import styles from './componentStyles/MaintLineGraph.scss';
 
 const MaintLineGraph = React.createClass({
   renderLineGraph(){

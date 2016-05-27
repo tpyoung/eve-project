@@ -1,6 +1,5 @@
 'use strict';
-import React from 'react';
-import styles from './Disclaimer.scss'
+import styles from './componentStyles/Disclaimer.scss'
 
 const Disclaimer = React.createClass({
   render(){

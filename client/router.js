@@ -1,4 +1,4 @@
-import React from 'react';
+'use strict';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, BrowserHistory } from 'react-router';
 import { Provider } from 'react-redux';
@@ -7,7 +7,7 @@ import InputContainer from './container/InputContainer';
 import ResultPage from './components/ResultPage';
 import store, { history } from './store';
 import APILandingPage from './components/APILandingPage';
-const MainCSS = require('./components/Main.scss')
+import styles from './components/componentStyles/Main.scss';
 
 const router = (
   <Provider store = { store }>

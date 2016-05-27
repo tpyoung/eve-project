@@ -1,8 +1,7 @@
 'use strict';
-import React from 'react';
 import Redux from 'redux';
 import Select from 'react-select';
-import styles from './stateDropDown.scss'
+import styles from './componentStyles/stateDropDown.scss'
 
 
 var BodyTypeDropDown = React.createClass({

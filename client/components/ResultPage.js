@@ -1,12 +1,11 @@
 'use strict'
-
 import Car from './Car';
 import EpaGHGRatingGraph from './EpaGHGRatingGraph';
-import styles from './ResultPage.scss';
+import styles from './componentStyles/ResultPage.scss';
 import CostPer100Miles from './CostPer100Miles';
 import Disclaimer from './Disclaimer';
 import MaintLineGraph from './MaintLineGraph';
-const resultpageCSS = require('./ResultPage.scss')
+
 
 const ResultPage = React.createClass({
   getInitialState() {

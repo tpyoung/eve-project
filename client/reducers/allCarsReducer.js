@@ -12,7 +12,4 @@ function allCarsReducer (state = [], action) {
   return state;
 }
 
-
-
-
 export default allCarsReducer;

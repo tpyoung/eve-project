@@ -1,5 +1,6 @@
+'use strict';
 import ReactSliderNativeBootstrap from 'react-bootstrap-native-slider';
-const PriceSliderCSS = require("./PriceSlider.scss");
+import styles from './componentStyles/PriceSlider.scss';
 
 var PriceSlider = React.createClass({
 	getInitialState() {

@@ -1,3 +1,4 @@
+'use strict';
 import store from '../store';
 import Redux from 'redux';
 import * as $ from 'jquery';
@@ -6,8 +7,8 @@ import ResultPage from './ResultPage';
 import StateDropDown from './stateDropDown';
 import PriceSlider from './PriceSlider';
 import BodyTypeDropDown from './BodyTypeDropDown';
-const InputFormCSS = require("./InputForm.scss");
-const PriceSliderCSS = require("./PriceSlider.scss");
+import styles from './componentStyles/InputForm.scss';
+const PriceSliderCSS = require("./componentStyles/PriceSlider.scss");
 
 const InputForm = React.createClass({
   getInitialState() {
