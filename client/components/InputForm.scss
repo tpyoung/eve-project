@@ -5,6 +5,7 @@ body {
 	background-color: #20282D;
 	font-family: Roboto;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .InputContainerDivs{
@@ -35,6 +36,7 @@ display: none;
 	display: flex;
 	margin: 0 auto;
 	color: #BFC4C7;
+	width: 100%;
 } 
 
 .initLand {
@@ -170,7 +172,7 @@ display: none;
 
 .ResultPage {
 	background-color: #efefef;
-	width: 100vw;
+	width: 100%;
 }
 
 .initResult {
