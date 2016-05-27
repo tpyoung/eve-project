@@ -38,11 +38,12 @@
     position: absolute;
     output{
       font-size: 1em;
+      font-weight: 100;
     }
   }
 }
 
 svg:hover ~ .incentiveBox {
-  opacity: 1.0;
   display: block;
+  z-index: 1;
 }
