@@ -1,40 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
-
-.costPer100Miles {
-  background-color: hotpink;
-  width: 98vw;
-  margin: auto;
+.costPer100MilesGraph{
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2vw;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  font-weight: 300;
 
-   #costPer100Header {
-    flex: 0 1 100vw;
-    font-size: 3em;
-    font-weight: 300;
-   }
+  #header{
+    margin: 1em;
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #727272;
+  }
 
-   p {
-    font-size: 2em;
-   }
-}
 
-#gasCostPer100 {
-  background-color: gray;
-  // width: 30%;
-  flex: 0 1 30%;
-}
-
-#hybridCostPer100 {
-  background-color: lightblue;
-  flex: 0 1 30%;
-}
-
-#electricCostPer100 {
-  background-color: lightgreen;
-  flex: 0 1 30%;
 }

@@ -68,8 +68,30 @@ const costPer100Miles = React.createClass({
         },
         axis: {
           rotated: true,
-          x: {show:true},
-          y: {show:true}
+          x: {
+            show:false,
+            tick:{
+              outer: false
+            }
+          },
+          y: {
+            show:true,
+            label: {
+              text: "Dollars",
+              position: 'outer-center'
+            }
+          }
+        },
+        size: {
+          width: 1200,
+          height: 400
+        },
+        padding: {
+          bottom: 100,
+          right: 25
+        },
+        legend: {
+          position: 'right'
         },
         color: {
           pattern: ['#93CC5D', '#82D5BA', '#4FA9CD',  '#4F4F4F' ]
@@ -84,7 +106,6 @@ const costPer100Miles = React.createClass({
                 var format = id === 'data1' ? d3.format(',') : d3.format('$');
                 return format(value);
             }
-//            value: d3.format(',') // apply this format to both y and y2
         }
     }
       }); //end of CHART
@@ -178,10 +199,14 @@ const costPer100Miles = React.createClass({
   render() {
       this.props.gasCar ? this.CreateBarGraph() : null
     return (
+      <div>
         <div className="costPer100MilesGraph">
-          <h3>Cost To Drive 100 Miles</h3>
-          <div id="barGraph"></div>
+          <div id='header'>Cost To Drive 100 Miles</div>
+            <div id="carNames">
+            </div>
+            <div id="barGraph"></div>
         </div>
+      </div>
       )
   }
 });
