@@ -21,6 +21,9 @@ const Car = React.createClass({
   prevElectricCar: function () {
     this.props.getCurrCar('previous electric');
   },
+  addCommas: function (num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  },
   render: function () {
     if (this.props.vehicleInfo && this.props.vehicleInfo.power === 'Gas') {
       return (
@@ -35,7 +38,7 @@ const Car = React.createClass({
               <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
               <div className="carLabels">MSRP</div>
               <div className="carLabels">MPG</div>
-              <div className="carInfo">{this.props.vehicleInfo.msrp}</div>
+              <div className="carInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
               <div className="carInfo">{this.props.vehicleInfo.mpgmpge.gas}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
@@ -60,7 +63,7 @@ const Car = React.createClass({
               <div className="carLabels">MSRP</div>
               <div className="carLabels hybridM">MPGe</div>
               <div className="carLabels hybridM">MPG</div>
-              <div className="hybridCarInfo">{this.props.vehicleInfo.msrp}</div>
+              <div className="hybridCarInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
               <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.electric}</div>
               <div className="hybridCarInfo hybridM">{this.props.vehicleInfo.mpgmpge.gas}</div>
             </div>
@@ -85,7 +88,7 @@ const Car = React.createClass({
               <div className="modelInfo">{`${this.props.vehicleInfo.manufacturer} ${this.props.vehicleInfo.model}`}</div>
               <div className="carLabels">MSRP</div>
               <div className="carLabels">MPGe</div>
-              <div className="carInfo">{this.props.vehicleInfo.msrp}</div>
+              <div className="carInfo">${this.addCommas(this.props.vehicleInfo.msrp)}</div>
               <div className="carInfo">{this.props.vehicleInfo.mpgmpge.electric}</div>
             </div>
             <div className="stateIncentiveHeader">State Incentives</div>
