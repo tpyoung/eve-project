@@ -240,7 +240,6 @@ const StateIncentives = React.createClass({
         }
         else if (iconObj[falseKey].includes('@INSTALL@')){
           let installIcon = iconObj[falseKey].split('@INSTALL@');
-          console.log('installIcon: ', installIcon);
           return (
             <Icon key={falseKey} d={installIcon[1]} className="grayIcon" incentiveName="install" />
           )
@@ -275,6 +274,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
+              <output value="Car pool lane priveleges" />
             </div>
           </div>
         </div>
@@ -291,6 +291,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
+              <output value="Cash rebates available" />
             </div>
           </div>
         </div>
@@ -307,6 +308,7 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
+              <output value="Free/discounted meter parking" />
             </div>
           </div>
         </div>
@@ -325,24 +327,42 @@ const Icon = React.createClass({
           <div className="incentiveBox">
             <div className="triangle"></div>
             <div className='box'>
+              <output value="Tax credits available" />
             </div>
           </div>
         </div>
       )
     }
-
-    return (
-      <div className="icons">
-        <svg className={`${this.props.className} ${this.props.incentiveName}`} width="36px" height="36px">
-          <path d={this.props.d} />
-        </svg>
-        <div className="incentiveBox">
-          <div className="triangle"></div>
-          <div className='box'>
+    else if (this.props.incentiveName === 'charging') {
+      return (
+        <div className="icons">
+          <svg className={`${this.props.className} ${this.props.incentiveName}`} width="36px" height="36px">
+            <path d={this.props.d} />
+          </svg>
+          <div className="incentiveBox">
+            <div className="triangle"></div>
+            <div className='box'>
+              <output value="Discounts on home electricity prices" /> 
+            </div>
           </div>
         </div>
-      </div>
-    )
+      )
+    }
+    else if (this.props.incentiveName === 'install') {
+      return (
+        <div className="icons">
+          <svg className={`${this.props.className} ${this.props.incentiveName}`} width="36px" height="36px">
+            <path d={this.props.d} />
+          </svg>
+          <div className="incentiveBox">
+            <div className="triangle"></div>
+            <div className='box'>
+              <output value="Discounts on home charging station installation" /> 
+            </div>
+          </div>
+        </div>
+      )
+    }
   }
 })
 

@@ -139,11 +139,13 @@
 .stateIncentiveIcons {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   padding: 0.5em;
 }
 
 .icons {
-  flex: 0 1 25%;
+  flex: 0 1 16%;
+  text-align: center;
 }
 
 .placeholderCar {
