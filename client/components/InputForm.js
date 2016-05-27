@@ -7,6 +7,7 @@ import StateDropDown from './stateDropDown';
 import PriceSlider from './PriceSlider';
 import BodyTypeDropDown from './BodyTypeDropDown';
 const InputFormCSS = require("./InputForm.scss");
+const PriceSliderCSS = require("./PriceSlider.scss");
 
 const InputForm = React.createClass({
   getInitialState() {
@@ -32,6 +33,9 @@ const InputForm = React.createClass({
 
         document.getElementById('resultPage').classList.remove('initResult');
         document.getElementById('resultPage').classList.add('clickResult');
+
+        document.getElementById('priceTab').classList.remove('initSliderBox');
+        document.getElementById('priceTab').classList.add('sliderBox');
       }
   },
 

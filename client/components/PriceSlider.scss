@@ -99,7 +99,12 @@ output {
  padding-left: 2%;
 }
 
-#sliderBox {
+.initSliderBox {
+  display: none;
+  visibility: hidden;
+}
+
+.sliderBox {
   margin-top: 10%;
   margin-left: 6%;
   opacity: 0.0;
@@ -124,7 +129,7 @@ output {
     }
   }
 }
-#slideContainer:hover ~ #sliderBox {
+#slideContainer:hover ~ .sliderBox {
   opacity: 1.0;
   transition: .4s ease-in-out;
 }

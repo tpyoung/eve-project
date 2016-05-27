@@ -41,7 +41,7 @@ var PriceSlider = React.createClass({
 				onChange={this.updateValue}
 				/>
 				</div>
-				<div id="sliderBox">
+				<div id='priceTab' className="initSliderBox">
 					<div id="triangle"></div>
 					<div id='box'>
 						<output value={'$' + this.state.newPriceState + dollarAmount2} for='pSlider'></output>
