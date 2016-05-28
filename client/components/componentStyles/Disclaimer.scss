@@ -3,17 +3,30 @@
 	margin-top: 3%;
 	flex-flow: column nowrap;
 	text-align: center;
-	font-size: .5em;
+	font-size: 1em;
 	background-color: #323E47;
+  padding: 2%;
 }
 p{
 	flex: 1 1 20%;
 	color: #BFC4C7;
 	opacity: 0.2;
+  width: 85%;
+  margin: auto;
+  padding: .5em;
 }
 
-.links {
+.links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+
 	color: #BFC4C7;
-	text-decoration: none;
-	margin-top: -.5%;
+	margin-top: .5%;
+  color: white;
+
+  &:visited{
+  }
 }
