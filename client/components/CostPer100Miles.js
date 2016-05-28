@@ -1,7 +1,7 @@
 'use strict';
 import c3 from '../resources/c3';
 import styles from './componentStyles/c3Styles.scss';
-const costPer100MilesCSS = require('./componentStyles/costPer100Miles.scss');
+const costPer100MilesCSS = require('./componentStyles/CostPer100Miles.scss');
 
 const costPer100Miles = React.createClass({
   CreateBarGraph: function(){

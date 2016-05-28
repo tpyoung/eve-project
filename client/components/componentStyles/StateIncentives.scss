@@ -16,9 +16,10 @@
   display: none;
   height: 100%;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.85;
   transition: opacity 1s ease-in-out;
   position: relative;
+  padding: 1%;
   .triangle {
     margin-left: 35%;
     width: 0px;
@@ -29,13 +30,15 @@
   }
   .box {
     background-color: white;
-    padding: 0.5em;
+    padding: 1em;
     margin-left: 8%;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    
     output{
       font-size: 1em;
       font-weight: 100;

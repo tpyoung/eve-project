@@ -79,7 +79,11 @@ const InputForm = React.createClass({
         <div id='pluggy'>
         </div>
         <div id="header" className='initHeader'>
-          <h1 id='siteTitle'>E V E  - Electric Vehicle Evaluator</h1>
+          <h1 id='siteTitle'>E V E 
+          <div id='dividerDiv'></div>
+          </h1>
+
+          <h3>Electric Vehicle Evaluator</h3>
         </div>
           <br/>
           <a href='/'><h2 id='h2' className='initH2'>E V E  </h2></a>
