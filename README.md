@@ -10,10 +10,6 @@ Electric Vehicle Evaluator (EVE) is an assistive selection tool for those lookin
 
 #### Input
 
----
-![screencapture-eve-devleague-com-1465362781064](https://cloud.githubusercontent.com/assets/13547790/16079833/207443ee-32a1-11e6-8b11-2c584388908e.png)
----
-
   - State Input
     - Allows users to see their state's incentives for own an electric vehicle
     - Creates a visualization of how much it costs to travel 100 miles:   -- it takes an average of the user's state's gas prices and compares that with their local electricity costs
