@@ -31,13 +31,7 @@ Electric Vehicle Evaluator (EVE) is an assistive selection tool for those lookin
     - Users can flip through the car 'cards' to find on that match
     - Creates a visualization of how much it costs to travel 100 miles:   -- it takes an average of the user's state's gas prices and compares that with their local electricity costs
 
- - Basics
-    - Model
-    - MSRP    
-    - The Miles Per Gallon (or Miles Per Gallon Equivalent)
-    - Photo of the car
-    - Fuel Type
-    
+ - Basics -- (Model, MSRP, The Miles Per Gallon (or Miles Per Gallon Equivalent), Photo of the car, and Fuel Type)
 
   - 5 Year Maintenance Schedule
     - Using data projections created from past versions of the vehicle, we are able to create a projection map in the form of a line graph as to what the cost of upkeep could look like over the course of the next few years ('maintenance' includes repairs and regular maintenance)
