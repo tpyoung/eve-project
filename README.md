@@ -20,7 +20,8 @@ Electric Vehicle Evaluator (EVE) is an assistive selection tool for those lookin
   - Budget Input
     - depending on the user's price range a different selection of vehicles will be listed as viable options 
     
-  ##### Returned 
+
+#### Returned 
 
 ---
 ![screencapture-eve-devleague-com-1465362813304](https://cloud.githubusercontent.com/assets/13547790/16079646/592e9438-32a0-11e6-8e59-e30ab7fd8c9d.png)
