@@ -1,9 +1,7 @@
 # E V E - Electric Vehicle Evaluator
 
 ---
-![screencapture-eve-devleague-com-1465362813304](https://cloud.githubusercontent.com/assets/13547790/16079646/592e9438-32a0-11e6-8e59-e30ab7fd8c9d.png)
 
----
 ### Background
 Electric Vehicle Evaluator (EVE) is an assistive selection tool for those looking at the benefits of purchasing an electric car. Through cross referencing various charging, distance, and emissions data within our databases, EVE provides users a more thorough understanding of often overlooked details in the vehicle purchasing process. One of the main focuses of this project is the initial and projected costs of owning a vehicle regardless of fuel type. With a wide selection of gas, hybrid, and electric vehicles tailored to their requests, EVE sets a precedent for future car comparisons.
 
@@ -12,6 +10,9 @@ Electric Vehicle Evaluator (EVE) is an assistive selection tool for those lookin
 
 #### Input
 
+---
+![screencapture-eve-devleague-com-1465362781064](https://cloud.githubusercontent.com/assets/13547790/16079833/207443ee-32a1-11e6-8b11-2c584388908e.png)
+---
 
   - State Input
     - Allows users to see their state's incentives for own an electric vehicle
@@ -24,6 +25,10 @@ Electric Vehicle Evaluator (EVE) is an assistive selection tool for those lookin
     - depending on the user's price range a different selection of vehicles will be listed as viable options 
     
   ##### Returned 
+
+---
+![screencapture-eve-devleague-com-1465362813304](https://cloud.githubusercontent.com/assets/13547790/16079646/592e9438-32a0-11e6-8e59-e30ab7fd8c9d.png)
+---
 
   - Array of cars in each category of fuel type (gas, hybrid, electric)
     - Users can flip through the car 'cards' to find on that match
